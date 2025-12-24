@@ -1,0 +1,15 @@
+[project]
+name = "ncaa-player-pool"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2.3",
+    "polars>=1.25.2",
+    "psycopg[binary]>=3.2.6",
+    "python-dotenv>=1.0.1",
+    "pytz>=2025.1",
+    "pyyaml>=6.0.2",
+    "requests>=2.32.3",
+]

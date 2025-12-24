@@ -1,0 +1,1079 @@
+seed,team_id,team_name,player_id,player_name
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,0e8cd880-6103-4171-9904-75653f5ff7b1,Rory Hawke
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,30e0eb92-340a-485b-a713-2093e778306d,Paulius Murauskas
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,327ac679-5fb9-480b-be0d-9e09d7048681,Liam Campbell
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,3a7bf868-e639-4f71-b985-18ea37d3eb20,Mikey Lewis
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,45953d56-5ca9-4f2c-8293-c10f3132efd6,Harry Wessels
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,4a256e73-e4b6-4c2e-bbc0-13bd0ef57740,Ashton Hardaway
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,51c724e8-b3b1-4d70-b6fb-e4d54bd8ebf5,Luke Barrett
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,51d5f146-7378-4534-9d11-ffa2344aaf12,Mitchell Saxen
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,52af043e-fc19-45d9-b50b-1987457a0253,Oliver Faubert
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,69d7a9b6-cd22-4e11-910a-096039d40f60,Joshua Dent
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,8084f1e9-c0f9-4d67-a63e-91460c661bc7,Jordan Ross
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,a5788665-0571-4808-a65b-022616253f08,Augustas Marciulionis
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,c71f274b-6d0d-44d6-a8e0-4a50de8c9738,Cade Bennett
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,ddc75484-6d22-4d83-a55b-2bb9c5fd588e,Andrew McKeever
+7,b18f34af-a7f1-4659-a2e5-fc11a31cd316,Saint Mary's,f2873f89-80fa-4aef-9645-8c5196ea5b1b,Kevin Gad
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,064e4318-85c3-449b-b453-b3f7a45d587f,Markus Ilver
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,155311b1-cd0e-453d-adba-782a6e4e77d2,Riccardo Greppi
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,298b7f48-84db-4f2c-b554-83d0562d8060,Xavier Amos
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,314ef606-b642-4900-a60b-aadc549d3de2,Carter Gilmore
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,43ad079d-56f8-4acf-8d15-b804513e071f,Isaac Gard
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,519ad0d6-2658-4672-83e0-d7157a3e304e,Jack Janicki
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,58a958e2-86fe-4042-ad17-e6baf5f37a22,Nolan Winter
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,5b701220-47f6-43c3-b1d8-e3b10920d1ad,Daniel Freitag
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,677f1589-306d-4fef-96e6-3ad0f9f6bbc7,Steven Crowl
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,aaa9142e-4671-4dcd-8768-66f08afc8aaa,Kamari McGee
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,af41b14d-1976-4260-bd22-81013bf6d0d6,Aidan Konop
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,bdae846b-f642-4b36-88fd-a7ae34c448ff,John Blackwell
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,c494c6e4-3b9a-4804-ab21-e33c46eef6b6,Chris Hodges
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,df984935-84ea-4df6-afae-187ae6e93087,John Tonje
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,dfc61055-2b37-4a87-b80b-9286a09c573f,Jack Robison
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,e4778064-e68a-4146-9bda-3b0957b70288,Camren Hunter
+3,c7569eae-5b93-4197-b204-6f3a62146b25,Wisconsin,f57830f2-b527-4bde-987a-6eb06648b95d,Max Klesmit
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,07540208-743d-40ef-9c40-b2e2941384a8,Lincoln Ball
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,219d0546-9808-489b-b8d6-e83040b720d7,Greg Jones
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,2faa9ebb-0452-42cf-a330-3d7d28a17270,Julen Iturbe
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,3391080a-b8fa-49df-b050-50cb0895e17c,Matt Mayock
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,33df1435-a22e-4fe7-888a-bbf4242f19c4,Geoff Sprouse
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,53494cfb-3df8-4379-a516-777e27787046,Wyatt Nausadis
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,6fa28035-25d7-4a1c-b248-572cbd29efe9,Eric Michaels
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,7e32da3b-d4b1-4efc-a687-f37d1c379ff4,Shane O'Reilly
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,80f66bd2-3b78-413d-b4f8-ebd5c7573376,Noah Jones
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,816c0735-ccf1-459e-95c0-d651342dae12,Matt Rogers
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,8f48af84-b76b-436d-b56f-3dfa5165842c,Colin Smalls
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,9ebe3dd3-d9af-48ad-a304-6bd693591f63,Adam Holod
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,b0464c92-de3a-48a8-90c4-3dbbedd18aa0,Alex Daniels
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,c6fbe8d5-da12-477e-ae7f-d19bc300f781,Adrian Samuels
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,d0335a08-1bcb-475e-b309-df5c95c594a5,Elijah Stephens
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,e7705c8b-5caf-4584-a7d4-2ab98634da3b,Mason Whittaker
+16,2f513e67-f019-4eec-9096-fbc5911858b6,American,f02a8cdf-ea72-4a87-9fe8-6d58cf484058,Gibraltar Coleman
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,042cbbba-67d0-4abb-852c-700f16cecc12,Devin McGlockton
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,17b0f450-6faf-4efb-9a1e-54a9e16c52e0,Jordan Williams
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,1c51f4b1-e74f-4c02-a069-08feb82b8980,Tyler Nickel
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,5dc2b235-dcd4-488f-9a64-2e3422ddc8cb,Coleson Messer
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,64404e37-a1be-43ce-87e4-27a507aadc13,JaQualon Roberts
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,675bc6dc-ed0c-4e0a-ac77-7d07cf472b06,Tyler Tanner
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,695eae60-a6a7-445a-a3e4-3af0f83c1f9d,Karris Bilal
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,69bed49d-3d47-4df1-89ac-1463269598a1,AJ Hoggard
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,6b4d231d-6304-42ea-a8de-0ce58fd6e733,Graham Calton
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,71ad7d90-6f3a-4bcf-8b95-3dcbc19d7816,MJ Collins Jr.
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,8f24b28f-f9bb-4355-b68c-fcac8d3a4a54,Alex Hemenway
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,a5eb9d6a-8fe6-4a2e-9c64-88f46c2a5747,Chris Mañon
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,a73ba214-dbf7-4da2-81a0-4ec4f47c59ca,Hollman Smith
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,d166790f-c91d-48c9-9d9f-4e35ba0a2fcf,Jason Edwards
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,d3228085-0441-4dbd-af57-19c6c5a1a067,Grant Huffman
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,d9bd0215-483f-4bf9-95ee-6ccf7bebaaa9,Miles Keeffe
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,deb48ec9-078b-4ee8-9f08-c465e31a0ac7,Kijani Wright
+10,72971b77-1d35-40b3-bb63-4c5b29f3d22b,Vanderbilt,e2ad453b-fa3d-409c-934d-70e206be869b,Jaylen Carey
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,365737f6-1097-48dc-a86f-c2d27600ee15,Mason Gillis
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,61ecca46-a9ea-40fd-abd3-fdb30dac9b85,Stanley Borden
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,649143b8-d572-42ba-bd8e-199a8a37eaf6,Maliq Brown
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,6d43cd92-db02-4020-bde5-cb7ba9ef355b,Sion James
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,725f4c50-417e-4e9b-817c-b3e7b8167345,Isaiah Evans
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,80bf72fe-5f22-43e6-9a06-d46e340c3409,Tyrese Proctor
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,8c7eb91b-dd5a-4e01-8946-d9fc6218a7d8,Spencer Hubbard
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,99d4d024-f1dc-4aee-96e1-4eeeb47d687f,Kon Knueppel
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,9dd5bcf8-74b3-40d7-9173-bea73d0d8779,Cooper Flagg
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,a2ddef6d-8f1e-44d9-9e1a-8b4ef134351f,Patrick Ngongba II
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,bc2a3880-93b9-4de4-88fb-41f8a28de50a,Darren Harris
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,db1479e7-3202-4d61-9200-464259a04684,Neal Begovich
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,e33bbf34-b7ce-4101-b2e6-b8d2140cd2d0,Cameron Sheffield
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,e5f04229-5257-4047-8448-3918a7d0cccc,Khaman Maluach
+1,faeb1160-5d15-4f26-99fc-c441cf21fc7f,Duke,f0f117de-9515-45a5-b8e0-a9e19398f38e,Caleb Foster
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,1e9ab482-48ad-4984-98a6-d7c7e7909dc8,Brody Kozlowski
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,1ead8b0e-79f5-40d5-a397-f291b92f9956,Kanon Catchings
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,2ffa0c7d-bad4-4f83-9560-1665ba9928a7,Elijah Crawford
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,33b0f3b8-b551-4305-b67e-a9680cd06c0b,Jared McGregor
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,34a47c8a-d817-40b2-8f4f-b4cfd2231a7d,Trevin Knell
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,4493bf09-c0d1-4d8d-9599-50daa56c5d17,Townsend Tripple
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,48c1121a-cfc7-40ad-8f84-108b63980dec,Dallin Hall
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,5f896364-a892-400d-85a3-2318d2f759ee,Dawson Baker
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,65c674d1-5711-46e1-9344-c2812c43feab,Fousseyni Traore
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,6e140e8e-25f7-4990-859f-bfc37ad9a185,Mawot Mag
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,7856e2e3-1db9-4478-9631-cb15d1fadb9d,Khadim Mboup
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,799b2919-705f-4d60-aeb3-6cbfc324c7e6,Keba Keita
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,95452594-42dd-4d28-966e-b61198bf5905,Richie Saunders
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,a7364d5f-6c1b-47ae-9ab6-49acfce96df4,Egor Demin
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,abc3e3d5-bd20-4da0-a645-085c081c1cb1,Trey Stewart
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,c3b77898-f963-4c31-8948-48ff378aaf84,Max Triplett
+6,c31455b2-8a45-4248-aa8f-ce7eab1c6b02,BYU,f8e0eb15-fe60-45b2-8496-731dd0450cc3,Mihailo Boskovic
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,0d7c2477-d43f-4cad-b6da-0fef4dcf7276,Dola Adebayo
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,1551badc-fde8-4056-b8a0-754341e42897,Javon Ervin
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,248fd87d-4e31-4dac-865d-1dcd3a2a6751,Dallas Hobbs
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,2ffd8dca-b66b-4fd3-b1ac-b6f32aca961f,Jaxon Hartman
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,304ad107-2f38-443c-a475-b0986fad815e,Xavier Lipscomb
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,34d13802-cc57-4c1e-9362-6296f82cfaa3,Abdou Khadre Kebe
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,5fb93e10-36f9-40a3-8852-312c5b5eb856,Terrell Ard Jr.
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,782a725c-2e28-4b21-adbf-f20b5a895fb7,Arlandus Keyes
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,834cb785-b3da-44fc-baa0-4eea2f583b03,Carmelo Pacheco
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,9f16c646-1f0e-4199-ade7-023de78e9df9,Patrick Haigh
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,a752e91e-082c-43db-8925-d9fa6d0b405e,Malcolm Dread
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,b8822b4f-2377-431d-a5aa-5c22711283b2,Elijah Espinosa
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,bd0ebe5f-c9fb-4fa9-9cdb-41945a34abea,Trey Wilson
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,d3fa803b-d178-4291-9d1a-5a7c951ca509,Jedy Cordilia
+16,5fe4a398-1699-4442-a364-305b2f0ac01e,Mount St. Mary's,e066457b-467e-4516-8348-9d3ff1656702,Jonathan Ogunfuye
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,09934056-1872-48c7-aa39-9b130739793e,Brandon Jennings
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,1361bd4d-66cd-403d-bea1-66678a5ec678,Joe Bamisile
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,1a06c658-4da8-4638-a2c4-1155b714e52f,Martin Carrere
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,23d07fc5-cb2a-4ca3-b71f-9478e5af6c9f,Max Shulga
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,2de1ff2a-c456-4f54-a841-2c500642b3c7,Michael Belle
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,3ab0785f-a9f3-47a0-b2d4-7d792b1a518f,Luke Bamgboye
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,41681319-bf58-438b-b2cf-87c2fab9bac4,Terrence Hill Jr.
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,46b0b64c-3a40-4833-813a-b987995de7d1,Phillip Russell
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,5441beda-03a7-4863-985f-dc7fa8b6769c,Alphonzo Billups III
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,aac168f5-85db-43b5-b0ac-c0142eda8c64,Zeb Jackson
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,cf20f49a-6328-4907-a15d-6ca1b0b2811e,Obinnaya Okafor
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,d86c6bd2-9b5e-4f33-86ab-8ca31cd408a3,Jack Clark
+11,c1c1e6df-a383-4fbd-ba7b-32d4f9ef9518,VCU,f2c5f8a2-3739-4f36-8f39-fc4ab618d4de,Christian Fermin
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,08560642-9a4e-4784-b14d-dd7b5aacbd33,Trey Townsend
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,112ba67d-7e16-40ab-a959-3eadb76d4fa9,Sven Djopmo
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,28c3cbde-5b90-4d33-aa7f-2374d84e8db1,Will Kuykendall
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,3bd7eed0-a5ff-466c-9bf5-c423b254c426,Emmanuel Stephen
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,51ad6d93-b343-4452-9b44-95b604a6fd9f,Jackson Cook
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,5df0c38f-052c-4902-894c-ba29a55de30d,Addison Arnold
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,5f73bfbd-a1d2-4f91-aeb4-2b061596a9d5,Carter Bryant
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,644404c5-182b-4de9-a10e-26e1b72686ce,Luke Champion
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,75872464-437a-4008-9b6d-34475390c0a1,Anthony Dell'Orso
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,7956fd23-bb18-47ca-af7f-cc25dbd69c08,KJ Lewis
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,9061efb6-264b-448d-bce5-2df97467680e,Tobe Awaka
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,a868cf5a-4f94-4f73-abe4-8c8dc82abab8,Grant Weitman
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,ac0fdc86-3882-4f8d-a9ca-6230f51e73e4,Henri Veesaar
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,cbfe4d7c-3829-4f32-8b9c-393a2af2b6ff,Motiejus Krivas
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,cdb78b58-eb12-46a1-9150-a9ab8fea60cd,Conrad Martinez
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,d3e96fdc-5584-4a5b-9a19-a81e305867f3,Liam Lloyd
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,da8287c9-05c2-440e-89c4-a75e587d35a6,Jaden Bradley
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,de76d683-344b-400d-ad04-4934897a1c82,Jackson Francois
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,ecca0dc2-afc1-44c0-929d-6d55c71bfe7a,Will Menaugh
+4,9b166a3f-e64b-4825-bb6b-92c6f0418263,Arizona,f05eedf9-895c-45a4-bd23-631b3dac9a91,Caleb Love
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,01e89694-ca6e-48f9-8f1d-71b48dcd3c74,Norchad Omier
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,031a5ffb-6818-4aef-a838-b65d261682bd,Josh Ojianwuna
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,14a99007-4084-4703-ab45-2bdb846d410b,Yanis Ndjonga
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,287b416f-2ba3-47fc-920a-1d0fd99ce99e,Davidson Hubbard
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,3a5f4ceb-cb96-4eb9-9714-023e36136063,Kaleb Jackson
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,3c2f1bbc-27aa-438c-adee-e18b9621f155,Robert O. Wright III
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,55562f61-e3f2-4802-9790-62c7e1838753,Jalen Celestine
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,57eb0442-1147-4dfe-9731-dae30c45afba,VJ Edgecombe
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,61929ed0-2d9a-4303-a5a8-65a70e5b482b,Langston Love
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,7490d45f-80d0-4c97-95e0-113106812db2,Omar Adegbola
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,827a447c-a273-403f-bdc9-8ea8f78e4e6f,Jeremy Roach
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,ab560329-b328-4b22-a2b9-79cc6eebd58d,Marino Dubravcic
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,c73134e4-86e1-4847-bdde-05c419df62e8,Jayden Nunn
+9,db6e1cab-3fa3-4a93-a673-8b2a358ff4bf,Baylor,e2cf2939-0fbe-46bd-aaed-277e3c503289,Jason Asemota
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,0b1a49c1-8db8-440f-be2e-694d6a6cf33d,Te'Jon Sawyer
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,11cf4e66-f950-4fe7-8d93-927aaefcfe49,Austin Patterson
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,21d51196-50c6-433d-8242-04609924bd7a,Jensen Bradtke
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,3ca8f9e5-1576-41e0-9d66-5e04422fa230,Brandon Whitney
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,42bf5c30-292a-40ca-b9fe-3387dc3a3b41,Chase Henderson
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,4e1bb7e2-5d08-4cf7-8786-af6e14cf3450,Amari Jedkins
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,67828290-0ab1-4656-81b9-9b1987446b21,Zack Davidson
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,7a1415f3-d443-43ac-b519-3f286ce4d702,Adam Shoff
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,973e7d3c-5f15-4996-b20a-94c89df8a27b,Malik Moore
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,976d8787-71c7-4979-a359-595f35c68020,Money Williams
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,a3ce0b30-b583-4c0d-80f0-380dc325b8d8,Jalen Foy
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,ac18dd77-9477-4497-afaa-293a16c30cea,Kai Johnson
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,ba7514ce-afc5-4e8d-9081-8b135146ceca,Jeremiah Dargan
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,d6015039-d6dc-4a73-aa4c-4dd02c679fd8,Connor Dick
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,e72b409e-4888-429c-a431-481e723737ed,Tyler Thompson
+14,e3848467-66c0-41e5-8283-02e3586d8601,Montana,fc349a86-fbd0-4a5a-b79e-223ce49d36a7,Joe Pridgen
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,0070a0af-f7e4-4cdc-af19-e9dc678f498a,Brandon Angel
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,12ea9813-e136-4acd-9f23-534aa251c339,Jamari Phillips
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,189e86e1-04c7-40b3-97de-6d40c8786000,Jadrian Tracey
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,221573b7-7b17-476f-ad29-95a032953c36,TJ Bamba
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,2c3f0b73-e9c6-4d29-98f1-21d034743dee,Jayson Williams-Johnson
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,592318c1-f3ce-47ae-b470-b3b9dc61813d,Andre Warren
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,6cbfddc2-5948-4900-84b6-ed8d04b5b104,James Cooper
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,92961a5e-aab1-46d0-99fc-0dd03e2f93d3,Keeshawn Barthelemy
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,cd9f8889-72d7-4c95-83d1-d1a2647aa5e4,Kwame Evans Jr.
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,d32ff488-fa54-4ccb-82f8-5927ef1438fc,Supreme Cook
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,d607475d-da3f-45ac-a398-31b2e7f32737,Oleksandr Kobzystyi
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,d6f35db5-ab79-4d62-b29f-1eccb644762a,Mookie Cook
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,d9c87858-a593-4dcc-b349-7bb5bee715e1,Drew Carter
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,f0cef0c8-742c-4491-b950-f234c3aea836,Nate Bittle
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,f583d1b7-c6d8-4ba8-a4c3-5f5439b11c74,Luke Johnson
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,f8c0069d-e1ec-43b6-a8ba-cf4d647b51d1,Jackson Shelstad
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,f9a45186-143d-4f23-b04b-1dad77931509,Dezdrick Lindsay
+5,1da70895-f77f-44ef-b216-d63c02e696eb,Oregon,fc2a65c4-ba36-45c6-88f7-1369054682a3,Ra'Heim Moss
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,19b175f7-9578-4ea3-8865-43aeb01e91ab,Eric Mahaffey
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,32831736-1960-481b-a9d3-14775644173a,Bowen Hardman
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,3406b09d-50e1-47f1-a8b6-41f617e5ae7e,Amani Lyles
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,3b8fb089-e5e5-44c1-acd6-cca6f314a4ed,Seth Wilson
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,4d70f5f3-f552-4428-89a4-ab3fda6176d4,Sharron Young
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,4f216ecd-3ff5-40a2-aeca-37afffc03a60,Conner Groce
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,557680ad-a31c-4ebb-b76b-226c71e6eb18,Zach Halligan
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,5e76bd90-4d88-4c1c-8e28-6e07575f37b3,Josiah Harris
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,606d0499-135d-4012-8aac-8394cb0067eb,Shammah Scott
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,66580dc4-e9eb-4e14-a30b-7f4555f1b6fc,Isaiah Gray
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,850ce3cc-2053-430a-a728-874c2249b87a,Nate Johnson
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,b98a6e0c-7aad-445a-a939-cb2ce90a16a7,James Okonkwo
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,ba4998e4-dff7-478a-9e81-a4e3f5d9c13e,Evan Wilson
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,c357812e-e0c4-4e8f-82ce-9a4a34b7c382,Tavari Johnson
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,cb4226d3-19f2-44fb-b11e-833f6cb84944,Rich Brisco
+13,56fe0ab2-e4f0-47b9-8726-9ce23ebcde20,Akron,fdbc24a6-549f-4ffc-b3d3-9aa5f6daa1c9,Marvin Musiime-Kamali
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,1319d07a-8452-4bbf-b2f0-b35d2a66ace7,Alvaro Folgueiras
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,1aa3d955-a5d0-4dd4-ad07-c5118d9fb05e,Chris Ford
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,3d0ba5b7-0144-4c25-be1e-343e55920f64,Josh Omojafo
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,5f3f16eb-8a41-4572-a363-eacd4f3b901b,Amarion Dickerson
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,608dabe2-1d53-42ea-a236-af939914c1b3,Maurio Hanson Jr.
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,669f8e52-c039-4d10-9148-8a4ab61da1e0,Justice Williams
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,9b14536c-bf91-4569-b009-dc2cb2226606,Ismael Plet
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,c1c475ce-c2b7-4ca7-a44d-ebc63e24e1fa,Kam Woods
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,cb7fb2ce-9a90-4b06-84d0-c8771942c046,Cyril Arvanitis
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,d75164b2-413f-4d68-b0dd-72573e366755,Vasilije Serafimoski
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,d864c75b-ca09-4974-aae2-6b5b80d46a62,Tanner O'Grady
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,da2598df-2c7a-450a-b30b-55e694f50358,Dilen Miller
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,dc1f105f-669b-4f15-b934-425db1b3190d,Antallah Sandlin-El
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,ec95432d-bcdf-4a35-a513-daefab01240e,Ryan Prather Jr.
+15,6906e22d-92fa-40cb-8c05-ec8391ac1979,Robert Morris,fac7c7ac-bd85-40ad-ac63-4a4bc872a0c0,DJ Smith
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,5c25624f-e7df-4b4e-bd7c-454c6de36bca,Trey Jackson III
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,5e162916-dbec-4518-855c-1420c832e1f0,Gai Chol
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,75c5697d-12b3-4d2c-9672-c78f5bf523bf,Kanye Clary
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,7a5323a2-3ae9-4f54-9d3c-316a33c270d1,Josh Hubbard
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,7be216d6-b1c7-4407-8f31-0df82994db9d,EJ Paymon
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,84698595-1bb1-4649-9939-ebc38de9a2ee,RJ Melendez
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,8d60812d-b3c0-4289-a236-eddbe9f20762,Adrian Myers
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,9c71c0d4-0ee5-4beb-b284-82a122057193,Riley Kugel
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,a15aab9b-e884-4067-a83f-040c8e8bf639,Claudell Harris Jr.
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,a3bbb166-4a62-4b7a-ab21-0e125c046993,Harrison Alexander
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,a6bdc462-15bc-4e91-911e-4e67d967351d,Shawn Jones Jr.
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,a9d1c138-ad74-434f-a412-9e874d1c6539,Michael Nwoko
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,bfee88b5-ba22-43ed-883a-ce9d3c36fa97,Jeremy Foumena
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,c245a8d2-0f05-4ddd-99d5-db2f087da973,KeShawn Murphy
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,c368504a-ad1a-4739-9828-a0bcf133fcf7,Martavious Russell
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,c6148598-4fce-45ec-a7c5-26f1316342e1,Dellquan Warren
+8,a1ba4b89-d97c-44e2-835f-79ad3ccaa5ae,Mississippi State,f09ee4c6-1580-4244-b0dd-2f6f7203a9b1,Cameron Matthews
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,04af090b-66c9-4c30-bfe2-e247382fc691,Isaiah Ihnen
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,2136dff4-3693-42a8-ac20-32a3e9ba054c,Zach Cleveland
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,3bb1928a-5636-456b-bd99-4d4590803724,Owen Aquino
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,4ca628cb-0987-4c5d-bc63-979e465e3336,Will Gibson
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,50a792e7-8926-4868-a805-854ec45aaa85,Curtis Blair III
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,56e5e252-1584-4db9-b662-d2861a292b79,Kai Yu
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,6c3859fa-53ab-4253-9a35-3b924b03fefe,Jayvon Maughmer
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,7c27cf5c-da88-4509-8093-bcd13c81f965,Bryson Spell
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,806ab3cb-219f-49d9-bf5c-c045ed692521,Brett Decker Jr.
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,8b7515ba-420c-4075-848a-85a3d392b733,Gabriel McKay
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,9460b1f5-f251-4925-a4ea-8afdaf749323,JC Shirer Jr.
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,a457ac65-bd9e-4724-85c5-e4ca02a46b57,Kaden Metheny
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,bc2065df-6eb2-4647-a817-eaa4e886bf1b,Zander Yates
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,bc30fb10-35d6-4106-bf8e-1394f2957264,Josh Smith
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,d1a6f495-9574-479e-b331-bcdb5a410220,Taelon Peter
+12,559db90c-741f-40d1-aa81-3fdd1d4889f3,Liberty,f1e32a2b-a16a-431d-8f01-eb5bafe460eb,Colin Porter
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,16fe770e-5cf2-449d-b320-ceb4b410ed0b,Labaron Philon
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,1a8d976c-9ae4-45d2-80b0-b51894cda7ba,Aiden Sherrell
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,1af09922-a1cd-45f9-813c-78374573b4f5,Latrell Wrightsell Jr.
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,1be8f338-840a-4e49-8b7a-22f52d83ca9c,Clifford Omoruyi
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,2003708e-4fff-4e12-b0d5-52296d9b7372,Max Scharnowski
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,2b41299f-6520-48a5-828d-ec7d508ea86e,Derrion Reid
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,476e44ae-2218-4fe6-add3-05d6b24f8d41,Jarin Stevenson
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,5537fea8-fce3-4541-bf38-7a337ccfbb5c,Naas Cunningham
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,5648ffc0-0992-4ac7-b8ca-a18c9a09378b,Chris Youngblood
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,6a419ffa-a17b-4087-812c-93b187c59a5f,Houston Mallette
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,9f7b5d5c-6c28-4af1-9514-5c2cbce45e00,Grant Nelson
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,bbc21898-d2de-4454-b4f4-1e961d4b6b95,Aden Holloway
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,ff7b20b2-ea27-4938-b6ca-ae27fabafde5,Mark Sears
+2,c2104cdc-c83d-40d2-a3cd-df986e29f5d3,Alabama,ffd025a8-e4ca-43f9-8f90-6282d816176c,Mouhamed Dioubate
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,0d0dc813-2196-44c9-a430-1f550638fa6f,Tyrese Hunter
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,188553c5-18cc-4649-9484-2b68f48ab0ab,Damarien Yates
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,4d3d3a52-fb89-41b4-8478-d87af711c8f9,Noah Stansbury
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,5b326585-69a7-496d-8133-371f955130b4,PJ Carter
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,5f8865b4-57a2-4d20-928b-76d4ff65985d,Dante Harris
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,6135433a-fc3e-414e-8d6b-38f9d2bc4b56,Bouna Kebe
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,6618ec3f-89a9-4278-b827-c12791913c34,Dain Dainja
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,68fafd64-b4af-4204-821b-5442762f38a6,Moussa Cisse
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,933fc30e-8d79-4553-8ca6-5e341e0939c3,Ragi Phillips
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,97a9b074-67a0-4416-86e4-6eae432107db,Nicholas Jourdain
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,ebbe0b8b-58b4-4714-904d-30578aa9e86d,Colby Rogers
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,f036d801-32c8-4773-bb6f-86e7c1fcaec5,PJ Haggerty
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,f3edc33e-5291-4033-aa87-60e681227df3,Jared Harris
+5,1551b3a0-6d10-4ffa-8dfa-73b56f004553,Memphis,fdd7d30c-9eb1-4bc5-a5ac-8e298c59cc95,Baraka Okojie
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,092b2c9c-35ca-43a7-ba07-dcd877d4e21c,Keshawn Williams
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,0d5e65a5-f6e1-4a42-9350-aab10ad49a36,Jaden Steppe
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,3ab4a41a-4323-4a7c-b79a-cb7e169b4ff1,Nikola Djapa
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,486eb4cf-ef0a-4519-a5e5-bb14429b4c63,Rashaan Mbemba
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,4d4be799-d672-47f7-a7c6-d3864aa2cfa1,Nique Clifford
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,61a99492-b1ce-47eb-a7d7-a77f31e72b6b,Darnez Slater
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,69069046-a82c-4f74-bf4e-802a2af5026f,Jalen Lake
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,8c441f7e-dfda-4be2-89c2-b82302cf60df,Luke Murphy
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,8e75371e-b1bc-4082-91aa-722e573348fe,Bowen Born
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,9e7904d8-3fea-4f32-b756-67c35ceccb16,Jaylen Crocker-Johnson
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,a8c5c026-e0f6-4fd5-be9c-1146cbf28423,Kyle Jorgensen
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,b2984853-3cf7-4a23-b7ab-384894ec2c13,Kyan Evans
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,e0013689-144a-4398-86dc-3d4e618fa9f9,Jon Mekonnen
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,e3d13755-5c2a-4311-9c98-f9d0b9f9387d,Ethan Morton
+12,1a470730-f328-4fb1-8bbf-36a069e4d6b2,Colorado State,eac635b9-4e29-41f3-818d-9b6531e5e5a4,Charlie Dortch
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,0df8d60f-f4b1-449d-8946-fa0857e51fee,Casmir Chavis
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,215ab52b-7e84-4c02-994c-9ebfbb05243c,Melo Sanchez
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,47bb75b6-0178-4058-93fc-70a753906dbe,Johnell Davis
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,56d20a4a-982b-4e0c-bc52-eca8e76c8e73,Boogie Fland
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,57a0b5e4-0b8a-44ec-93b1-c6e6ba85dcd6,Adou Thiero
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,7977586d-f671-41a6-bdcc-7de98d3ada67,Trevon Brazile
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,7d100793-00aa-4791-a894-0cbe46df4f7a,Karter Knox
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,7fd700e4-8eb2-46e6-8063-a7531c716039,D.J. Wagner
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,8c4bb8ad-0fb7-4907-846e-c42ae587ab41,Zvonimir Ivišić
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,91e0052d-035e-491a-ab1a-9b1321dbbe58,Lawson Blake
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,984cb38d-faa0-4bd8-b2d4-e1c93e1ba778,Billy Richmond III
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,a3b41fdc-4ce2-470c-90a1-2dc603a55fc6,Kareem Watkins
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,b79f2f86-7ab4-4498-9209-40be6951666a,Jaden Karuletwa
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,e6abc51b-733c-4c6b-a13f-e17f8aadcdfd,Ayden Kelley
+10,c70c23c4-ab09-4797-a1af-792c848ab17f,Arkansas,ef6272db-0641-4a5e-ac81-d6678a110ec8,Jonas Aidoo
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,04bec847-ef29-4d9f-879a-b9afa6078be6,Christian Anderson
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,236c08e8-93c9-4b54-bd67-7ea16e85a8da,Jazz Henderson
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,27e8b06e-a5a3-4c69-9503-b4d5bc38d1b6,Corbin Green
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,32a3ebed-4f04-47c0-9dfa-e69b50a10c1e,Eemeli Yalaho
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,35b33108-f533-498d-bfbe-58ce5c220129,JT Toppin
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,36aacebb-532c-4a12-ab28-e116f274b8e2,Federiko Federiko
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,3b107db6-9b65-4984-8799-b239cea1c642,Kevin Overton
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,3e626f86-695a-4b53-837d-f735165e7af9,Kerwin Walton
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,41b4e227-8f9f-4d26-ad61-494f2719fff9,Elijah Hawkins
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,5aaaf386-03f6-41fc-81d9-3abaf04aa377,Darrion Williams
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,94afabec-80a3-4262-9813-00565bb6fecc,Jack Francis
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,9c364791-05f1-4de6-b105-b90a040e725b,Leon Horner
+3,f8c705b7-87d3-411a-9c8b-5124daab0469,Texas Tech,ab719fa3-ec31-4f12-b786-1524a566adb1,Chance McMillian
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,14520159-0077-4ad9-93f7-5ea43a942164,Vince Iwuchukwu
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,15f86ddd-f8ef-46f3-8d85-240f09da4546,Jaiden Glover
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,3670ffa7-fa22-41d0-b49b-195e28a15bd1,Deivon Smith
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,51401db5-2b80-4e89-92a8-df07804c5879,RJ Luis Jr.
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,59bbf3e7-77bd-4e75-9079-bc60c8a16b9a,Simeon Wilcher
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,780a2cc5-0211-49f7-a864-0b11eb6e8ce9,Khaman Maker
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,7c44739b-3b7f-414d-802a-704cbfac66ff,Lefteris Liotopoulos
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,844fdf4c-4a04-40e3-9dcb-09e4805c4dd2,Brady Dunlap
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,b16ddfef-f092-438f-81ca-4a533e962e17,Kadary Richmond
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,b48045b3-2613-4e3d-b2b9-4259cde6559a,Zuby Ejiofor
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,b79b7ea4-e2e0-4612-9eae-4472657f64f6,Ruben Prey
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,cd0c1ecf-7da4-45ea-b304-c78c87e081bc,Sadiku Ibine Ayo
+2,c1f4aae1-aa16-4095-aeab-10e5c2a1236a,St. John's,ed4382fb-3022-473c-9e1d-9970902b20e7,Aaron Scott
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,05a4a59c-8632-4ee7-9f60-10027db7010e,Kobe Elvis
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,39c396cd-1da1-4b98-aaa7-67273633a4b5,Reid Lovelace
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,3ca5cfd8-38ca-4177-9772-1f45ed23df0a,Glenn Taylor Jr.
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,4995eaae-a65b-422e-b415-45a9bb1d4c17,Yaya Keita
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,499df5fa-c210-4337-8c0e-25ab2af6033b,Jacolb Fredson-Cole
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,56a54a78-9987-4033-a5f3-bb774c003f31,Jadon Jones
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,76801000-c1a6-4168-8705-eb7579c31371,Mohamed Wague
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,7ae5e44e-96ab-4df1-b94d-0ada31e815a0,Duke Miles
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,8b539b29-b261-46f1-8b6c-030969b1b5d7,Dayton Forsythe
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,92250a0f-8949-49d2-affd-7210efd4ac41,Jake Moser
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,a099af78-04b2-496f-93ec-5602655379cd,Jalon Moore
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,a928e1ea-cca6-4b20-bfc7-be6849ff585b,Jeff Nwankwo
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,b6539e6f-5a77-41b3-b453-f18640f17666,Kuol Atak
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,bcbb4d95-7d9d-463a-a460-c1609f6c3cc7,Brycen Goodine
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,c9bb0e9d-c34f-44b5-8284-ee9887c7a92f,Jeremiah Fears
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,dcb2601b-f1c0-4419-a5d4-15eb9e5f1fe4,Luke Northweather
+9,b2fda957-e15c-4fb2-8a13-6e58496f561e,Oklahoma,e13249ae-125b-4674-8bb9-54c31f6c6de1,Sam Godwin
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,10752065-7b67-44d3-b0aa-5f809e43df94,Marquel Sutton
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,30a8d6ea-2416-49aa-9d9a-a4cb30301cfc,Lance Waddles
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,34f8c252-2de3-44c0-a787-595f0cd573c8,Aidan Skradis
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,4d97040a-90bc-4dc3-8d45-7b0a40a13e6b,Joshua Streit
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,4f22cc66-ffda-4585-ad59-9fcf8c9f7f98,Ja'Sean Glover
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,6d8d5170-eba0-42b4-a10c-02f685e2f007,Isaac Ondekane
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,919bef00-18c6-4879-845f-cd73c5a1c7c3,Grant Stubblefield
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,a0327455-ce58-4e7a-93aa-52347cc538cb,Khamani Cooper
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,a38061de-fbc3-49bc-aedc-0e0065306b2f,Sebastian Perry
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,a6c1e05f-9558-4e8a-a319-f0f5066a04aa,Lincoln Palbicki
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,ad4eaff6-f460-49fc-b0b5-53a0006928e2,Valentino Simon
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,ae10a722-311c-478c-b274-9e8013f12a29,Tucker Mills
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,c57eb512-36c5-4a14-a3f9-e38ebb9a759e,Tony Osburn
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,ca157d2d-4de5-4994-ac01-c026abdc29e8,Kamryn Thomas
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,db786ee8-b817-4ff5-932f-93b98bbf488d,JJ White
+15,68d2aa5b-714f-4652-96f3-b71e1752413f,Omaha,e52c92ef-973b-4b13-9bfb-bde93392397b,Pablo Soumare
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,048b0cfb-a379-40af-a6b2-88fea32f244a,Bryson Tiller
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,0ece995a-7168-4b1b-b72f-bf3b694c8115,Zach Clemence
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,112d64ee-36dc-4fb4-b9f5-1f13185d141e,Dillon Wilhite
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,1585e981-9a9f-4524-b3b3-0cadb1478eb0,David Coit
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,18ea2533-8b60-4013-92ab-a0db780bae4b,AJ Storr
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,1d0c6b20-76b7-4a82-ae1d-20b78136525b,Hunter Dickinson
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,1d513a0c-0e5a-47c1-9b13-9229240282b5,Will Thengvall
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,38d45f05-0e57-4dca-a703-60021da441b5,Elmarko Jackson
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,4f125826-5e8e-4132-bf74-59fb767ee81a,Zeke Mayo
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,51b89ec9-c414-4766-b0cf-d5444efc81e7,Flory Bidunga
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,8e654a5c-8712-4906-b8a4-3075cc79b05a,Noah Shelby
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,9674ca61-fbb9-4db3-bc8f-5cf4cdb4b30b,Rylan Griffen
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,9b055841-fe20-45b6-98f2-3d2017eeacae,Jamari McDowell
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,adb75955-9974-4d92-8b4f-0d00ca30f4cd,Rakease Passmore
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,ae3534d0-0e91-42ef-a566-98858c20fd07,Patrick Cassidy
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,b4ae6dcd-8402-418c-ba59-3d03c14919a7,Dajuan Harris Jr.
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,cc87bbfa-c706-4bde-9d4a-2e80108951d0,Shakeel Moore
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,d7a3bd02-0649-46d1-810b-1ba60fce049b,KJ Adams
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,db9f50da-20bb-4daa-9cbf-5d1828992106,Justin Cross
+7,fae4855b-1b64-4b40-a632-9ed345e1e952,Kansas,e70f7e72-3433-4da1-b531-ac0a7d0323ef,Wilder Evers
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,0771b741-1e3b-48fe-a4ea-44503619c445,Lukas Sotell
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,1431b488-6d01-43d8-b905-b1d1a70a1136,Ja'Kobi Gillespie
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,45ac5da5-1679-4cc0-a4e5-732992c4b3e5,Jay Young
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,46a06059-e565-43c0-90f2-4ce8cdbed711,DeShawn Harris-Smith
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,4794bee6-4242-4fe5-8b97-4d30e886509a,Jordan Geronimo
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,4abab5af-b766-432d-9eb9-ad48d5e935fe,Rodney Rice
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,5bd106ff-cec9-4591-82c5-02160d3aaa1e,Braden Pierce
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,6cf6aa8f-3d50-4adb-b758-ab0ea2590e65,Ben Murphy
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,8c014dfd-f799-453a-b75e-826b2dac7eed,Julian Reese
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,bb284976-ddcb-4fa6-a298-be2e60aaf7bf,Tafara Gapare
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,cd0d1628-83fa-4318-a9ca-bcec2f164847,Selton Miguel
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,dd27b9fc-82de-4e92-bd5d-89df804e9df6,Chance Stephens
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,eba2ef4a-e6a7-4169-8e80-3ca8b14bf590,Jahari Long
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,f815e7d9-0591-41dc-9295-8434b0442c4a,Derik Queen
+4,2778d005-cc14-4e58-9bf2-3fc37bffb62f,Maryland,f8f28f0a-5f6e-4f29-b18d-6810e4239890,Malachi Palmer
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,1242f4d5-c636-4f9c-86fb-8732b05b61cf,Brian Moore Jr.
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,1ffe4749-a13c-4816-8ed7-0ba85430552e,Chris Fields Jr.
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,269bd0a1-5a33-40f3-8414-f2d4216897a6,Jalen Myers
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,52a07aa9-a5df-40ea-b362-ba3cab32a48b,Dramane Camara
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,5d650b3d-aec5-4418-bd5e-843792470518,Sin'Cere McMahon
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,6bc9f6c3-9036-425d-bd6c-945a63fc36ee,Kuluel Mading
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,9e906cd4-8369-4920-aa6e-9c6601de2c5d,Jordan Leaks
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,af05de08-8496-4ff2-8168-5b12c171dc99,Terrance Jones
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,b6de7d0a-ce12-4f21-9d84-00240c23fddd,Jaylani Darden
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,c997ed9d-0a86-4c25-bbce-79d78090b58f,Mykel Jenkins
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,d3a7674d-a8ba-4fc7-86a9-824dbe0c8d95,Tyrel Bladen
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,e8000fdc-db72-4f84-8b57-fb85b287eb58,Melo Baines
+16,a8f75c12-c4db-401f-99e3-b48209d85274,Norfolk State,fdcf040e-8c2f-4106-a335-7510656beba5,Christian Ings
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,0647192a-4e86-4dcd-9557-7af986a8b378,Isaiah Jackson
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,2ffd3a96-e5d7-49ca-8735-e794e9c1d3e7,Mitch Mascari
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,3874b3ba-a6e2-4f47-a21a-1f365306be87,Tavion Banks
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,65445eaa-13df-478c-9c5f-d53778943af7,Joey Matteoni
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,72d0c6a8-be2c-4696-8f72-e88041b3f342,Kael Combs
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,8104d455-a153-4966-96f6-fefacf40a2eb,Eli Shetlar
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,8af075c2-787f-4c1e-b456-97e3b4a3b1a6,Cam Manyawu
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,8eb59bd0-811e-4493-8c7c-789b5b68945b,Daniel Abreu
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,9a96e418-6666-415a-a741-ee2d92630551,Isaia Howard
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,b0c07449-9329-4c05-bda7-161490bbb175,Nate Ferguson
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,b633e3b4-f0bd-4bc8-ac36-6ac971ab7ddb,Andrew Alia
+11,aed211c3-23a4-4188-ad70-22c6eba7d765,Drake,df203734-86d0-4c42-a492-4db4726821bf,Bennett Stirtz
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,008b59d7-16db-46af-a372-5ecb8e813e99,Will Richard
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,131402b9-14a0-4f48-b63c-0d03eec89f92,Kevin Pazmino
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,1cd06efa-1419-458c-aa84-e7f493204b62,Thomas Haugh
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,1e821cbb-c487-4809-b560-b216995ac0b6,Rueben Chinyelu
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,2c99fb55-da8b-423f-ad58-ac063f79776d,Denzel Aberdeen
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,4b23c11d-8610-4ff1-a049-618245e90698,Bennett Andersen
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,53ef749f-e84a-4cc4-b018-bf2a103caef6,Cooper Josefsberg
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,581366a8-a150-4932-be94-7743c314f34a,Walter Clayton Jr.
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,586b75d3-0222-4953-84e7-6a60c960d9f8,Urban Klavzar
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,617f88ed-353b-4507-8344-4e7dff503e39,Isaiah Brown
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,6aa036df-1242-4ada-b3b9-fde3075a34b9,Viktor Mikic
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,9c99c46d-0b88-4ead-bf99-5d7fcde0c920,Alijah Martin
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,a9bc1442-4a81-4268-9fd2-ad676ab5fcfe,Kajus Kublickas
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,da845d7c-ce11-445c-81c7-6b010bb90084,Alex Condon
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,ecea1c09-1d25-4a7c-82ed-4a52723826b3,Sam Alexis
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,ee31b2a3-520b-4717-939f-eeed249fbef6,Olivier Rioux
+1,912f8837-1d81-4ef9-a576-a21f271d4c64,Florida,f7ae7e3c-21dd-41d3-9c72-0cbdc9fe4a53,Micah Handlogten
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,1622ded6-ffd3-4c9b-a774-badd27cd85c0,Solo Ball
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,3d19832c-9763-4429-9d5a-67a4f5cfa99f,Isaiah Abraham
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,463da7bb-0f39-4890-9cff-cb1114fcd01a,Jayden Ross
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,47c24d47-e523-4ae1-9a35-02851dc2b20d,Hassan Diarra
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,767110e4-94c1-4f47-8310-7d8a03f146f9,Samson Johnson
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,77972bf1-e048-4df4-b2b2-15f3edd13ceb,Aidan Mahaney
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,7bddb4bf-9f2a-458c-9a33-371813c84669,Tarris Reed Jr.
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,801fc7bc-25dd-447e-81fe-35fe57506d8c,Ahmad Nowell
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,ae68a64d-815b-492a-876a-78bf2f5924f0,Youssouf Singare
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,b25d9882-86b5-4964-8222-bda1694ec44d,Liam McNeeley
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,f43f458e-4116-4375-9850-45732511a940,Jaylin Stewart
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,f6a274f3-53eb-4c03-9b17-65a686f419cd,Souleymane Diaby
+8,efba5350-79bc-47aa-a189-db177b95b491,UConn,fba1c25b-f3b9-40bc-9c44-6918cf97c61b,Alex Karaban
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,2cab6aaa-054b-49ac-bb43-52dbf03b6c0f,JaKobe Coles
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,46987b13-7d4c-4b27-a32d-211e3a2f11ca,Styles Phipps
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,4a25d133-7e74-48fa-b0d7-3fe7d8158d2c,Collin Moore
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,6582cd5a-e0ff-453b-be50-59257b2e7304,Austin Maurer
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,7c661a02-0676-4f62-bcc5-c4d4756475b0,Lok Wur
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,8698eb03-0735-4aa5-a909-a4841d9b073b,Duke Brennan
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,90a54b26-442b-4ecd-9180-6bdd0efdd598,Ray Harrison
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,a4d6e5b4-c6b4-4433-b100-d922efeb799a,Tyon Grant-Foster
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,acaf19f8-4b27-4b6a-adf5-29007fbaa83a,Traivar Jackson
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,b42e2edf-4ad7-41ce-940d-46bd0c578250,Makaih Williams
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,c120b919-8f5e-40a0-9121-1d097e9116ef,Dennis Evans
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,c8c7393a-d181-4e40-ac35-51ba9b4e2bed,Braylon Johnson
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,cf8dcffa-a6db-4bb2-8d99-21fcfbc9b198,Malcolm Flaggs
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,dd9dfd3a-daca-4f2f-b059-8092b2d7acb2,Sammie Yeanay
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,efe878ba-5c26-491f-bc74-d7a20ad06692,Jason Amador
+13,f7e6acc3-0778-4de5-940a-d88e20df1159,Grand Canyon,fb317bd7-077e-4587-90bb-241f8b4c71f0,Caleb Shaw
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,13511168-5ce2-4495-aafc-2b3ac7a4a3ff,Joshua Corbin
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,2e8438c6-4824-4de7-a4cd-1be84c4c8296,Greedy Williams
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,41ed2477-598e-4a17-ba9f-1c0f653c19d2,Noah Ross
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,44ade4d2-61e7-4cb9-bb33-8b22249868e5,Sean Moore
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,47e7ff64-55c1-4c07-a5b5-d0916f387794,Donovan Newby
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,4e074bfd-7abe-4a39-a89c-e25e67de35ad,Harlan Obioha
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,52ab2735-03cb-40a3-8b5f-0d96a974620e,Khamari McGriff
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,5d76b8ae-270d-4e3c-894d-aabf3d0e48c1,Makoi Mabor
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,62b31d02-54c5-4ede-a25d-51600862c95e,Nolan Hodge
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,6aa08e52-f5cf-4a39-b537-2daeb81d10a1,Bo Montgomery
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,8847182b-c797-48a0-a304-7691bfcb66c8,Shane Anthony
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,a6e9e1ce-0287-4f17-9aa1-599a1464366e,JoJo Fullwood
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,af137952-4718-49a2-b7d8-308c2a6a3329,Jake Murphy
+14,c54279f9-3028-4663-893a-7d22482f8098,UNC Wilmington,da74ba47-91e9-4117-8d16-e1305c2739d4,Makel Smith
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,0422f89b-acbc-4a60-a5d9-0240b6f56526,Marques Warrick
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,18cc457a-a826-43d0-aa78-3c6f196c7dab,Jeremy Sanchez
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,1e56e16b-77f2-479a-8c9e-020edd12a5a0,Caleb Grill
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,2061c82f-bad5-4ab5-bacd-87c232fd8003,Mark Mitchell
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,2842feb5-3d8c-4530-9dc7-180f1f358064,Marcus Allen
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,3562b5a2-f9bb-4643-81ee-b5c0b1e944ef,Tony Perkins
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,44bd852b-42e9-40ee-b9ca-93e3c2b73b9c,Danny Stephens
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,4bb0aecc-cab3-40a3-bb95-00f50e13f72f,Trent Burns
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,6677b758-4042-4d31-a1fd-1f5505769399,T.O. Barrett
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,792df54a-aa9e-4a7d-bb13-510c77b01bbe,Annor Boateng
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,7a9608e5-4578-4be7-b987-1e457e5f8e9a,JV Brown
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,8d502278-9056-4fff-a3b4-bc55b193365e,Tamar Bates
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,a5b20ac3-44f0-4f39-a527-e22cc6153431,Trent Pierce
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,a600ce55-8a51-45fb-99c7-cb93bcb90fe8,Aidan Shaw
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,b150b6a3-82eb-4c7e-86c2-31d57c01175e,Josh Gray
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,bc1badaa-85ad-4e8e-be74-165d0d59c8e8,Jacob Crews
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,d9a94d9f-9a6f-419c-819e-a54085cdc1ac,Peyton Marshall
+6,77ca152a-cb2f-48a5-97b2-492351250d94,Missouri,fd00d17a-8a1d-418f-85cc-5a30f7e0ab61,Anthony Robinson II
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,0abffed1-8a31-41f0-a952-a622a3b0b5f9,Presley Patterson
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,0e8df01b-c9b6-4839-b794-2a1fa2b7455f,Dylan Cardwell
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,224b9563-3a69-4745-bb71-cb64255426c9,Johni Broome
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,24c42b6c-8195-44f5-8eea-6a89b3b32d47,Chaney Johnson
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,3522ea45-1530-4c00-912b-a9d78406166c,CJ Williams
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,52b19f1c-1b54-4560-9e41-1e8b6883d3f9,Chad Baker-Mazara
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,60ae184a-72bf-42f8-b8b1-855015a159ad,Ja'Heim Hudson
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,7558b2be-7d3e-41ec-8e62-944880f5b63a,JP Pegues
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,94eb35d1-bb83-4982-983f-cb426999f75b,Joah Shay
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,9700a4f5-12b8-4602-a196-172f872b2db8,Miles Kelly
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,98316382-8e4b-4679-8102-06778f9a2641,Denver Jones
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,a753e0ae-b5a0-4c65-baa7-73d2a6e0e7ce,Blake Muschalek
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,d3080408-f406-4dde-9297-d3792f8a5feb,Drake Cardwell
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,e81176be-dd24-4c95-af62-5de9d7da5c68,Chris Moore
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,f1683d18-6b55-4cd8-a124-3d15894f6c4a,Jahki Howard
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,f5e210af-58f6-4314-bf1c-f244de0ef7f7,Addarin Scott
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,f813429b-4c67-47cd-9ae3-c7e3b52657ac,Reed Trapp
+1,0c0608b3-f349-4f5e-9a10-7e6a744dd0d2,Auburn,fc8aeae6-8d78-4340-9876-e2a46ee563ec,Tahaad Pettiford
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,11b274b5-8bb7-45e3-8485-9c6fde9aa95b,Cade Tyson
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,28a5c731-2e7b-48ea-afe8-08f97d49962d,Elijah Davis
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,3cb70f4e-09eb-4a98-bbb7-aaeb5c9f26ad,James Brown
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,3fdff96d-f14d-45b9-a2d5-507b6bfeafee,RJ Davis
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,4cb668ab-0230-46e8-a7ba-8b533e8661de,Jae'Lyn Withers
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,4f0e4a09-5fe2-42ba-bc94-96139fcaadc4,Ty Claude
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,54c0c2b4-ab7b-4224-9be6-b1460bc0026b,Dante Mayo Jr.
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,7f40831e-63d0-487b-abbb-05b3527a150d,Ian Jackson
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,8fe6a378-886e-405d-ba43-d49c5e9e8f94,Russell Hawkins
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,9305102b-6e91-4a65-ac76-fe167c22a2df,John Holbrook
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,9f577b39-9ef2-47b1-b4a4-dc8dddaeff47,Seth Trimble
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,b988a572-f8a4-4be6-97f4-1aa58e697082,Jalen Washington
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,ca782a63-f388-4360-8ee5-46e0cde9f524,Elliot Cadeau
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,e5da890a-8058-4be3-906c-46455468a900,Ven-Allen Lubin
+11,e9ca48b2-00ba-41c0-a02b-6885a2da1ff1,North Carolina,ff380a59-d23b-4fad-91aa-4f26d0a29440,Drake Powell
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,01813bd9-cd7d-4c68-bbe7-cc7b0b1a1feb,James Scott
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,22080063-cbb1-4faa-89c9-786dfa42f675,J'Vonne Hadley
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,38008095-7521-41df-9fec-9b8c91459700,Patrick Antonelli
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,4456c06c-bfb3-44d6-9d77-5539b20929c9,Terrence Edwards Jr.
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,479fce07-7128-401b-8823-993cba40962b,Spencer Legg
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,54351cfc-290a-4b40-a09c-6d5e67922bf4,Frank Anselem-Ibe
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,5af5c514-68b5-4531-8e54-c7166a76db48,Kobe Rodgers
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,66f3af35-5e83-4792-b938-c5accb653391,Cole Sherman
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,67dd5b9a-d9ac-4758-b651-e2298dd55ccd,Reyne Smith
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,8ebde36e-a22d-4ea1-a786-d5239ea5ae21,Khani Rooths
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,8f1ad86a-1467-4ff3-8019-faecdac1f9c9,Koren Johnson
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,9c9264a1-6584-40f8-807d-f71412fb5298,Aboubacar Traore
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,b10b6c04-f1c1-4716-b748-f1179c9755b6,Kasean Pryor
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,b73ba2ca-24a1-4a8f-bd04-7e07aed7860b,Aidan McCool
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,c9f536b5-3019-494d-880b-77a706c9c5ce,Noah Waterman
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,de99ae35-7a8b-4955-be0c-9d0dbdace772,Chucky Hepburn
+8,b795ddbc-baab-4499-8803-52e8608520ab,Louisville,e4472943-c620-451d-9801-eb4cf05a9ca2,Aly Khalifa
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,24dbde89-8da6-4552-92e3-1d184d74fc29,Jase Richardson
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,2640e094-4331-4ed7-95a8-e2a2d7aa2c0c,Jeremy Fears Jr.
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,282f5e3f-67a1-4030-b8f6-61e1e4f0a1fa,Kur Teng
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,2bea2925-4824-4cdd-80f2-9b87cb1feecc,Gehrig Normand
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,33ec638f-5e47-49d9-91a3-45871586daf6,Colin Walton
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,3fcd81ff-0914-4839-a8fa-00b042d346d7,Jaxon Kohler
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,59f2c97e-223a-4e78-9334-2ca873324edb,Jaden Akins
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,80ee52b5-d28a-4cf0-9aaa-a35a900aff69,Coen Carr
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,9322d75b-9590-4944-827a-402d8c2a2777,Frankie Fidler
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,ab1af9aa-4c0e-4b92-8568-82767db5a917,Jesse McCulloch
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,b603f3ea-0b18-4377-857c-96463db2293f,Xavier Booker
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,b7467620-fdb4-4fa6-a99b-a2308df09909,Carson Cooper
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,ccbd0eb2-4413-4bb8-a790-c159080d7a14,Tre Holloman
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,cfc55196-be1d-462e-8728-e4d3109eac5f,Brennan Walton
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,e3c7d696-b9c3-4db1-a098-ccfc6e744e1b,Nick Sanders
+2,a41d5a05-4c11-4171-a57e-e7a1ea325a6d,Michigan State,ee926f1e-cbf8-45ee-ac53-30820b474ed0,Szymon Zapala
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,15e86605-d3f6-4884-a722-fb0eeedd1adc,Pharrel Payne
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,19ed69bd-1c5e-42d0-b32a-20d30cb1177f,Hayden Hefner
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,21c596a6-a070-46b0-8ff3-8f6da11f94ad,Wade Taylor IV
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,237e313b-c2fc-4f93-b55e-c918acea7a69,Jaelyn Lee
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,489338f0-9c7b-4e0c-845c-e8949986fc83,Henry Coleman III
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,4becefda-cf9c-4d71-ba98-9d835fea2d11,CJ Wilcher
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,4d6e6a33-87f7-4f77-b775-e7333581d2be,Zhuric Phelps
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,563b01d7-5d06-4c12-ab72-a27912367ac6,George Turkson Jr.
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,902c9d87-db4f-4bfe-91ed-1a7b2c645442,Janusz Ratowski
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,9158ef35-62c7-4df1-9184-9e6b1e704594,Jace Carter
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,a5e97c48-1c56-44c1-bcde-994b501877db,Andersson Garcia
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,b234cfec-0a3d-4aaa-93f9-37d76c4a5a82,Christopher McDermott
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,c1ef6e40-a77f-47c5-8ef5-4648e956b6de,Solomon Washington
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,d8cb55f3-c500-45a7-b9d5-c38cb3769cc6,Manny Obaseki
+4,ef184799-d79b-49d9-a662-991eaf4044cd,Texas A&M,dce561ef-fc65-44eb-b165-603a0630c319,Andre Mills
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,056cfdd0-1f81-4d0a-b71a-5d8a9416703d,Magoon Gwath
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,1b0a5912-9ae4-4c2a-96fc-c79f665511c2,Taj DeGourville
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,1dab0af8-3411-4753-b7e6-baccbf7f12b0,Desai Lopez
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,4a532f05-9859-42fc-9872-c2e465ed066b,Cam Lawin
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,4c8c3e85-69ba-4898-a54f-d1051cfbadc2,Thokbor Majak
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,5b698e4b-018f-4b82-959c-9102a116b7bd,Pharaoh Compton
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,68f7031e-2d17-4193-b691-187ce178c025,Miles Byrd
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,6dd7c903-56d5-4f7b-a946-d2defb323fa5,Demarshay Johnson Jr.
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,73ad2be0-c4d9-49f8-bd47-b2814fe99e42,Miles Heide
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,871ca218-9d4e-498d-a5b3-bbaabd06f81e,Wayne McKinney III
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,a576cea2-ff05-4fe6-a1b3-f24550db470e,BJ Davis
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,b35ac4b9-679b-4f4b-9953-8812a2e6b2cd,Reese Waters
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,bd2d9fb1-5caf-4c03-bd6a-cd7cee10e4ca,Kai Lee
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,c01badc7-feb4-41bf-a241-f7dd629fe29a,Ray Gonzales
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,c39e1159-9561-4950-830b-de552196120a,Ryan Schwarz
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,cf67d1d1-c7d4-4d6e-ba41-7935ee483992,Jared Coleman-Jones
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,cfe4322d-a8ae-41ba-9b13-d416d58a74c4,Nick Boyd
+11,e6914f16-ca37-4d2e-ba26-a425910283e2,San Diego State,ee14b9fa-52ba-42b3-bf3d-e98aebd831cd,Kimo Ferrari
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,083d27ad-cdbf-4ca3-b751-1e2902ddb8b6,Cade Kelderman
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,09ee4be6-8b68-45b2-a5da-76bb0a74bd2c,Nojus Indrusaitis
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,1f12c1fd-89d1-4461-bfe0-fa7c51951b3c,Conrad Hawley
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,2636319e-b2d6-4ede-bbc8-fe4086ac06d7,Demarion Watson
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,2d6dc5e6-acb4-47cc-b7b1-b230f3e18dcf,Curtis Jones
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,2dd899eb-51b0-482d-8a2e-f0682999cfee,JT Rock
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,31373913-cb4c-4811-90de-c823994598fb,Joshua Jefferson
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,3a1cf50e-79be-4499-9b65-80b9a51588d9,Kayden Fish
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,3cd44390-45fd-4c3c-9864-1885326c05ac,Keshon Gilbert
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,4706efaf-0ed7-450c-8e84-b69aca8ed5cb,Tamin Lipsey
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,5c6132d7-0c25-4bfc-8326-8bba53f774b0,Brandton Chatfield
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,6956ae94-ce32-4cf9-9f74-6394f242c454,Milan Momcilovic
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,d2f2ed78-388c-46da-b8b4-8828f4a7287c,Dishon Jackson
+3,0e4258fa-3154-4c16-b693-adecab184c6c,Iowa State,d3f151b9-936d-4886-90ba-0ac5d974da4a,Nate Heise
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,06facdf9-7f9c-419b-a895-1c441609e1c3,Jace Howard
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,159cf965-5a18-455e-b5c7-b19f2e1eae61,Tre Donaldson
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,1b809f2d-3461-4614-8129-2821a11f4e60,Nimari Burnett
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,34769e96-5517-4cb8-85d0-160dffa95464,Will Tschetter
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,3707cd7a-b038-430c-bb2b-c6f5e4379ced,Danny Wolf
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,41b9fca3-94b4-4bb4-9e5b-63ea4b1c6a53,Vladislav Goldin
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,5bcdb659-95b3-4010-b860-2dea41108345,Sam Walters
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,72121ec9-e108-4779-8aa3-98871b5a8d80,Ian Burns
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,8526266a-3118-4398-a1ce-bdda32789656,Howard Eisley Jr.
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,93c6c75b-778e-4f78-acd0-82b9beaa004b,Justin Pippen
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,ac828779-19b3-42f9-b246-9241906d1e04,L.J. Cason
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,ceaced03-7c6e-4607-938b-30ed1a73733b,Phat Phat Brooks
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,d977c501-eb05-4567-a8ef-3a936316d7fb,Roddy Gayle Jr.
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,dbd1c705-70e2-48d1-bfb6-71ec7a781656,Charlie May
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,deb91011-8249-4bb3-b1d4-821d9905e6a6,Harrison Hochberg
+5,bdc2561d-f603-4fab-a262-f1d2af462277,Michigan,f21ab051-994a-4660-90b7-12e8e2a38da8,Rubin Jones
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,13dc060f-6e71-4169-b281-e0a6f1dee61f,Jalen Keago
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,1719216e-cc54-4b2f-8e90-066b128aeb2c,Shawn Fulcher
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,529a9fbc-84c1-4db1-bb45-d96aef98a22f,Jasteven Walker
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,6409a9ee-e64a-42c9-89de-76210a3bdb0c,Jordon Marshall
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,6caca196-b1d1-45c6-b12f-959775801d72,Ubong Okon
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,70ca3d05-e51e-4b4d-a0f8-4f86313f131f,Micah Octave
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,7af33e65-e7f3-4dbd-96ac-a55c64afdbf4,D'Ante Bass
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,7c05dd7c-fd66-4098-9780-fca6418d32c1,Micah Simpson
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,82b698cf-a2c0-4675-aea5-457370c488d5,Tyler Mack
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,9a6e7703-6c43-4b76-aac0-90d85338107a,Jerquarius Stanback
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,a17e3df4-2921-4a49-90d5-e65dc21bf8f7,Mario Andrews
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,b2f6f330-2d10-4059-9124-db293d4b7846,TJ Madlock
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,cec40874-5c54-4dd6-b7ca-84315a105429,Amarr Knox
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,e0e3cde0-48eb-402b-a944-e62cc5095f43,CJ Hines
+16,267d417a-8f85-4c87-a15a-068c089a74c6,Alabama State,fd2152e9-69e2-47e9-97ca-b71d100dce39,Kevin Alabi
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,0f700d51-b242-43d0-a7f3-473a296b5c26,Chris Howell
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,106dd842-6997-4c1d-8038-d3e941d4968a,Ryder Elisaldez
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,20d8f3d5-17ac-4beb-93ed-2e2fb5d71222,Cade Pendleton
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,2ecbea84-8448-44e9-a147-b6f7fb040a61,Tyler McGhie
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,321cdbf4-0294-4271-a7d2-e1b7996bffd9,Christopher Cox
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,3a3c9d9a-cc07-4b8c-bc34-722b96e0a94d,Justin Rochelin
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,456c57f5-2eaf-44b2-84a6-999b68f466e2,Nordin Kapic
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,50a5190c-7649-4ebe-84e9-e6c265f9cf97,Aidan Burke
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,62c594b4-120c-4d56-b5ac-3cd9f503fbef,Jasen Brooks
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,6df2db06-2792-403d-9058-ac0910ecd36e,Quin Patterson
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,736a47a4-58a8-46cb-a587-75cd271fc0ea,Maximo Milovich
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,ce1544b0-706e-4ea7-83ce-d952d1bb964b,Camden McCormick
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,ce5ffa59-6989-4fe9-8001-9a53c1785c1f,Yaqub Mir
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,cff1841e-c5c1-43dd-817b-e07d32acd6d0,Milos Vicentic
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,e19d4c9c-410b-431c-b1cc-e762ecaedb93,Aniwaniwa Tait-Jones
+12,55a2e70d-efe3-4aa6-b625-daab2faa4991,UC San Diego,ed8978ad-56c2-44c1-b672-c6606e9de794,Hayden Gray
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,0497166d-0348-42a7-a7d3-935221b7d54a,Grant Asman
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,05917182-795b-470d-b536-dfbebd7c1c91,Charlie Williams
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,05be4c66-422a-4091-afbb-39dabc162b50,Dylan Faulkner
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,28e07785-0981-4636-889e-ac8fedc3da13,Logan Suber
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,48fdc083-0b47-454e-a882-eed2eba51a55,Jacob Ognacevic
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,4b433de3-1416-4e92-b44c-6c0839af4fb6,Joe Anderson
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,580d3dd0-ca43-4e58-ab71-6d89a401db51,Ross Candelino
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,58ecacdc-2f3c-4139-8d17-c1093bda0e85,Rylan Houck
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,79d59180-821a-4547-a4d6-a1db8312b272,Gyasi Powell
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,9fa71fe5-5fc0-4c9c-9251-1f56b4744d5f,Kellan Boylan
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,c0402bdd-7a82-470f-ae0c-a41863b4a9e9,Jack Ingold
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,c2f52eb0-6dab-4b36-875a-b2a8c1886d21,Luke Carter
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,d7edaba2-5164-471a-a30d-d63d7d00db30,Will Pruitt
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,d9d9745b-6400-41f6-8831-874b8f401d34,Miles White
+14,a2b8223d-40b3-4076-b5df-55655c2f8591,Lipscomb,fe1bbb63-d4fb-4767-bdc5-76e334671db7,Zach Lamey
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,00f96b78-e62d-4845-b432-991d4ecfa3ac,Mustapha Amzil
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,0b36edda-b2b0-45e5-88c7-017f20476459,Shane Douma-Sanchez
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,0ccfc1ca-ffcf-4596-80d8-20f3ba6cf65a,Atiki Ally Atiki
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,14981163-0f6d-4082-b76c-693d608ca7ed,Quinton Webb
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,1e0e6e9c-3dc3-4d3f-b13b-61c271da6e23,Donovan Dent
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,3a18e744-8c13-4a28-84d8-5cb521cca7f2,Deraje Agbaosi
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,5f1e5a05-05e8-43e7-927e-5428931049f3,Daniel Thomas
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,6cd9cccb-d3ad-41e5-878e-e8349c186c95,CJ Noland
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,8c60bbdd-807d-437b-89c9-ec2183dc261a,Filip Borovicanin
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,9da8d688-a94c-46e4-a0ec-a9ed625e88bd,Tru Washington
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,a2dd833b-a4cd-469c-8002-77972883734b,Braden Appelhans
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,a669595c-6a6f-4c0a-ab15-6244943abd4a,Jovan Milicevic
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,a8b415d0-0045-484d-8abb-ad22bde00dd4,Kayde Dotson
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,d40c7309-fe73-4665-805d-0486dfd876b3,Dylan Chavez
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,ede5ba13-2f5f-4705-85bf-c102ebc4b6ca,Ibrahima Sacko
+10,1b1977ec-b32f-4ce3-95a4-d07bab4816cd,New Mexico,f3d1074c-2dd9-4ed6-b2af-f1546a7a32c0,Nelly Junior Joseph
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,06955429-a015-47c4-80dd-eb0b9767d889,Jakai Robinson
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,131fdf26-96b8-4fbf-8b5c-ea47e35addca,Barry Evans
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,206a7d5f-8cbd-458f-90f3-26fd36cecd88,Frankie Vassalluzzo
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,40e0aa23-5f2a-4f46-9bf6-ef7af4bfeb32,Josh Ozabor
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,428e1852-05aa-4437-97a0-92b11fb21a4d,Earl Timberlake
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,655bd287-c0d0-46cb-b10f-912795276d83,Devean Williams
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,77cef696-5c90-40e1-be19-4050ecbf6b3d,Keyshawn Mitchell
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,8bb90807-8119-41b0-9530-6c7e68fa1dff,Favour Aire
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,8bbb64ed-e0b9-41eb-aaa3-e393022334e0,Khalil Williams
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,aa81de00-9474-47e5-bfa2-718c6f3a787e,Langston Bailey
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,bec50b7c-5969-42b5-81f0-9692be5591b9,Kvonn Cramer
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,bfe10ad9-1b49-42f6-8bff-7f7c2cbed539,Jason Koval
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,c1d833e9-bad5-4831-a519-fa6cf9cbcb00,Aaron Davis
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,cb7b23a8-2f0a-4534-aca2-56e7d31f6a91,Jayden Brown
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,d46bb2ea-dc92-47f1-8194-757c9f46ebd8,Michael Amador
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,debe8dae-170a-4003-ade9-4e7162d45bc9,Kam Farris
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,eae4e6b4-c761-47f3-ba7f-6bc2fe5274fe,Connor Withers
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,f9388a2d-b3d8-4192-9fa9-15875109b107,Jason Sepe
+15,61dadefa-76bf-4db4-8067-f88df540b9cd,Bryant,fc843b8e-2112-40c8-bedb-cc823821bfdf,Rafael Pinzon
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),0e0200d3-8373-4d5b-931e-b836d8561bb3,Miles Webb
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),168ac9d0-9745-495e-bc99-8aa123013845,Ryen Gresko
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),31e9e5f1-04a8-4338-8ac6-48a1966b99b1,Ace Talbert
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),35eb5591-2b59-45ad-8819-628f3cefe5bb,Carson Rhodes
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),3d42a5c7-f3b8-4406-858c-883b4addb502,Blaze Angellotti
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),664549a1-5584-4bbd-8872-229117215aef,Wisler Sanon II
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),6d6e7d51-02a5-480b-b4b4-c407c26555a8,Bobby Rosenberger III
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),70b90de0-e962-4114-afcd-bc3ad896133c,Trey Weiand
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),8a2bf1b0-f9b3-44a0-b807-d45a41739449,Chris Moncrief
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),9138a16d-4f34-450c-9cf9-8049ce1858e3,Riley Parker
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),ae554bf4-ee82-4e14-adb1-327ab662c016,Daemar Kelly
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),affb681f-b6cb-410c-94e2-9d11a0924a60,Juan Cranford Jr.
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),beda29e2-d4cf-4c38-81ac-cb60afdc239d,Jeremy Clayville
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),ca3f0d7c-334c-4ce2-b5b9-dd2b44e69b36,Zachary Jones
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),cc5e115a-0efb-40ce-ab33-9e0ba78cfb12,Brendan Scanlon
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),da7a6dba-a065-431b-be2b-25f4fa2be57b,KJ Swain Jr.
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),da822f61-48e4-4674-af45-d1fa2409a9a9,Victor Payne
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),dbdfffe8-b78a-45d3-8d69-854abda92518,Gestin Liberis
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),e91af45b-195d-47f1-85d3-2e1407828246,Valentino Pinedo
+16,6637ac5f-59c2-4888-af34-a86d138ccfb3,St. Francis (PA),f47384cb-c1b4-4f83-990d-60ee2abc1f7e,Aidan Harris
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,04a415b9-0e3d-4a2f-9485-d09b06a2c356,Cameron Brown
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,06aa1771-b51b-4b2d-9390-afb49fcc0bce,Al Amadou
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,0cbe8399-d365-4227-a9ff-187557447b1b,Zaide Lowery
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,10a732a7-ef55-4494-86c4-b8a6289bd1d8,Damarius Owens
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,123763c6-0130-4a92-a72b-56e7e281ee34,Stevie Mitchell
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,157c4b3f-cea0-444f-b7d5-b054ef754188,Casey O'Malley
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,40d8bbdb-32e8-4f03-ab5f-3d87582570c2,Tre Norman
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,522daa1f-3cd4-4afa-b9e1-20f736307094,Kam Jones
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,604215d0-1f03-4ecd-8e12-cd9b092cd55e,Joshua Clark
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,71b6c8b7-3ab1-4408-8d7c-c0826a0809a3,Luke Jacobson
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,85fa9795-dfd3-4f40-8ea3-6d5231a12e0c,Jack Anderson
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,87cbe63e-3d2a-4d73-a901-7f5829cfe087,David Joplin
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,994328ce-4480-470d-8fb6-756d91979675,Ben Gold
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,a2d9bdf8-30b5-4fd2-a9fe-c4c7315d086d,Sean Jones
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,c33f5b52-5f7e-4c79-9b1e-946138dc66e0,Royce Parham
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,c6fe4a8f-48a2-4411-b92a-4444c8d259f1,Chase Ross
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,cc629998-a912-42de-8125-3e4357dd5508,Caedin Hamilton
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,e4535897-986b-450d-8fa4-5c905aab8e00,Jake Ciardo
+7,06f7c904-0ac7-4125-b0f4-f4871bb69057,Marquette,e98fbf1d-6108-42c3-a34b-8f5cd59d7cc5,Jonah Lucas
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,2117e4cb-7ec3-479f-80a4-d00ecd8a6a4f,Jaemyn Brakefield
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,24060a60-b6b8-49cc-bd5e-2875f0bb1f35,Malik Dia
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,48cf13cc-9c8a-4e25-a6fa-f52cd356c33d,Jaylen Murray
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,71805ec0-938e-47fa-8707-3177ae49d1ea,John Bol
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,7f550d62-37bb-4ff1-b125-3d358998ad46,Mikeal Brown-Jones
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,84037e35-11d9-4736-a7a0-4112cbeea3a2,Zach Day
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,8b11e5c9-af63-4b10-8b6b-9128b8de026f,Max Smith
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,90f8fc7f-093e-4a75-8143-a01f1d480d2a,Sean Pedulla
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,913ee76c-53f8-40b9-a810-000a6d78ccf6,Robert Cowherd
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,9ffb2f51-e613-4110-9bdf-3cde6746e846,Dre Davis
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,a065a5d1-823a-492f-9cbd-212e7d0cb558,Ja'Von Benson
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,a4382ae3-2299-49a1-95f8-5db98915a405,Eduardo Klafke
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,a57ab283-c42e-4ec2-92b7-e72e74fae738,Davon Barnes
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,c2830aaf-c3e3-4f46-a7e2-f92ae390d3cb,Cam Brent
+6,d7d668ec-edaa-4d6b-be25-2ebba4128643,Ole Miss,cb3095de-5384-48a2-9fd8-f8a5cb3966bf,Matthew Murrell
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,07a5ae86-5d9b-4548-8841-eda7508f9374,John Poulakidas
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,08b3394d-c02d-4206-9e66-ad96bb1e53a1,Jordan Brathwaite
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,1f42ddc2-4b60-4d3c-b4c2-db5859d1563b,Trevor Mullin
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,20fccc38-8ca8-476b-9c1b-9b784754dbec,Bez Mbeng
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,20ff1d85-fe79-45f4-b2b7-2b4d27f5f7ca,Emir Buyukhanli
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,253018d1-291c-4e58-95f9-89e7ef2c19d6,Isaac Celiscar
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,3eb70d73-23d2-4edd-b861-8bc45b34fe33,Samson Aletan
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,5c8d174f-bff0-407b-8ccb-d9e2dafbac99,Teo Rice
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,5cc6bf41-e3ad-4b17-b353-7d48637c75fb,Devon Arlington
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,62a06588-c4f0-4204-88c6-13e828009c2e,Jeannot Basima
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,787a8692-cbc2-4ea6-8270-27678f80352b,Casey Simmons
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,bdb5df70-d201-47ee-a67f-19c1cc54d4a8,Nick Townsend
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,e8b312b4-7267-468e-81c4-6c1003741931,Jack Molloy
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,fc610fcf-4d8b-4101-8d9b-a5c95c53e761,Yassine Gharram
+13,ca478771-aa3d-4231-81e0-b70f519134fb,Yale,fe0ccacd-af6b-4b00-83c7-607cd3fa8b0d,Riley Fox
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,04c8edfc-4661-40fa-ac36-4fa841504bc9,Ty Davis
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,08b95e19-d0ea-477f-b16d-49fa3b94daee,Shane Thomas
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,2464d7fd-4270-4aa4-acb1-7377df560e5b,Sami Osmani
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,5b51efc5-5d74-407f-90fa-218d27c43fb4,Josh Townley-Thomas
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,64fc1a8b-9e7d-462c-b32c-42d33d3e0fab,Sterling Knox
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,6614c6f6-543c-45a6-bfee-ee0aebb133fa,Isaac Traudt
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,88a04c54-6c4a-4f5b-9c43-f1d47f546dad,Steven Ashworth
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,93e06cfb-0b86-434c-98be-19915e6be75a,Mason Miller
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,acccc11c-52db-4839-a01e-06f280d738a1,Jasen Green
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,c2a6616f-cfcf-486b-900c-b4eebeff4aca,Fedor Žugić
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,c76618e4-c1ce-405b-8630-4e37db5dd4d9,Pop Isaacs
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,c9bab93f-70ab-4a54-b31b-2e1f76b0f325,Ryan Kalkbrenner
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,d8f1ddf8-7c81-4ac8-8f39-f49d2d8e1e60,Fredrick King
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,e1cc01a9-5318-4299-a9f7-be4160475ad3,Jackson McAndrew
+9,7d797407-623e-476d-b299-46de4275414d,Creighton,ebcbbe76-1899-4731-887b-d66029b6436f,Jamiya Neal
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,0d910ac5-e4b5-487f-bab8-fbd8d53a7e1f,Dakota Leffew
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,1ec14bb2-fcee-44ae-819d-0ea57a14a365,Dylan James
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,29c634a7-68ba-459c-8f2f-5130efa6a118,Markel Jennings
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,31340ebc-b84d-4053-b994-857ed51078fb,De'Shayne Montgomery
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,47707483-96ef-491c-8b8a-a27bfa225b14,RJ Godfrey
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,485ed2f6-1562-441c-a105-cb75eae68baa,Savo Drezgic
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,4fbb188e-78d6-4344-8d0a-784e0ccec7ca,Jaden Newell
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,5a8acfcf-86c1-45c4-8abf-3404e34b3cc1,Blue Cain
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,674f419f-5301-4d7c-8ada-f7a2cef8da9a,Asa Newell
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,77196ff9-1450-4e3a-98e5-8ab511ccfdf5,Somto Cyril
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,78603dbe-2eb7-4eb3-8825-78a5eeebdec0,Brandon Klatsky
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,b520c937-43a9-43eb-9f5f-2860fe3c6b77,Justin Abson
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,d73e5875-ff28-441c-baf0-c52c19c6be8f,Jordyn Kee
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,dafc0a25-13f5-4f56-a4d1-6443c4dec883,Silas Demary Jr.
+9,4f4b0771-994c-4126-822d-7525aaa00f65,Georgia,eab9d2de-7642-4c62-86a2-3bc04c798ed9,Tyrin Lawrence
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,14569d1e-1846-4941-be34-7e003553ade3,Jerome Brewer Jr.
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,16686f7d-301a-4732-9405-71c235125bcd,Joe Charles
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,3eb9a5bd-6f42-43c9-98bf-1530345f88b0,Christian Shumate
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,55ef793f-4306-4431-8cea-88131f67732c,Erik Villarreal
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,8fac8c73-6596-4b5c-a7b0-16cc3f032962,Quadir Copeland
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,a8b61301-b9ce-44e4-b0b3-e95b1c3aabeb,T'Johnn Brown
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,b5cc9d8d-544e-4144-9a5a-36eb355b2d2b,Howard Gaskins Jr.
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,b61f7515-53f3-457a-a76a-b0b0006409e2,Alyn Breed
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,bf19fbb0-e037-4ade-babe-884373185263,Brandon Murray
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,c4d07d1b-4f5e-46b3-8218-3c3358e24bec,Omar Cooper
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,cc0e7df1-6d4b-4128-8fea-a5bd9eaf5169,DJ Richards Jr.
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,cf1f7265-1dfc-4821-892b-7641f7cf8198,Lamont Evans IV
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,e127fb1b-6317-4571-aeea-959d37f8240e,Javohn Garcia
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,e7b8291c-bda4-4443-9930-02cfe0f8ffd4,Sincere Parker
+12,d2ef641c-70e4-48bb-b40d-ac654d179205,McNeese,f9a818af-a6fd-4d0d-9959-1c13b9d10005,Bryant Selebangue
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,16af625c-07c7-4efc-b5c9-e86fdffad4f4,Deyton Albury
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,1843c84f-4b5a-40b7-ae9c-d074e3bb203d,Isaac Johnson
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,19545b37-d717-4f80-975c-38eaa53d9ec9,Aubin Gateretse
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,2b22e0da-fe2c-4fa5-9fe4-5ff956aff8fe,Ian Martinez
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,2be97735-5231-4de0-aa7e-a63e0258e6c5,Isaac Davis
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,2f1c4fae-6f48-4220-9ea7-148a5af05a68,Tucker Anderson
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,38d8abc4-9be4-491a-9380-7ad1f959b57f,Mason Falslev
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,485554a9-8246-49b9-873c-c80cd7e92c29,Drake Allen
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,617aef46-803c-4130-8713-0a9098a33ae0,Jordy Barnes
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,76d6d38a-2050-4513-a85f-fdb9b7fac98a,Braden Housley
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,7a16dcfa-e863-462a-ac17-bff604a858e0,Dexter Akanno
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,cdc235a9-adc3-4187-99b3-479116d8b859,Pavle Stosic
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,d97c6344-6167-41c0-a36d-a419e5155422,Karson Templin
+10,7672ff16-8436-47e6-8546-0fb5494ec7ee,Utah State,e79d1703-60f4-4747-98d1-e6d565c56eec,Jaxon Smith
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,0c4c8cd9-f545-4588-9260-fd412f2f539f,Cam Fletcher
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,0fddd1dc-21d2-40a3-a08e-25c9e73a7e27,John Hugley IV
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,1a031152-59f1-4633-b2ef-e31519cbd285,Brad Colbert
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,1b420267-2af8-4c18-b877-4d49a41f3a3d,Bob Nunge
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,1f90be80-a97e-414a-a67a-6b086aea5a83,Roddie Anderson III
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,3b1a5ca3-d87a-4335-a6ca-1a069d851b47,Henry Thole
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,681d2cc6-24b9-4f38-8564-8c0b210a9535,Jerome Hunter
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,6838c46c-2d7f-4786-b79b-fee589bee85d,Ryan Conwell
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,6920c00d-3550-4d15-b2e7-4b112349cf59,Zach Freemantle
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,7e90e281-1b62-4517-9a8e-a51ade2f005b,Ian Sabourin
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,89465f7d-f5d0-48e5-95a1-901503f2e5d4,Dayvion McKnight
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,94677b5c-6116-4dfd-8e28-fcee66d43a49,Marcus Foster
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,c8d6ec00-9a22-442c-8681-e189cce0cd14,Lassina Traore
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,ca551807-8972-4785-8171-309b8dca7952,Dailyn Swain
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,e5013f75-d1d4-4227-a378-b73a169f0581,Trey Green
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,eda6c2eb-a350-4b45-b68e-ba4299b643cb,Dante Maddox Jr.
+11,0d8a328f-20ce-410b-bed1-15fc01308aaf,Xavier,efbd03c4-4cf1-4767-8c6a-fc3b432b87d5,Michael Wolf
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,0bf847d1-ebb3-4d1f-a2b5-803c3c839788,Jordan Pickett
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,0e84721a-d4d1-4b35-8bd7-8804e87658d2,Ray'Sean Taylor
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,161b0e5e-421f-4d76-b459-00d0f3af4310,Kyle Thomas
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,21800557-3391-48a2-8d7d-5764f90b2010,Desmond Polk
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,2f3beb13-7692-4326-ab63-ffd9ea9963d8,Declan Dillon
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,3153c850-cfb1-4ca5-912d-66ca4169c5f0,Brian Taylor II
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,3f9634e1-f527-4300-a2f6-c24d4606a83f,Arnas Sakenis
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,6e4862a5-5d16-40a9-9c5f-1e6926107385,Ring Malith
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,7fb7c4f9-cd91-4b4a-bbcb-fcce364a21b4,Myles Thompson
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,88bfb25f-ebed-4605-b2ed-4fc2f802bbad,Darrion Baker
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,8bd09f70-eced-4db8-ba04-edfd57fad036,Raynard Horry
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,a306f591-e1f2-40aa-a34d-3e613019f531,Eddiean Tirado
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,ad0eefbd-b994-4fce-930d-a6a54eab56c1,Jordan Hamilton
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,be385426-9df0-40ee-b6cf-8b945d0ed147,Cham Okey
+16,c206712f-2298-4279-b76c-834ac42809b9,SIU Edwardsville,f0a02b63-49a7-411d-af73-5ad0459f8ea3,Jo Valrie
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,05e9dfcd-6d71-4f9e-ad7d-f6cf4977d32f,Jackson Porch
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,30c604e3-4084-438b-9876-c4e0fcddf94f,Braydon Whitaker
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,4a4e9b65-f029-4f6a-a45e-a90892361cad,Evan Griffin
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,5100b1b8-199f-44f7-96bb-c5454ddd9cc7,Myles Rigsby
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,587db45f-93a4-478d-b581-b1f87bf9f8c4,Cooper Campbell
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,59a9fda2-b50c-4671-a1ce-7ae292850885,Jackson Fields
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,5b5b5b73-7e82-42e9-b67a-b17cd9120d90,Hikaru Awata
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,64a9a655-99d0-4fb7-b23b-fb84522ccdc1,Kerrington Kiel
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,76c4c7f8-8a4c-41b1-9274-ac9bb6ba3600,Kameryn Mitchell
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,8725b521-1678-4f0c-ab90-1042344f32c0,Victor Valdes
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,abfd60c4-ec2a-4e29-9982-9dc2dfe9b588,Thomas Dowd
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,bd5af00b-d7af-4ad3-96e8-fe37c81a4b33,Cobi Campbell
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,d0c49dbf-0508-48a4-876a-4e8810761cb6,Jerrell Bellamy
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,ec15458e-d1de-4c05-9ded-c8f9168fbc74,Tayton Conerway
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,f1323b2b-cc0f-4661-a148-fa4f75e71d10,Randarius Jones
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,f3a5e548-efd6-4764-b53f-9440624c6167,Theo Seng
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,f921a5f9-b3ab-4b2d-a197-808e28f30952,Marcus Rigsby Jr.
+14,6373b18c-62f6-49bc-bd4c-8959a2466516,Troy,ffb164cf-1db0-4f5c-b6c2-7692e960fe05,Austin Cross
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,1d3da732-a9a5-4ab0-b5e4-28a50daba4cd,Tomislav Ivisic
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,23df1912-081e-4f6a-8bdd-b0b4ad1edbac,Dra Gibbs-Lawhorn
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,2aee7c3f-5172-46ca-b181-728778e437f3,Kasparas Jakucionis
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,7747d305-adc6-4646-a87b-3f8f57236838,Carey Booth
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,a4fd1970-b623-4180-9f2a-96396fafc487,AJ Redd
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,b2e989df-45d2-4f6c-a7fc-729da49530bd,Tre White
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,be2cebbb-3752-41a2-bfec-424d2ff07180,Jason Jakstys
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,c5b110cc-84e5-4581-9c45-2ca43392de9f,Ben Humrichous
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,ca76580f-b7b0-4210-9fea-9fa2fe27fddb,Will Riley
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,d10bf846-d36b-4280-9612-f890f9b711e6,Jake Davis
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,d59611aa-8c04-4fe1-aa96-8042da1415a5,Ty Rodgers
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,e098b303-f8e3-4016-bbec-3d5e2ae244b9,Keaton Kutcher
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,e2887b24-afb5-447f-9c44-f14fd6d47278,Kylan Boswell
+6,150148c2-ca8f-414f-8f41-d94a55d4a122,Illinois,fdf75b96-8a0f-40f7-b07d-54597b2c45b8,Morez Johnson Jr.
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,12d8aa68-1b69-452e-83e4-600510bfee4e,Andrew Latiff
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,2aa41151-de65-4893-b588-b52cf22e86f6,Ace Buckner
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,3cf08a7d-f298-489e-8c1c-44cdd512f35d,Christian Reeves
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,44ac6850-5b99-45e8-bc90-c9fd50bb2d64,Asa Thomas
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,4628a687-f6d3-4ba5-bb0a-1c9e72835aed,Dillon Hunter
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,51b2c729-61e2-4995-a6b2-b163b2a59e55,Jake Heidbreder
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,561903da-4158-4756-a494-569138641d9b,Viktor Lakhin
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,5caf7186-8f25-407f-b9c0-2424788b4a70,Jaeden Zackery
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,6ac5e54a-19bd-4024-86c9-f655c1693cc5,Daniel Nauseef
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,793a550c-65ea-4d40-9fad-fbcf45da2fe6,Del Jones
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,91484798-c6af-4a1a-a474-77692b80ebc7,Dallas Thomas
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,95cb8794-e88b-4a2d-b7da-b1a1e57fdd00,Chauncey Wiggins
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,a8f9155f-a4a5-4b9f-aeb7-0a59a580da78,Matt Kelly
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,b78dea8e-4b78-472c-8b0d-5f0947184349,Chase Hunter
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,c4a7e12e-1b92-44a9-8a25-6d5c0872fe1f,Myles Foster
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,c803b37a-4236-4228-9dd3-d031beeb0ff9,Jackson Roberts
+5,dcf5c2e7-c227-4c20-af26-715d5f859412,Clemson,f6bcfdde-ce62-4d0b-8ab3-c96dcf10d4bf,Ian Schieffelin
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,00fc0f52-56b7-423b-bb6f-6451128e9f3d,Joe Few
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,0c5b38b4-024b-4e13-a620-55d8d869c975,Ben Gregg
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,112774dc-2c85-4ac5-be57-f1e1aa2d17fb,Jun Seok Yeo
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,2594437b-fd4b-419f-9e6a-66027d277f3a,Steele Venters
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,31c6acfa-9560-49e1-a4c5-2c90b11c8d9a,Braeden Smith
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,4e871af5-a471-403c-bfa5-9a426a13515d,Michael Ajayi
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,50f57340-f067-42a2-8ed0-3de28c166bb6,Noah Haaland
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,686f84d3-4008-4ef7-bf79-710008bebffa,Braden Huff
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,7263b2b7-a331-40ed-8672-3f534f022c12,Graydon Lemke
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,75b32a9f-1317-44d8-95b6-f18a2b31602d,Dusty Stromer
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,8410d3b6-1b8f-4113-96de-a4d3bcabec27,Cade Orness
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,92db078c-ecfc-4f8d-a282-10cfb7d4f943,Ryan Nembhard
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,a56d4465-9a2b-4b9a-a171-0f8efc82aeb0,Emmanuel Innocenti
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,cfaa9287-2bac-49e6-bbde-0b69e963a0c1,Graham Ike
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,e701a2f6-8b4e-4001-8cb4-1b33a4a1ca7c,Khalif Battle
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,eaf96237-c23c-4169-9129-8bf0becf13e8,Nolan Hickman
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,f16d075e-23f5-4d12-9e31-9b256588f176,Ismaila Diagne
+8,2f4d21f8-6d5f-48a5-abca-52a30583871a,Gonzaga,f3154b4b-f8ab-4b52-86ac-a0188e1315c4,Joaquim ArauzMoore
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,12d58ce6-f2e4-4df1-95e7-8cf29edb33b2,Kobe Johnson
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,186f7e81-4743-4c33-a64d-055c4ed22400,Evan Manjikian
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,231eae82-90f9-4d06-84e6-33edefc1167c,Eric Freeny
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,379941e5-04d0-47b2-a123-c8532ba64601,Sebastian Mack
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,3cc0c35a-a782-41ea-b0bb-ae963bdb52df,Jack Seidler
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,600e9fc9-c3c4-45e1-aea0-bf2d65eabd4b,Trent Perry
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,631eada3-d21f-48ec-bc58-36b60ce2c6dc,Tyler Bilodeau
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,66b8497b-255e-4c73-8d53-a8be284c6a30,Aday Mara
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,68df3b07-2f2e-4abc-93dc-86ec021f7e3f,Lazar Stefanovic
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,73ac2144-91c4-4138-9cac-360374d4a6e5,William Kyle III
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,84e85f91-e6fe-4f1d-8c7a-65e416bd681b,Christian Horry
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,9382021a-5911-488e-8d27-daea30bff02d,Dominick Harris
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,94a31d0f-93dc-4fd7-8ef6-558e4156f2e2,Brandon Williams
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,ac851cf7-8217-430f-b718-fe0cb0dd6640,Skyy Clark
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,b98e724b-8d04-4dc0-a0dd-709c7e42ff9e,Devin Williams
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,d64f09cd-6586-46ba-83fe-c0d435d3859d,Dylan Andrews
+7,ec0d6b67-4b16-4b50-92b2-1a651dae6b0f,UCLA,de0ecf36-20c6-4f6f-89ee-57e8a9e6ec65,Eric Dailey Jr.
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,03d16f6b-beb3-42a5-a5b6-750b6971e2dc,Darlinstone Dubar
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,0b94a63b-9991-482b-bfbc-009b1c8cba9d,Felix Okpara
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,0db0043a-dfea-4095-a853-a9434aec3ca0,Chaz Lanier
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,22d1bbb7-534e-44cf-b68c-f1427bb72a4f,J.P. Estrella
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,51f8014b-fc7d-4e32-b053-d9220fae812b,Jahmai Mashack
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,57de673f-e7f9-43c5-a0b5-7490652ca177,Bishop Boswell
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,700fc20e-b9e6-4408-be67-1e4bd73a142a,Ben Linnemeyer
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,b4bdaffa-72aa-418d-9025-77192479e737,Zakai Zeigler
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,b707c4a6-558a-424b-8b60-600bfe490ec9,Cade Phillips
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,d4f3de7d-2b50-4996-9376-fd6167fb9a90,Jordan Gainey
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,dec8793f-3079-45eb-ba6e-1be189b9894c,Grant Hurst
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,deee4eb1-b93d-4bd0-aae5-49d8a228ef1b,Gavin Paull
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,f77af151-216f-41a7-ba17-248273ad005b,Igor Milicic Jr.
+2,b827dbdf-230f-4916-9703-3bb9004e26eb,Tennessee,fd358b06-e0b6-442f-88a2-75a84428ed18,Campbell Duncan
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,15443417-6e28-4c9a-9684-9f8e53e01831,Belal El Shakery
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,1b4e6056-7bcd-4eb1-bdd4-ff2ae6ab1394,Anthony Arrington Jr.
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,334b7a56-f398-43c8-a2d7-fee6334435d3,Cannon Richards
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,369cfc0f-50fa-46ed-89a5-8fd28c3972c2,Kahmare Holmes
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,3e31aae1-2070-467a-86f1-92cec8de6ff9,Luke Flynn
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,49477f26-7b8e-49a0-9229-7eac5851fec5,Jeremy Lorenz
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,5a21abb8-3835-4d8d-bd60-e78ba495f073,Jackson Sivills
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,65633d3f-9338-4273-b9ba-611b6ac961d7,Justin Bailey
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,8b5b363d-2652-4c61-a9d7-0442a409b801,Hank Neace
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,98f94c31-02ea-4acd-9e8d-00162b4a149f,Kyler Filewich
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,9a9b66b5-cae3-4ec4-afd1-a152331c90e5,Don Douglass
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,d689b560-0a66-4f98-b66b-ee631c4fba91,Dillon Bailey
+15,9916713f-b243-452b-93ae-a2c3ccabf68b,Wofford,f10b7337-73f9-4b5e-a215-359185a6a9f8,Corey Tripp
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,0d6d0a47-e5f4-4f19-b19f-9cba44907e98,Amari Williams
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,1074a91f-38db-4cd6-b3a0-7622382800a6,Trent Noah
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,3135e16f-0424-4a06-938f-1960064a078d,Otega Oweh
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,34b4f0db-d012-42f6-aaf9-f3b1180c3fde,Walker Horn
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,66b5e23e-6608-4352-a56e-272c920018a0,Travis Perry
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,8f177845-d873-474c-97af-9a5cd16f5b47,Lamont Butler
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,9c4a17f0-e59a-40f9-b753-08f10552bed8,Kerr Kriisa
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,a7023586-3c10-4012-a17a-5757ee3b52af,Koby Brea
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,afdfb9ee-f74f-4c4b-8513-4efae8331959,Grant Darbyshire
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,b874082c-57b7-4d3b-b04a-8c8abbeceb47,Brandon Garrison
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,c845220e-7cc2-41f0-80a6-bed9719fe22e,Ansley Almonor
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,cc2e3b0f-7d90-4a7c-bd0a-271f7e7d83e4,Jaxson Robinson
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,ec6ef70a-e375-47bb-bac8-e53fcfba170c,Andrew Carr
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,f557908a-c03b-4813-9cc8-7315e7cf79a6,Collin Chandler
+3,2267a1f4-68f6-418b-aaf6-2aa0c4b291f1,Kentucky,ffba074a-65ed-49f8-906d-1d237bda7c8c,Zach Tow
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,099ed1fb-103b-4526-9fb9-7d5abfa80456,Tre Johnson
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,09ea0bfa-9703-4413-be39-9d1099a181b1,Jayson Kent
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,294c15a8-74c7-4bc3-a16f-caea3d1ad87e,Jamie Vinson
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,4d3fec1b-3554-4226-acbe-239332d0b273,Devon Pryor
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,74dc75a2-4370-4df7-b466-060d11a55ed6,Kadin Shedrick
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,7b86b5c0-93f1-4882-a452-a2775f08cd30,Julian Larry
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,912fbb74-6c27-4df1-aabb-a7edab44622b,Arthur Kaluma
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,a119f1a4-8944-4420-b32e-d50e92dd6800,Cole Bott
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,a35f8c1d-f99f-47ff-9307-1913ce2ac001,Malik Presley
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,a74d959c-aed6-43fb-b89c-c41dda668da5,Chendall Weaver
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,b371c68a-77da-4c86-96af-a3d5179dfeac,Anthon McDermott
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,b7752655-174c-4b6d-9159-133cfaf45c4e,Nic Codie
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,c0e721c9-276e-464d-9ea1-337606df0773,Ze'Rik Onyema
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,c64608c1-01b1-4dcf-88ed-ccd19cd4c8dd,Jordan Pope
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,d77f3e28-2b05-4b21-bd96-82a0d719f304,Tramon Mark
+11,6ed15092-2670-450a-99c2-61d861e87644,Texas,f9658e12-3716-41e4-acc0-7228c4052d51,Preston Clark
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,019fe74d-9d6b-4813-8e80-22a609565181,Ramon Walker Jr.
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,0ba736dc-3607-441d-88e6-4198e679ca6c,L.J. Cryer
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,12ef247a-8b2f-4d25-ae4f-5825523a506a,Kordelius Jefferson
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,1521a38c-d9e9-4f49-9e35-8e12932b67e7,Terrance Arceneaux
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,1e6ec2db-4d15-48b5-a003-ea18eec6d245,Cedric Lath
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,25d87da8-f34a-41ba-af4c-6b3ba0bb73f3,Joseph Tugler
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,25db5f0c-992d-430a-a97b-0f49e903dc6b,Mercy Miller
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,31144c57-b72b-4377-9d06-10d2ed54c658,Jacob McFarland
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,4f58640d-c039-4a96-a33a-2eb6a1fa8dc1,J'Wan Roberts
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,57bd2685-9794-438f-b123-f18cbcb41848,Ja'Vier Francis
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,58c3eae8-2550-4092-b2e0-bbce1f8b0cd6,Milos Uzan
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,65c505a9-323d-4a9b-856f-f19adaf3deba,Mylik Wilson
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,7bbeba55-0a9d-48da-afb0-b6f07be51fcd,Chase McCarty
+1,1f99a164-d593-4d81-85d5-0d7889d6f486,Houston,e6cb8a23-35ef-4af6-b193-9abc30eac546,Emanuel Sharp
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,0594d03c-3560-4011-ab9b-dc299672c4f9,Titas Sargiunas
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,0a3aebb6-6f50-4272-99ec-579c1330bb1d,Josh Ibukunoluwa
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,0fc2d5a3-fc5b-4dc7-b0c5-ab673f526314,Liam McChesney
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,368af10b-9717-4d86-b9ba-a03052b56c7f,Simon Hildebrandt
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,3fd738ae-35a5-4940-b9ef-69c347741423,Kezza Giffa
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,524fbbec-1d07-4b44-b481-f7f08cf54236,Bobby Pettiford
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,58538fd1-ffe6-4296-9bfb-17e8d4504976,Liam Carney
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,6509aeb3-bf32-493d-a25d-9ddc23fd4c63,Abdoulaye Thiam
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,6c543aff-c711-4b2b-94a6-bcb4511a8f1a,Chase Johnston
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,6e2a605c-a5ce-4f23-95ea-64183320a4e3,Andrew Sineway
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,795d4a5e-fd10-431e-84d4-c886c711f399,Trae Benham
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,8aaab22f-6e63-4c48-ad72-f6407b2783c4,Kimani Hamilton
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,91ccc486-79eb-4a41-87e4-1122e763b5ab,Mavrick Miller
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,91faec0b-7ff1-445b-a7b9-b709cdcb73b2,Birgir Irving
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,9fad0e80-a8a7-4176-9226-7543df0f12a0,Ivan Matlekovic
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,adf87d98-bafa-417e-bde1-3edf7aaf4490,Terry Anderson
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,bf12bc1b-5b61-41be-88c2-c20e0582f546,Juslin Bodo Bodo
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,dc112e1f-22c6-44db-b22b-45154143a760,D'Maurian Williams
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,ec6762bc-6ec6-4fc9-9c1c-68f28e7b8a1d,Braden Hausen
+13,a311188e-1259-4fda-b0ea-c47cb52694b1,High Point,f796e1ce-a29a-4c4e-8872-9ec6ad7c0adc,David Fonville
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,3282831b-7087-4a96-b7f4-cf95c1d6e4e4,Aaron Fine
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,34ba5c70-aafb-48b2-8963-8bb9696dcec8,Will Berg
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,701c96e9-a7c2-448e-8712-03f0ec3f7dcf,Fletcher Loyer
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,78a66fd8-2a38-4996-8958-40906944fa91,Josh Furst
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,7f5b31cc-80ad-4de3-94c2-4ef40a4ab22f,Jack Lusk
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,90d6e1cd-bfd7-4a0d-8d8b-988b8b66e457,Jace Rayl
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,93bb1441-eba2-4e66-a93e-abe6d88c4618,Camden Heide
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,a09b4154-4c6e-4b02-8eef-34372d75ae55,Braden Smith
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,b3a91f22-ff4b-4b64-9e76-b115aea5713b,Daniel Jacobsen
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,c002d5ac-0062-4b68-9b19-5eca69c0745b,Jack Benter
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,c97857a5-f64e-4fe3-a452-80aa1b9facdf,Caleb Furst
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,db3899ff-bffd-45af-9214-e52f0f2ddfa4,Brian Waddell
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,dec61328-a4c1-4f5b-b615-69fe5fe19501,C.J. Cox
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,e1d18e72-c272-41a9-b303-812a10f17596,Sam King
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,e7ba1c3d-ff83-476a-b550-44634e224ac6,Myles Colvin
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,f64b5ab9-8dd8-4240-801c-686869cdf087,Trey Kaufman-Renn
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,f9418452-f034-45e6-9b1f-090c9a6211d7,Gicarri Harris
+4,12d7f888-675b-459f-9099-a38f771d8a95,Purdue,fc218324-474d-4b81-9b64-043c0746dcce,Raleigh Burgess
