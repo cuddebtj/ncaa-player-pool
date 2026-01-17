@@ -1,14 +1,12 @@
 import json
 import time
 
-import requests
 import polars as pl
 
 
-base_url = "https://api.sportradar.com/ncaamb/trial/v8/en/"
+base_url = "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball"
 tournament_url = base_url + "tournaments/56befd3f-4024-47c4-900f-892883cc1b6b/summary.json"
 team_url = base_url + "teams/{team_id}/profile.json"
-api_key = {"api_key": "bkmdR8b2OXyilWKmWp5UB01WbYfxjqTyGJow6BZz"}
 
 headers = {"accept": "application/json"}
 player_data = []

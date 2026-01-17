@@ -1,26 +1,27 @@
 import time
 from pathlib import Path
 
-import requests
+import httpx
 import polars as pl
-import pandas as pd
 
-data_path = Path("data\player_data.csv")
+data_path = Path("data/2026/player_data.csv")
 df = pl.read_csv(data_path)
 team_ids = df[["team_id", "seed"]].unique().to_dicts()
 
-base_url = "https://api.sportradar.com/ncaamb/trial/v8/en/"
-team_url = base_url + "seasons/2024/REG/teams/{team_id}/statistics.json"
-api_key = {"api_key": "bkmdR8b2OXyilWKmWp5UB01WbYfxjqTyGJow6BZz"}
+base_url = "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball"
+# team_url = base_url + "seasons/2024/REG/teams/{team_id}/statistics.json"
+team_url = ""
 
 headers = {"accept": "application/json"}
 
-with requests.Session() as session:
+# with requests.Session() as session:
+async with httpx.AsyncClient() as client:
     rows = []
     for team_row in team_ids:
         time.sleep(2.5)
         url =team_url.format(team_id=team_row["team_id"]) 
-        resp = session.get(url, params=api_key, headers=headers)
+        # resp = session.get(url, params=api_key, headers=headers)
+        resp = await client.get(url, params=api_key, headers=headers)
         resp.raise_for_status()
         data = resp.json()
         for player in data["players"]:
@@ -40,9 +41,7 @@ with requests.Session() as session:
                 "average_rebounds": player["average"]["rebounds"],
                 "average_assists": player["average"]["assists"],
             }
-            # df = pd.DataFrame.from_dict(write_data)
-            # df.to_csv("data/player_stats.csv", header=False, index=False, mode="a")
             rows.append(write_data)
 
-df = pd.DataFrame.from_records(rows)
-df.to_csv("data/final_player_stats.csv", index=False)
+df = pl.from_dicts(rows)
+df.write_csv("data/final_player_stats.csv", index=False)

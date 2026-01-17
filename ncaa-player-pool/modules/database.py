@@ -6,9 +6,10 @@ from dataclasses import dataclass
 from typing import Literal
 
 import psycopg
+from dotenv import load_dotenv
 from psycopg import sql
 
-
+load_dotenv()
 logger = logging.getLogger(__name__)
 
 
@@ -22,7 +23,7 @@ class DatabaseParameters:
 
 def get_conn_str():
     try:
-        connection_string = os.getenv("POSTGRES_CONN_STR", "localhost")
+        connection_string = os.getenv("POSTGRES_CONN_STR")
         db_conn = psycopg.connect(connection_string)
         return db_conn
 
@@ -41,7 +42,7 @@ def data_to_db(
     table_name: str,
     schema_name: str = "public",
 ) -> None:
-    columns = ["sleeper_json"]
+    columns = ["json"]
     logger.info(f"Json load to table {schema_name}.{table_name}.")
     copy_statement = """COPY {table_name} ({column_names})
     FROM STDIN"""
@@ -50,13 +51,13 @@ def data_to_db(
     json.dump(resp_data, file_buffer)  # type: ignore
     file_buffer.seek(0)
 
-    set_delete_statement = sql.SQL(
-        "CALL public.delete_duplicate_data({schema_name}, {table_name});"
-    ).format(
-        schema_name=sql.Literal(schema_name),
-        table_name=sql.Literal(table_name),
-    )
-    logger.info(f"SQL Delete Statement:\n\t{set_delete_statement}")
+    # set_delete_statement = sql.SQL(
+    #     "CALL public.delete_duplicate_data({schema_name}, {table_name});"
+    # ).format(
+    #     schema_name=sql.Literal(schema_name),
+    #     table_name=sql.Literal(table_name),
+    # )
+    # logger.info(f"SQL Delete Statement:\n\t{set_delete_statement}")
 
     set_schema_statement = sql.SQL("set search_path to {};").format(
         sql.Identifier(schema_name)

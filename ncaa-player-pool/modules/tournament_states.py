@@ -2,7 +2,6 @@ import json
 import time
 from pathlib import Path
 
-import requests
 import polars as pl
 
 
@@ -10,7 +9,6 @@ base_url = "https://api.sportradar.com/ncaamb/trial/v8/en/"
 team_id = "267d417a-8f85-4c87-a15a-068c089a74c6"
 tournament_url = base_url + "tournaments/56befd3f-4024-47c4-900f-892883cc1b6b/schedule.json"
 game_url = base_url + "games/{game_id}/summary.json"
-api_key = {"api_key": "qyhhcacoPF5Vz86mccwsuOjDnL3gFcu2zfoPfRrM"}
 headers = {"accept": "application/json"}
 
 with requests.Session() as session:
