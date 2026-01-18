@@ -6,10 +6,8 @@ from dataclasses import dataclass
 from typing import Literal
 
 import psycopg
-from dotenv import load_dotenv
 from psycopg import sql
 
-load_dotenv()
 logger = logging.getLogger(__name__)
 
 
