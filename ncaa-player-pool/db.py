@@ -11,8 +11,14 @@ from typing import Optional, List, Dict, Any
 from config import Config
 from logger import get_logger
 from models import (
-    Tournament, Team, Player, Game, PlayerGameStats,
-    PlayerExport, PlayerStatsExport, GameStatsExport
+    Tournament,
+    Team,
+    Player,
+    Game,
+    PlayerGameStats,
+    PlayerExport,
+    PlayerStatsExport,
+    GameStatsExport,
 )
 
 logger = get_logger(__name__)
@@ -49,9 +55,7 @@ class Database:
                 # Set search path to schema
                 with self.conn.cursor() as cur:
                     cur.execute(
-                        sql.SQL("SET search_path TO {}, public").format(
-                            sql.Identifier(self.config.database_schema)
-                        )
+                        sql.SQL("SET search_path TO {}, public").format(sql.Identifier(self.config.database_schema))
                     )
                     self.conn.commit()
 
@@ -100,7 +104,7 @@ class Database:
         logger.info(f"Running migration: {migration_file.name}")
 
         try:
-            with open(migration_file, 'r') as f:
+            with open(migration_file, "r") as f:
                 sql_content = f.read()
 
             with self.conn.cursor() as cur:
@@ -134,15 +138,18 @@ class Database:
         """
 
         with self.conn.cursor() as cur:
-            cur.execute(query, (
-                tournament.id,
-                tournament.name,
-                tournament.year,
-                tournament.status,
-                tournament.start_date,
-                tournament.end_date,
-                psycopg.types.json.Jsonb(tournament.raw_data) if tournament.raw_data else None,
-            ))
+            cur.execute(
+                query,
+                (
+                    tournament.id,
+                    tournament.name,
+                    tournament.year,
+                    tournament.status,
+                    tournament.start_date,
+                    tournament.end_date,
+                    psycopg.types.json.Jsonb(tournament.raw_data) if tournament.raw_data else None,
+                ),
+            )
 
         logger.debug(f"Upserted tournament: {tournament.name} ({tournament.year})")
 
@@ -169,17 +176,20 @@ class Database:
         """
 
         with self.conn.cursor() as cur:
-            cur.execute(query, (
-                team.id,
-                team.name,
-                team.market,
-                team.abbreviation,
-                team.seed,
-                team.year,
-                team.eliminated,
-                team.eliminated_round,
-                psycopg.types.json.Jsonb(team.raw_data) if team.raw_data else None,
-            ))
+            cur.execute(
+                query,
+                (
+                    team.id,
+                    team.name,
+                    team.market,
+                    team.abbreviation,
+                    team.seed,
+                    team.year,
+                    team.eliminated,
+                    team.eliminated_round,
+                    psycopg.types.json.Jsonb(team.raw_data) if team.raw_data else None,
+                ),
+            )
 
         logger.debug(f"Upserted team: {team.name} ({team.year})")
 
@@ -206,17 +216,20 @@ class Database:
         """
 
         with self.conn.cursor() as cur:
-            cur.execute(query, (
-                player.id,
-                player.team_id,
-                player.full_name,
-                player.short_name,
-                player.position,
-                player.jersey_number,
-                player.year,
-                player.active,
-                psycopg.types.json.Jsonb(player.raw_data) if player.raw_data else None,
-            ))
+            cur.execute(
+                query,
+                (
+                    player.id,
+                    player.team_id,
+                    player.full_name,
+                    player.short_name,
+                    player.position,
+                    player.jersey_number,
+                    player.year,
+                    player.active,
+                    psycopg.types.json.Jsonb(player.raw_data) if player.raw_data else None,
+                ),
+            )
 
         logger.debug(f"Upserted player: {player.full_name} ({player.year})")
 
@@ -246,19 +259,22 @@ class Database:
         """
 
         with self.conn.cursor() as cur:
-            cur.execute(query, (
-                game.id,
-                game.home_team_id,
-                game.away_team_id,
-                game.year,
-                game.round_name,
-                game.scheduled_date,
-                game.status,
-                game.home_score,
-                game.away_score,
-                game.winner_team_id,
-                psycopg.types.json.Jsonb(game.raw_data) if game.raw_data else None,
-            ))
+            cur.execute(
+                query,
+                (
+                    game.id,
+                    game.home_team_id,
+                    game.away_team_id,
+                    game.year,
+                    game.round_name,
+                    game.scheduled_date,
+                    game.status,
+                    game.home_score,
+                    game.away_score,
+                    game.winner_team_id,
+                    psycopg.types.json.Jsonb(game.raw_data) if game.raw_data else None,
+                ),
+            )
 
         logger.debug(f"Upserted game: {game.id} ({game.year})")
 
@@ -304,29 +320,32 @@ class Database:
         """
 
         with self.conn.cursor() as cur:
-            cur.execute(query, (
-                stats.game_id,
-                stats.player_id,
-                stats.team_id,
-                stats.year,
-                stats.points,
-                stats.rebounds,
-                stats.assists,
-                stats.minutes_played,
-                stats.field_goals_made,
-                stats.field_goals_attempted,
-                stats.three_pointers_made,
-                stats.three_pointers_attempted,
-                stats.free_throws_made,
-                stats.free_throws_attempted,
-                stats.steals,
-                stats.blocks,
-                stats.turnovers,
-                stats.fouls,
-                stats.starter,
-                stats.did_not_play,
-                psycopg.types.json.Jsonb(stats.raw_data) if stats.raw_data else None,
-            ))
+            cur.execute(
+                query,
+                (
+                    stats.game_id,
+                    stats.player_id,
+                    stats.team_id,
+                    stats.year,
+                    stats.points,
+                    stats.rebounds,
+                    stats.assists,
+                    stats.minutes_played,
+                    stats.field_goals_made,
+                    stats.field_goals_attempted,
+                    stats.three_pointers_made,
+                    stats.three_pointers_attempted,
+                    stats.free_throws_made,
+                    stats.free_throws_attempted,
+                    stats.steals,
+                    stats.blocks,
+                    stats.turnovers,
+                    stats.fouls,
+                    stats.starter,
+                    stats.did_not_play,
+                    psycopg.types.json.Jsonb(stats.raw_data) if stats.raw_data else None,
+                ),
+            )
 
         logger.debug(f"Upserted player stats: {stats.player_id} in game {stats.game_id}")
 

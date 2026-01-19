@@ -30,7 +30,12 @@ from transformers import (
     transform_tournament_to_tournament,
     transform_tournament_to_teams,
 )
-from models import ESPNScoreboard, ESPNGameSummary, ESPNRosterResponse, ESPNTournament
+from models import (
+    ESPNScoreboard,
+    ESPNGameSummary,
+    ESPNRosterResponse,
+    ESPNTournament,
+)
 
 # Initialize Typer app
 app = typer.Typer(
@@ -101,9 +106,7 @@ def fetch_rosters(
         "-t",
         help="Comma-separated team IDs (if not provided, fetches from scoreboard)",
     ),
-    save_responses: bool = typer.Option(
-        True, "--save/--no-save", help="Save API responses to files"
-    ),
+    save_responses: bool = typer.Option(True, "--save/--no-save", help="Save API responses to files"),
 ):
     """
     Fetch team rosters and store in database.
@@ -182,9 +185,7 @@ def fetch_games(
         "-d",
         help="Specific date (YYYYMMDD format, e.g., 20260319)",
     ),
-    save_responses: bool = typer.Option(
-        True, "--save/--no-save", help="Save API responses to files"
-    ),
+    save_responses: bool = typer.Option(True, "--save/--no-save", help="Save API responses to files"),
 ):
     """
     Fetch games from scoreboard and store in database.
@@ -242,9 +243,7 @@ def update_stats(
         "-d",
         help="Specific date (YYYYMMDD format, e.g., 20260319)",
     ),
-    save_responses: bool = typer.Option(
-        True, "--save/--no-save", help="Save API responses to files"
-    ),
+    save_responses: bool = typer.Option(True, "--save/--no-save", help="Save API responses to files"),
 ):
     """
     Update player statistics from game summaries.
@@ -322,9 +321,7 @@ def fetch_tournament(
         "-i",
         help="Tournament ID (default: NCAA Men's tournament)",
     ),
-    save_responses: bool = typer.Option(
-        True, "--save/--no-save", help="Save API responses to files"
-    ),
+    save_responses: bool = typer.Option(True, "--save/--no-save", help="Save API responses to files"),
 ):
     """
     Fetch tournament bracket with seeds.
@@ -342,10 +339,7 @@ def fetch_tournament(
             espn = ESPNService(config, client)
 
             # Fetch tournament
-            tournament_data = await espn.fetch_tournament(
-                tournament_id=tournament_id,
-                save=save_responses
-            )
+            tournament_data = await espn.fetch_tournament(tournament_id=tournament_id, save=save_responses)
             tournament_espn = ESPNTournament.model_validate(tournament_data)
 
             # Transform

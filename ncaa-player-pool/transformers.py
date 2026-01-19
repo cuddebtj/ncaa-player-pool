@@ -10,10 +10,19 @@ import pytz
 from logger import get_logger
 from models import (
     # ESPN Models
-    ESPNGameSummary, ESPNScoreboard, ESPNTournament, ESPNTeamResponse,
-    ESPNRosterResponse, ESPNBoxscorePlayers, ESPNPlayerStats,
+    ESPNGameSummary,
+    ESPNScoreboard,
+    ESPNTournament,
+    ESPNTeamResponse,
+    ESPNRosterResponse,
+    ESPNBoxscorePlayers,
+    ESPNPlayerStats,
     # Database Models
-    Tournament, Team, Player, Game, PlayerGameStats
+    Tournament,
+    Team,
+    Player,
+    Game,
+    PlayerGameStats,
 )
 
 logger = get_logger(__name__)
@@ -34,7 +43,7 @@ def parse_espn_date(date_str: str) -> Optional[datetime]:
 
     try:
         # ESPN dates are typically in ISO format: "2026-01-19T01:00Z"
-        dt = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+        dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
         return dt
     except (ValueError, AttributeError) as e:
         logger.warning(f"Failed to parse date '{date_str}': {e}")
@@ -62,7 +71,7 @@ def extract_year_from_date(date_str: Optional[str], default_year: int) -> int:
 def transform_roster_to_players(
     roster: ESPNRosterResponse,
     year: int,
-    seed: Optional[int] = None
+    seed: Optional[int] = None,
 ) -> Tuple[Team, List[Player]]:
     """
     Transform ESPN roster response into Team and Player models.
@@ -84,7 +93,7 @@ def transform_roster_to_players(
         seed=seed,
         year=year,
         eliminated=False,
-        raw_data=roster.team.model_dump()
+        raw_data=roster.team.model_dump(),
     )
 
     # Create player models
@@ -99,7 +108,7 @@ def transform_roster_to_players(
             jersey_number=athlete.jersey,
             year=year,
             active=True,
-            raw_data=athlete.model_dump()
+            raw_data=athlete.model_dump(),
         )
         players.append(player)
 
@@ -107,10 +116,7 @@ def transform_roster_to_players(
     return team, players
 
 
-def transform_scoreboard_to_games(
-    scoreboard: ESPNScoreboard,
-    year: int
-) -> List[Game]:
+def transform_scoreboard_to_games(scoreboard: ESPNScoreboard, year: int) -> List[Game]:
     """
     Transform ESPN scoreboard into Game models.
 
@@ -160,7 +166,7 @@ def transform_scoreboard_to_games(
                 home_score=home_score,
                 away_score=away_score,
                 winner_team_id=winner_id,
-                raw_data=event.model_dump()
+                raw_data=event.model_dump(),
             )
 
             games.append(game)
@@ -169,10 +175,7 @@ def transform_scoreboard_to_games(
     return games
 
 
-def transform_scoreboard_to_teams(
-    scoreboard: ESPNScoreboard,
-    year: int
-) -> List[Team]:
+def transform_scoreboard_to_teams(scoreboard: ESPNScoreboard, year: int) -> List[Team]:
     """
     Transform ESPN scoreboard into Team models.
 
@@ -199,7 +202,7 @@ def transform_scoreboard_to_teams(
                         seed=None,  # Seeds only available in tournament bracket
                         year=year,
                         eliminated=False,
-                        raw_data=competitor.team.model_dump()
+                        raw_data=competitor.team.model_dump(),
                     )
                     teams_dict[team_id] = team
 
@@ -222,8 +225,8 @@ def parse_stat_value(value: str) -> Optional[int]:
         return None
 
     # Handle "made-attempted" format (e.g., "2-6")
-    if '-' in value:
-        parts = value.split('-')
+    if "-" in value:
+        parts = value.split("-")
         if parts[0].isdigit():
             return int(parts[0])  # Return made count
         return None
@@ -237,7 +240,7 @@ def parse_stat_value(value: str) -> Optional[int]:
 
 def transform_game_summary_to_player_stats(
     game_summary: ESPNGameSummary,
-    year: int
+    year: int,
 ) -> Tuple[List[Player], List[PlayerGameStats]]:
     """
     Transform ESPN game summary into Player and PlayerGameStats models.
@@ -271,7 +274,7 @@ def transform_game_summary_to_player_stats(
                     jersey_number=athlete.jersey,
                     year=year,
                     active=True,
-                    raw_data=athlete.model_dump()
+                    raw_data=athlete.model_dump(),
                 )
                 players.append(player)
 
@@ -308,7 +311,7 @@ def transform_game_summary_to_player_stats(
                     fouls=get_stat("PF", "fouls"),
                     starter=athlete_stats.starter,
                     did_not_play=athlete_stats.didNotPlay,
-                    raw_data=athlete_stats.model_dump()
+                    raw_data=athlete_stats.model_dump(),
                 )
                 stats_list.append(player_stats)
 
@@ -316,10 +319,7 @@ def transform_game_summary_to_player_stats(
     return players, stats_list
 
 
-def transform_game_summary_to_game(
-    game_summary: ESPNGameSummary,
-    year: int
-) -> Game:
+def transform_game_summary_to_game(game_summary: ESPNGameSummary, year: int) -> Game:
     """
     Transform ESPN game summary into Game model.
 
@@ -366,17 +366,14 @@ def transform_game_summary_to_game(
         home_score=home_score,
         away_score=away_score,
         winner_team_id=winner_id,
-        raw_data=game_summary.header.model_dump()
+        raw_data=game_summary.header.model_dump(),
     )
 
     logger.debug(f"Transformed game {game.id}")
     return game
 
 
-def transform_tournament_to_teams(
-    tournament: ESPNTournament,
-    year: int
-) -> List[Team]:
+def transform_tournament_to_teams(tournament: ESPNTournament, year: int) -> List[Team]:
     """
     Transform ESPN tournament bracket into Team models with seeds.
 
@@ -402,7 +399,7 @@ def transform_tournament_to_teams(
                     seed=participant.seed,
                     year=year,
                     eliminated=False,
-                    raw_data=participant.model_dump()
+                    raw_data=participant.model_dump(),
                 )
                 teams_dict[team_id] = team
 
@@ -433,7 +430,7 @@ def transform_tournament_to_tournament(tournament: ESPNTournament) -> Tournament
         status=tournament.status,
         start_date=start_date,
         end_date=end_date,
-        raw_data=tournament.model_dump()
+        raw_data=tournament.model_dump(),
     )
 
     logger.info(f"Transformed tournament: {tournament_model.name} ({tournament_model.year})")

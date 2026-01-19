@@ -12,8 +12,10 @@ from pydantic import BaseModel, Field, ConfigDict
 # ESPN API Response Models
 # ============================================
 
+
 class ESPNTeamBasic(BaseModel):
     """Basic team information from ESPN API."""
+
     id: str
     displayName: str
     abbreviation: str
@@ -25,6 +27,7 @@ class ESPNTeamBasic(BaseModel):
 
 class ESPNPosition(BaseModel):
     """Player position information."""
+
     name: str
     displayName: Optional[str] = None
     abbreviation: str
@@ -32,6 +35,7 @@ class ESPNPosition(BaseModel):
 
 class ESPNAthlete(BaseModel):
     """Athlete/player information from ESPN API."""
+
     id: str
     displayName: str
     shortName: Optional[str] = None
@@ -41,6 +45,7 @@ class ESPNAthlete(BaseModel):
 
 class ESPNPlayerStats(BaseModel):
     """Player statistics from game box score."""
+
     athlete: ESPNAthlete
     starter: bool = False
     didNotPlay: bool = False
@@ -72,6 +77,7 @@ class ESPNPlayerStats(BaseModel):
 
 class ESPNPlayerStatsGroup(BaseModel):
     """Group of player statistics with keys."""
+
     names: Optional[List[str]] = None  # Alternative to name
     name: Optional[str] = None
     keys: List[str]  # Stat keys like ["MIN", "FG", "3PT", ...]
@@ -83,24 +89,28 @@ class ESPNPlayerStatsGroup(BaseModel):
 
 class ESPNBoxscoreTeam(BaseModel):
     """Team box score information."""
+
     team: ESPNTeamBasic
     statistics: Optional[List[dict]] = None
 
 
 class ESPNBoxscorePlayers(BaseModel):
     """Player statistics for a team."""
+
     team: ESPNTeamBasic
     statistics: List[ESPNPlayerStatsGroup]
 
 
 class ESPNBoxscore(BaseModel):
     """Game box score with team and player statistics."""
+
     teams: List[ESPNBoxscoreTeam]
     players: List[ESPNBoxscorePlayers]
 
 
 class ESPNCompetitor(BaseModel):
     """Competitor (team) in a game."""
+
     id: str
     homeAway: str
     team: ESPNTeamBasic
@@ -110,6 +120,7 @@ class ESPNCompetitor(BaseModel):
 
 class ESPNCompetition(BaseModel):
     """Competition information from game/event."""
+
     id: str
     date: str
     attendance: Optional[int] = None
@@ -118,18 +129,21 @@ class ESPNCompetition(BaseModel):
 
 class ESPNGameHeader(BaseModel):
     """Game header information."""
+
     id: str
     competitions: List[ESPNCompetition]
 
 
 class ESPNGameSummary(BaseModel):
     """Complete game summary response."""
+
     header: ESPNGameHeader
     boxscore: ESPNBoxscore
 
 
 class ESPNEvent(BaseModel):
     """Event (game) from scoreboard."""
+
     id: str
     date: str
     name: str
@@ -139,16 +153,19 @@ class ESPNEvent(BaseModel):
 
 class ESPNScoreboard(BaseModel):
     """Scoreboard response with events."""
+
     events: List[ESPNEvent]
 
 
 class ESPNTeamRecord(BaseModel):
     """Team record information."""
+
     summary: Optional[str] = None
 
 
 class ESPNTeamDetail(BaseModel):
     """Detailed team information."""
+
     id: str
     displayName: str
     abbreviation: str
@@ -163,11 +180,13 @@ class ESPNTeamDetail(BaseModel):
 
 class ESPNTeamResponse(BaseModel):
     """Team API response."""
+
     team: ESPNTeamDetail
 
 
 class ESPNRosterAthlete(BaseModel):
     """Athlete from roster endpoint."""
+
     id: str
     firstName: Optional[str] = None
     lastName: Optional[str] = None
@@ -186,6 +205,7 @@ class ESPNRosterAthlete(BaseModel):
 
 class ESPNRosterResponse(BaseModel):
     """Roster API response."""
+
     team: ESPNTeamBasic
     athletes: List[ESPNRosterAthlete]
     season: Optional[dict] = None
@@ -193,6 +213,7 @@ class ESPNRosterResponse(BaseModel):
 
 class ESPNTournamentParticipant(BaseModel):
     """Tournament bracket participant (team with seed)."""
+
     id: str
     name: str
     market: Optional[str] = None
@@ -202,12 +223,14 @@ class ESPNTournamentParticipant(BaseModel):
 
 class ESPNTournamentGame(BaseModel):
     """Tournament bracket game."""
+
     id: str
     scheduled: Optional[str] = None
 
 
 class ESPNTournamentBracket(BaseModel):
     """Tournament bracket/region."""
+
     id: str
     name: str
     location: Optional[str] = None
@@ -217,6 +240,7 @@ class ESPNTournamentBracket(BaseModel):
 
 class ESPNTournament(BaseModel):
     """Tournament response."""
+
     id: str
     name: str
     status: str
@@ -229,8 +253,10 @@ class ESPNTournament(BaseModel):
 # Database Models
 # ============================================
 
+
 class Tournament(BaseModel):
     """Tournament database model."""
+
     model_config = ConfigDict(from_attributes=True)
 
     id: str
@@ -246,6 +272,7 @@ class Tournament(BaseModel):
 
 class Team(BaseModel):
     """Team database model."""
+
     model_config = ConfigDict(from_attributes=True)
 
     id: str
@@ -263,6 +290,7 @@ class Team(BaseModel):
 
 class Player(BaseModel):
     """Player database model."""
+
     model_config = ConfigDict(from_attributes=True)
 
     id: str
@@ -280,6 +308,7 @@ class Player(BaseModel):
 
 class Game(BaseModel):
     """Game database model."""
+
     model_config = ConfigDict(from_attributes=True)
 
     id: str
@@ -299,6 +328,7 @@ class Game(BaseModel):
 
 class PlayerGameStats(BaseModel):
     """Player game statistics database model."""
+
     model_config = ConfigDict(from_attributes=True)
 
     id: Optional[int] = None
@@ -336,8 +366,10 @@ class PlayerGameStats(BaseModel):
 # View Models for Google Sheets Export
 # ============================================
 
+
 class PlayerExport(BaseModel):
     """Player data for Google Sheets export."""
+
     player_id: str
     player_name: str
     position: Optional[str] = None
@@ -352,6 +384,7 @@ class PlayerExport(BaseModel):
 
 class PlayerStatsExport(BaseModel):
     """Player tournament statistics for export."""
+
     player_id: str
     player_name: str
     team_name: str
@@ -370,6 +403,7 @@ class PlayerStatsExport(BaseModel):
 
 class GameStatsExport(BaseModel):
     """Game-by-game statistics for export."""
+
     game_id: str
     tournament_year: int
     round_name: Optional[str] = None
