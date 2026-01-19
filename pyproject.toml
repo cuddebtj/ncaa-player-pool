@@ -1,7 +1,7 @@
 [project]
 name = "ncaa-player-pool"
 version = "0.1.0"
-description = "Add your description here"
+description = "NCAA Tournament Player Pool - Track player stats and manage pool entries"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -11,4 +11,51 @@ dependencies = [
     "python-dotenv>=1.0.1",
     "pytz>=2025.1",
     "pyyaml>=6.0.2",
+    "typer>=0.12.0",
+    "tenacity>=9.0.0",
+    "pydantic>=2.10.0",
+    "gspread>=6.1.0",
+    "google-auth>=2.37.0",
+    "rich>=13.7.0",
 ]
+
+[project.scripts]
+ncaa-pool = "ncaa-player-pool.__main__:app"
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# Same as Black.
+line-length = 120
+indent-width = 4
+
+# Assume Python 3.9
+target-version = "py312"

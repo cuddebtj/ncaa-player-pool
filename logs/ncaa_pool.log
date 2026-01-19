@@ -1,0 +1,38 @@
+2026-01-19 02:55:59 | ncaa_pool | INFO     | main:32 | ================================================================================
+2026-01-19 02:55:59 | ncaa_pool | INFO     | main:33 | Starting ESPN API test data fetch
+2026-01-19 02:55:59 | ncaa_pool | INFO     | main:34 | ================================================================================
+2026-01-19 02:55:59 | ncaa_pool | INFO     | main:40 | 
+[1/4] Fetching tournament data...
+2026-01-19 02:55:59 | ncaa_pool | ERROR    | main:54 | ✗ Failed to fetch tournament: Unexpected error: Resource not found: https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/tournaments/56befd3f-4024-47c4-900f-892883cc1b6b/summary.json
+2026-01-19 02:58:47 | ncaa_pool | INFO     | main:32 | ================================================================================
+2026-01-19 02:58:47 | ncaa_pool | INFO     | main:33 | Starting ESPN API test data fetch
+2026-01-19 02:58:47 | ncaa_pool | INFO     | main:34 | ================================================================================
+2026-01-19 02:58:47 | ncaa_pool | INFO     | main:40 | 
+[1/4] Fetching current scoreboard...
+2026-01-19 02:58:49 | ncaa_pool | INFO     | main:48 | ✓ Scoreboard saved (1 games)
+2026-01-19 02:58:49 | ncaa_pool | INFO     | main:69 | ✓ Found 2 unique teams
+2026-01-19 02:58:49 | ncaa_pool | INFO     | main:70 | ✓ Found 1 games
+2026-01-19 02:58:49 | ncaa_pool | INFO     | main:78 | 
+[2/4] Fetching sample team data (first 3 of 2 teams)...
+2026-01-19 02:58:52 | ncaa_pool | INFO     | main:86 | ✓ Fetched team: Houston Cougars
+2026-01-19 02:58:54 | ncaa_pool | INFO     | main:86 | ✓ Fetched team: Arizona State Sun Devils
+2026-01-19 02:58:54 | ncaa_pool | INFO     | main:94 | 
+[3/4] Fetching sample game data (first 3 of 1 games)...
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:101 | ✓ Fetched game: 401827631
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:109 | 
+[4/4] Attempting to fetch tournament bracket...
+2026-01-19 02:58:57 | ncaa_pool | WARNING  | main:114 | Tournament bracket not available (expected if not March): Unexpected error: Resource not found: https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/tournaments/56befd3f-4024-47c4-900f-892883cc1b6b/summary.json
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:116 | 
+================================================================================
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:117 | Test data fetch complete!
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:118 | Data saved to: data/espn
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:119 | ================================================================================
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:124 | 
+Files created:
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:129 |   tournaments/: 1 files
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:131 |     - scoreboard_current.json
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:129 |   teams/: 2 files
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:131 |     - team_248.json
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:131 |     - team_9.json
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:129 |   games/: 1 files
+2026-01-19 02:58:57 | ncaa_pool | INFO     | main:131 |     - game_401827631.json

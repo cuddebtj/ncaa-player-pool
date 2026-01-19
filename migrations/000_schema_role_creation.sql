@@ -70,27 +70,3 @@ GRANT ncaa_pool_readwrite TO ncaa_pool_app;
 
 -- Set default search path for convenience
 ALTER ROLE ncaa_pool_app SET search_path TO ncaa_pool, public;
-
--- ============================================
--- 7. VERIFICATION QUERIES
--- ============================================
-
--- Check role memberships
-SELECT 
-    r.rolname AS role,
-    ARRAY_AGG(m.rolname) AS member_of
-FROM pg_roles r
-LEFT JOIN pg_auth_members am ON r.oid = am.member
-LEFT JOIN pg_roles m ON am.roleid = m.oid
-WHERE r.rolname IN ('ncaa_pool_read', 'ncaa_pool_readwrite', 'ncaa_pool_app')
-GROUP BY r.rolname;
-
--- Check schema privileges
-SELECT 
-    nspname AS schema,
-    pg_catalog.array_agg(privilege_type) AS privileges,
-    grantee
-FROM information_schema.usage_privileges u
-JOIN pg_namespace n ON n.nspname = u.object_schema
-WHERE object_schema = 'ncaa_pool'
-GROUP BY nspname, grantee;

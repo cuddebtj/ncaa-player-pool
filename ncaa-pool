@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Wrapper script to run NCAA Player Pool CLI
+# This ensures environment variables are loaded fresh from .env
+
+cd "$(dirname "$0")"
+
+# Unset any cached environment variables to force reload from .env
+unset POSTGRES_CONN_STR
+
+exec uv run python ncaa-player-pool/__main__.py "$@"
