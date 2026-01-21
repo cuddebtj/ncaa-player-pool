@@ -414,5 +414,52 @@ def stats(
         raise typer.Exit(code=1)
 
 
+@app.command()
+def export(
+    year: int = typer.Option(..., "--year", "-y", help="Tournament year"),
+    sheet_id: Optional[str] = typer.Option(
+        None,
+        "--sheet-id",
+        "-s",
+        help="Google Sheet ID (uses GOOGLE_SHEET_ID from .env if not provided)",
+    ),
+):
+    """
+    Export player roster and statistics to Google Sheets.
+
+    Requires GOOGLE_CREDENTIALS_FILE and GOOGLE_SHEET_ID in .env file.
+    Updates two sheets:
+    - Players: Tournament roster (player id, name, position, team, seed)
+    - Player Stats: Game-by-game statistics
+    """
+    config = get_app_config()
+    logger = get_logger(__name__)
+
+    console.print(f"[cyan]Exporting data for year {year} to Google Sheets...[/cyan]")
+
+    try:
+        from sheets import export_all_data
+
+        url = export_all_data(config, year, sheet_id)
+
+        console.print(f"[green]✓ Successfully exported data to Google Sheets![/green]")
+        console.print(f"[cyan]Spreadsheet URL: {url}[/cyan]")
+
+    except FileNotFoundError as e:
+        console.print(f"[red]✗ Credentials file not found: {e}[/red]")
+        console.print("[yellow]Set GOOGLE_CREDENTIALS_FILE in .env to your service account JSON file[/yellow]")
+        raise typer.Exit(code=1)
+
+    except ValueError as e:
+        console.print(f"[red]✗ Configuration error: {e}[/red]")
+        console.print("[yellow]Set GOOGLE_SHEET_ID in .env to your spreadsheet ID[/yellow]")
+        raise typer.Exit(code=1)
+
+    except Exception as e:
+        logger.exception(f"Export failed: {e}")
+        console.print(f"[red]✗ Export failed: {e}[/red]")
+        raise typer.Exit(code=1)
+
+
 if __name__ == "__main__":
     app()
