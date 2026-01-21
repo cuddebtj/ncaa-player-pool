@@ -144,7 +144,8 @@ class SheetsClient:
             "Player Name",
             "Position",
             "Team",
-            "Team Seed"
+            "Team Seed",
+            "Player Team",
         ]
 
         # Prepare data rows
@@ -156,6 +157,7 @@ class SheetsClient:
                 player.get("position", ""),
                 player.get("team_name", ""),
                 player.get("seed") if player.get("seed") is not None else "",
+                player.get("player_team", ""),
             ]
             rows.append(row)
 
@@ -163,7 +165,7 @@ class SheetsClient:
         worksheet.update(rows, value_input_option='RAW')
 
         # Format header row
-        worksheet.format('A1:E1', {
+        worksheet.format('A1:F1', {
             "backgroundColor": {"red": 0.2, "green": 0.5, "blue": 0.8},
             "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
             "horizontalAlignment": "CENTER"
