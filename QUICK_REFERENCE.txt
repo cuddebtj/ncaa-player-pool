@@ -1,0 +1,89 @@
+╔════════════════════════════════════════════════════════════════╗
+║          NCAA PLAYER POOL - QUICK REFERENCE                    ║
+╚════════════════════════════════════════════════════════════════╝
+
+📅 TOURNAMENT TIMELINE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Selection Sunday (March 16, 2026)
+  └─→ ./setup-tournament.sh 2026
+      ✓ Fetches bracket & rosters
+      ✓ Exports to Google Sheets
+      ✓ Participants fill Google Form
+
+  Tournament Days (March 17 - April 6)
+  └─→ ./update-tournament.sh 2026  (run daily)
+      ✓ Updates stats
+      ✓ Exports to Sheets
+      ✓ Leaderboard auto-calculates
+
+🚀 KEY COMMANDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Setup (once)
+  ./ncaa-pool init
+
+  Tournament Setup (Selection Sunday)
+  ./setup-tournament.sh 2026
+
+  Daily Update (during tournament)
+  ./update-tournament.sh 2026
+
+  View Stats
+  ./ncaa-pool stats --year 2026 --limit 20
+
+  Manual Export
+  ./ncaa-pool export --year 2026
+
+📊 GOOGLE SHEETS STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ✓ Players       (auto-updated) - Roster with seeds
+  ✓ Player Stats  (auto-updated) - Game-by-game stats
+  👤 Entries      (Google Form)  - Participant selections
+  🏆 Leaderboard  (your formulas) - Calculated rankings
+
+⚙️  CONFIGURATION (.env)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Required:
+  POSTGRES_CONN_STR=postgresql://user:pass%2Fword@host:5432/db
+  GOOGLE_CREDENTIALS_FILE=/path/to/service-account.json
+  GOOGLE_SHEET_ID=your_sheet_id
+
+  Note: URL-encode passwords! / → %2F, = → %3D
+
+🎯 SCORING FORMULA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Total Score = Points + Rebounds + Assists
+
+  In Leaderboard sheet:
+  =SUMIF('Player Stats'!$C:$C, A2, 'Player Stats'!$T:$T)
+
+📚 DOCUMENTATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  README.md                 - Full user guide
+  GOOGLE_SHEETS_SETUP.md    - Sheets setup walkthrough
+  COMPLETION_SUMMARY.md     - Project completion details
+  ESPN_API_SCHEMA.md        - API documentation
+
+🔧 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Check logs:
+  tail -f logs/ncaa_pool.log
+
+  Test database:
+  ./ncaa-pool stats --year 2026 --limit 5
+
+  Test export:
+  ./ncaa-pool export --year 2026
+
+  Get help:
+  ./ncaa-pool --help
+
+╔════════════════════════════════════════════════════════════════╗
+║  Ready for March Madness 2026! 🏀                             ║
+╚════════════════════════════════════════════════════════════════╝
