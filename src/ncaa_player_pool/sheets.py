@@ -3,14 +3,14 @@ Google Sheets integration for NCAA Player Pool.
 Exports player roster and game statistics to Google Sheets.
 """
 
-from typing import List, Dict, Any, Optional
 from pathlib import Path
+from typing import Any
 
 import gspread
 from google.oauth2.service_account import Credentials
 
-from logger import get_logger
-from config import Config
+from .config import Config
+from .logger import get_logger
 
 logger = get_logger(__name__)
 
@@ -19,10 +19,7 @@ class SheetsClient:
     """Google Sheets client for exporting NCAA pool data."""
 
     # Google Sheets API scopes
-    SCOPES = [
-        'https://www.googleapis.com/auth/spreadsheets',
-        'https://www.googleapis.com/auth/drive'
-    ]
+    SCOPES = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
 
     def __init__(self, config: Config):
         """
@@ -32,8 +29,8 @@ class SheetsClient:
             config: Application configuration
         """
         self.config = config
-        self.client: Optional[gspread.Client] = None
-        self.spreadsheet: Optional[gspread.Spreadsheet] = None
+        self.client: gspread.Client | None = None
+        self.spreadsheet: gspread.Spreadsheet | None = None
 
     def authenticate(self):
         """
@@ -51,10 +48,7 @@ class SheetsClient:
             raise FileNotFoundError(f"Credentials file not found: {creds_path}")
 
         try:
-            credentials = Credentials.from_service_account_file(
-                str(creds_path),
-                scopes=self.SCOPES
-            )
+            credentials = Credentials.from_service_account_file(str(creds_path), scopes=self.SCOPES)
             self.client = gspread.authorize(credentials)
             logger.info("Successfully authenticated with Google Sheets API")
 
@@ -62,7 +56,7 @@ class SheetsClient:
             logger.exception(f"Failed to authenticate with Google Sheets: {e}")
             raise
 
-    def open_spreadsheet(self, sheet_id: Optional[str] = None):
+    def open_spreadsheet(self, sheet_id: str | None = None):
         """
         Open a Google Spreadsheet.
 
@@ -113,7 +107,7 @@ class SheetsClient:
             worksheet = self.spreadsheet.add_worksheet(title=title, rows=rows, cols=cols)
             return worksheet
 
-    def export_players(self, players_data: List[Dict[str, Any]], worksheet_name: str = "Players"):
+    def export_players(self, players_data: list[dict[str, Any]], worksheet_name: str = "Players"):
         """
         Export tournament player roster to Google Sheets.
 
@@ -162,21 +156,24 @@ class SheetsClient:
             rows.append(row)
 
         # Write to sheet
-        worksheet.update(rows, value_input_option='RAW')
+        worksheet.update(rows, value_input_option="RAW")
 
         # Format header row
-        worksheet.format('A1:F1', {
-            "backgroundColor": {"red": 0.2, "green": 0.5, "blue": 0.8},
-            "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
-            "horizontalAlignment": "CENTER"
-        })
+        worksheet.format(
+            "A1:F1",
+            {
+                "backgroundColor": {"red": 0.2, "green": 0.5, "blue": 0.8},
+                "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
+                "horizontalAlignment": "CENTER",
+            },
+        )
 
         # Freeze header row
         worksheet.freeze(rows=1)
 
         logger.info(f"Successfully exported {len(players_data)} players")
 
-    def export_player_stats(self, stats_data: List[Dict[str, Any]], worksheet_name: str = "Player Stats"):
+    def export_player_stats(self, stats_data: list[dict[str, Any]], worksheet_name: str = "Player Stats"):
         """
         Export detailed player game statistics to Google Sheets.
 
@@ -223,7 +220,7 @@ class SheetsClient:
             "Turnovers",
             "Fouls",
             "Minutes Played",
-            "Total Score (PTS+AST+REB)"
+            "Total Score (PTS+AST+REB)",
         ]
 
         # Prepare data rows
@@ -254,34 +251,33 @@ class SheetsClient:
             rows.append(row)
 
         # Write to sheet
-        worksheet.update(rows, value_input_option='RAW')
+        worksheet.update(rows, value_input_option="RAW")
 
         # Format header row
-        worksheet.format('A1:T1', {
-            "backgroundColor": {"red": 0.2, "green": 0.5, "blue": 0.8},
-            "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
-            "horizontalAlignment": "CENTER",
-            "wrapStrategy": "WRAP"
-        })
+        worksheet.format(
+            "A1:T1",
+            {
+                "backgroundColor": {"red": 0.2, "green": 0.5, "blue": 0.8},
+                "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
+                "horizontalAlignment": "CENTER",
+                "wrapStrategy": "WRAP",
+            },
+        )
 
         # Format eliminated column with conditional colors
         # Green for No (active), Red for Yes (eliminated)
-        worksheet.format('B2:B5000', {
-            "horizontalAlignment": "CENTER"
-        })
+        worksheet.format("B2:B5000", {"horizontalAlignment": "CENTER"})
 
         # Format stat columns as numbers
-        stat_cols = ['L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T']  # Points through Total Score
+        stat_cols = ["L", "M", "N", "O", "P", "Q", "R", "S", "T"]  # Points through Total Score
         for col in stat_cols:
-            worksheet.format(f'{col}2:{col}5000', {
-                "horizontalAlignment": "RIGHT",
-                "numberFormat": {"type": "NUMBER", "pattern": "#,##0"}
-            })
+            worksheet.format(
+                f"{col}2:{col}5000",
+                {"horizontalAlignment": "RIGHT", "numberFormat": {"type": "NUMBER", "pattern": "#,##0"}},
+            )
 
         # Bold and highlight total score column
-        worksheet.format('T2:T5000', {
-            "textFormat": {"bold": True}
-        })
+        worksheet.format("T2:T5000", {"textFormat": {"bold": True}})
 
         # Freeze header row
         worksheet.freeze(rows=1)
@@ -289,7 +285,7 @@ class SheetsClient:
         logger.info(f"Successfully exported {len(stats_data)} stat records")
 
 
-def export_all_data(config: Config, year: int, sheet_id: Optional[str] = None) -> str:
+def export_all_data(config: Config, year: int, sheet_id: str | None = None) -> str:
     """
     Export all data (players and stats) to Google Sheets.
 
@@ -301,7 +297,7 @@ def export_all_data(config: Config, year: int, sheet_id: Optional[str] = None) -
     Returns:
         Spreadsheet URL
     """
-    from db import Database
+    from .db import Database
 
     logger.info(f"Starting full export for year {year}")
 

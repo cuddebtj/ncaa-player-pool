@@ -4,6 +4,20 @@ version = "0.1.0"
 description = "NCAA Tournament Player Pool - Track player stats and manage pool entries"
 readme = "README.md"
 requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["ncaa", "basketball", "tournament", "pool", "stats"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+    "Typing :: Typed",
+]
 dependencies = [
     "httpx>=0.28.1",
     "polars>=1.25.2",
@@ -19,11 +33,36 @@ dependencies = [
     "rich>=13.7.0",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+    "ty>=0.0.1a0",
+    "ruff>=0.2.0",
+    "pre-commit>=3.6.0",
+]
+test = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+]
+
 [project.scripts]
-ncaa-pool = "ncaa-player-pool.__main__:app"
+ncaa-pool = "ncaa_player_pool.__main__:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ncaa_player_pool"]
+
+[tool.uv]
+package = true
 
 [tool.ruff]
-# Exclude a variety of commonly ignored directories.
+src = ["src"]
 exclude = [
     ".bzr",
     ".direnv",
@@ -52,10 +91,68 @@ exclude = [
     "site-packages",
     "venv",
 ]
-
-# Same as Black.
 line-length = 120
 indent-width = 4
-
-# Assume Python 3.9
 target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # Pyflakes
+    "I",      # isort
+    "B",      # flake8-bugbear
+    "C4",     # flake8-comprehensions
+    "UP",     # pyupgrade
+]
+ignore = [
+    "E501",   # line too long (handled by line-length)
+    "B008",   # function call in default argument (standard typer pattern)
+    "B023",   # function uses loop variable (safe when called immediately)
+    "B904",   # raise from in except (not needed for typer.Exit)
+    "B905",   # zip without strict (safe in controlled contexts)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["ncaa_player_pool"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = [
+    "-v",
+    "--tb=short",
+    "--strict-markers",
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+]
+
+[tool.coverage.run]
+source = ["src/ncaa_player_pool"]
+branch = true
+omit = [
+    "*/tests/*",
+    "*/__main__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
+
+[tool.ty.environment]
+python-version = "3.11"
+
+[tool.ty.rules]
+# Relax strictness for existing code
+possibly-missing-attribute = "ignore"
+invalid-argument-type = "ignore"
+no-matching-overload = "ignore"
+not-iterable = "ignore"

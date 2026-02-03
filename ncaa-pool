@@ -7,4 +7,4 @@ cd "$(dirname "$0")"
 # Unset any cached environment variables to force reload from .env
 unset POSTGRES_CONN_STR
 
-exec uv run python ncaa-player-pool/__main__.py "$@"
+exec uv run ncaa-pool "$@"

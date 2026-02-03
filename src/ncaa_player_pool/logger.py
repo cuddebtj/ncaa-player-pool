@@ -5,15 +5,14 @@ Provides comprehensive logging with file rotation and structured output.
 
 import logging
 import sys
-from pathlib import Path
 from logging.handlers import RotatingFileHandler
-from typing import Optional
+from pathlib import Path
 
 
 def setup_logger(
     name: str = "ncaa_pool",
     level: str = "INFO",
-    log_file: Optional[str] = None,
+    log_file: str | None = None,
     max_bytes: int = 10_485_760,  # 10MB
     backup_count: int = 5,
 ) -> logging.Logger:

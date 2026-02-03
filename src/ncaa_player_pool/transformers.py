@@ -4,31 +4,24 @@ Converts ESPN API responses into database models.
 """
 
 from datetime import datetime
-from typing import List, Optional, Tuple
-import pytz
 
-from logger import get_logger
-from models import (
-    # ESPN Models
+from .logger import get_logger
+from .models import (
     ESPNGameSummary,
+    ESPNRosterResponse,
     ESPNScoreboard,
     ESPNTournament,
-    ESPNTeamResponse,
-    ESPNRosterResponse,
-    ESPNBoxscorePlayers,
-    ESPNPlayerStats,
-    # Database Models
-    Tournament,
-    Team,
-    Player,
     Game,
+    Player,
     PlayerGameStats,
+    Team,
+    Tournament,
 )
 
 logger = get_logger(__name__)
 
 
-def parse_espn_date(date_str: str) -> Optional[datetime]:
+def parse_espn_date(date_str: str) -> datetime | None:
     """
     Parse ESPN date string to datetime.
 
@@ -50,7 +43,7 @@ def parse_espn_date(date_str: str) -> Optional[datetime]:
         return None
 
 
-def extract_year_from_date(date_str: Optional[str], default_year: int) -> int:
+def extract_year_from_date(date_str: str | None, default_year: int) -> int:
     """
     Extract year from date string.
 
@@ -71,8 +64,8 @@ def extract_year_from_date(date_str: Optional[str], default_year: int) -> int:
 def transform_roster_to_players(
     roster: ESPNRosterResponse,
     year: int,
-    seed: Optional[int] = None,
-) -> Tuple[Team, List[Player]]:
+    seed: int | None = None,
+) -> tuple[Team, list[Player]]:
     """
     Transform ESPN roster response into Team and Player models.
 
@@ -116,7 +109,7 @@ def transform_roster_to_players(
     return team, players
 
 
-def transform_scoreboard_to_games(scoreboard: ESPNScoreboard, year: int) -> List[Game]:
+def transform_scoreboard_to_games(scoreboard: ESPNScoreboard, year: int) -> list[Game]:
     """
     Transform ESPN scoreboard into Game models.
 
@@ -175,7 +168,7 @@ def transform_scoreboard_to_games(scoreboard: ESPNScoreboard, year: int) -> List
     return games
 
 
-def transform_scoreboard_to_teams(scoreboard: ESPNScoreboard, year: int) -> List[Team]:
+def transform_scoreboard_to_teams(scoreboard: ESPNScoreboard, year: int) -> list[Team]:
     """
     Transform ESPN scoreboard into Team models.
 
@@ -211,7 +204,7 @@ def transform_scoreboard_to_teams(scoreboard: ESPNScoreboard, year: int) -> List
     return teams
 
 
-def parse_stat_value(value: str) -> Optional[int]:
+def parse_stat_value(value: str) -> int | None:
     """
     Parse stat value from string, handling formats like "2-6" or "21".
 
@@ -241,7 +234,7 @@ def parse_stat_value(value: str) -> Optional[int]:
 def transform_game_summary_to_player_stats(
     game_summary: ESPNGameSummary,
     year: int,
-) -> Tuple[List[Player], List[PlayerGameStats]]:
+) -> tuple[list[Player], list[PlayerGameStats]]:
     """
     Transform ESPN game summary into Player and PlayerGameStats models.
 
@@ -282,7 +275,7 @@ def transform_game_summary_to_player_stats(
                 stats_array = athlete_stats.stats
 
                 # Helper to get stat by key name (handles both formats)
-                def get_stat(*possible_keys: str) -> Optional[int]:
+                def get_stat(*possible_keys: str) -> int | None:
                     for key in possible_keys:
                         try:
                             idx = keys.index(key)
@@ -373,7 +366,7 @@ def transform_game_summary_to_game(game_summary: ESPNGameSummary, year: int) -> 
     return game
 
 
-def transform_tournament_to_teams(tournament: ESPNTournament, year: int) -> List[Team]:
+def transform_tournament_to_teams(tournament: ESPNTournament, year: int) -> list[Team]:
     """
     Transform ESPN tournament bracket into Team models with seeds.
 

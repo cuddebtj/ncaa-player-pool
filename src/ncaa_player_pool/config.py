@@ -6,7 +6,6 @@ Loads settings from environment variables and provides defaults.
 import os
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional
 
 import dotenv
 
@@ -24,13 +23,13 @@ class Config:
 
     # ESPN API
     espn_base_url: str = "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball"
-    espn_api_key: Optional[str] = None  # ESPN public API doesn't require key for basic endpoints
+    espn_api_key: str | None = None  # ESPN public API doesn't require key for basic endpoints
 
     # Application
     tournament_year: int = 2026
     data_dir: Path = Path("data")
     log_level: str = "INFO"
-    log_file: Optional[str] = "logs/ncaa_pool.log"
+    log_file: str | None = "logs/ncaa_pool.log"
 
     # HTTP Client
     request_timeout: int = 30  # seconds
@@ -39,8 +38,8 @@ class Config:
     rate_limit_delay: float = 2.5  # seconds between requests
 
     # Google Sheets
-    google_credentials_file: Optional[str] = None
-    google_sheet_id: Optional[str] = None
+    google_credentials_file: str | None = None
+    google_sheet_id: str | None = None
 
     @classmethod
     def from_env(cls) -> "Config":
@@ -73,7 +72,7 @@ class Config:
             google_sheet_id=os.getenv("GOOGLE_SHEET_ID"),
         )
 
-    def get_espn_tournament_url(self, tournament_id: Optional[str] = None) -> str:
+    def get_espn_tournament_url(self, tournament_id: str | None = None) -> str:
         """
         Get ESPN tournament summary URL.
 
@@ -113,7 +112,7 @@ class Config:
 
 
 # Global config instance
-_config: Optional[Config] = None
+_config: Config | None = None
 
 
 def get_config() -> Config:

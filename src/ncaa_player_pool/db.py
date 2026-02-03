@@ -3,22 +3,20 @@ Database connection and operations module.
 Handles PostgreSQL connections and common database operations.
 """
 
+from pathlib import Path
+from typing import Any
+
 import psycopg
 from psycopg import sql
-from pathlib import Path
-from typing import Optional, List, Dict, Any
 
-from config import Config
-from logger import get_logger
-from models import (
-    Tournament,
-    Team,
-    Player,
+from .config import Config
+from .logger import get_logger
+from .models import (
     Game,
+    Player,
     PlayerGameStats,
-    PlayerExport,
-    PlayerStatsExport,
-    GameStatsExport,
+    Team,
+    Tournament,
 )
 
 logger = get_logger(__name__)
@@ -35,7 +33,7 @@ class Database:
             config: Application configuration
         """
         self.config = config
-        self.conn: Optional[psycopg.Connection] = None
+        self.conn: psycopg.Connection | None = None
 
     def connect(self) -> psycopg.Connection:
         """
@@ -104,7 +102,7 @@ class Database:
         logger.info(f"Running migration: {migration_file.name}")
 
         try:
-            with open(migration_file, "r") as f:
+            with open(migration_file) as f:
                 sql_content = f.read()
 
             with self.conn.cursor() as cur:
@@ -349,7 +347,7 @@ class Database:
 
         logger.debug(f"Upserted player stats: {stats.player_id} in game {stats.game_id}")
 
-    def get_players_export(self, year: int) -> List[Dict[str, Any]]:
+    def get_players_export(self, year: int) -> list[dict[str, Any]]:
         """
         Get player data for Google Sheets export.
 
@@ -369,7 +367,7 @@ class Database:
         logger.info(f"Fetched {len(results)} players for export (year: {year})")
         return results
 
-    def get_player_stats_export(self, year: int) -> List[Dict[str, Any]]:
+    def get_player_stats_export(self, year: int) -> list[dict[str, Any]]:
         """
         Get player statistics for Google Sheets export.
 
@@ -389,7 +387,7 @@ class Database:
         logger.info(f"Fetched stats for {len(results)} players (year: {year})")
         return results
 
-    def get_game_stats_export(self, year: int) -> List[Dict[str, Any]]:
+    def get_game_stats_export(self, year: int) -> list[dict[str, Any]]:
         """
         Get game-by-game statistics for Google Sheets export.
 

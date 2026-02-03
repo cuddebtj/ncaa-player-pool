@@ -3,21 +3,21 @@ HTTP API client using httpx with retry logic and comprehensive error handling.
 """
 
 import asyncio
-from typing import Any, Dict, Optional
-from pathlib import Path
 import json
+from pathlib import Path
+from typing import Any
 
 import httpx
 from tenacity import (
+    before_sleep_log,
     retry,
+    retry_if_exception_type,
     stop_after_attempt,
     wait_exponential,
-    retry_if_exception_type,
-    before_sleep_log,
 )
 
-from config import Config
-from logger import get_logger
+from .config import Config
+from .logger import get_logger
 
 logger = get_logger(__name__)
 
@@ -53,7 +53,7 @@ class APIClient:
             config: Application configuration
         """
         self.config = config
-        self.client: Optional[httpx.AsyncClient] = None
+        self.client: httpx.AsyncClient | None = None
         self._rate_limit_delay = config.rate_limit_delay
 
     async def __aenter__(self):
@@ -81,9 +81,9 @@ class APIClient:
     async def get(
         self,
         url: str,
-        params: Optional[Dict[str, Any]] = None,
-        save_to: Optional[Path] = None,
-    ) -> Dict[str, Any]:
+        params: dict[str, Any] | None = None,
+        save_to: Path | None = None,
+    ) -> dict[str, Any]:
         """
         Make a GET request with retry logic.
 
@@ -117,7 +117,7 @@ class APIClient:
 
             if response.status_code == 429:
                 logger.warning(f"Rate limited: {url}")
-                raise RateLimitError(f"Rate limited. Retry after delay.")
+                raise RateLimitError("Rate limited. Retry after delay.")
 
             if response.status_code >= 500:
                 logger.error(f"Server error {response.status_code}: {url}")
@@ -146,11 +146,11 @@ class APIClient:
             logger.error(f"HTTP error {e.response.status_code}: {url}")
             raise APIError(f"HTTP error {e.response.status_code}: {url}") from e
 
-        except httpx.TimeoutException as e:
+        except httpx.TimeoutException:
             logger.warning(f"Request timeout: {url}")
             raise
 
-        except httpx.NetworkError as e:
+        except httpx.NetworkError:
             logger.warning(f"Network error: {url}")
             raise
 
@@ -162,7 +162,7 @@ class APIClient:
             logger.exception(f"Unexpected error fetching {url}: {e}")
             raise APIError(f"Unexpected error: {e}") from e
 
-    async def get_json_file(self, url: str, file_path: Path) -> Dict[str, Any]:
+    async def get_json_file(self, url: str, file_path: Path) -> dict[str, Any]:
         """
         Fetch JSON from URL and save to file, or load from file if it exists.
 
@@ -175,7 +175,7 @@ class APIClient:
         """
         if file_path.exists():
             logger.info(f"Loading cached data from {file_path}")
-            with open(file_path, "r") as f:
+            with open(file_path) as f:
                 return json.load(f)
 
         logger.info(f"Fetching fresh data from {url}")
@@ -184,9 +184,9 @@ class APIClient:
     async def batch_get(
         self,
         urls: list[str],
-        save_dir: Optional[Path] = None,
+        save_dir: Path | None = None,
         max_concurrent: int = 5,
-    ) -> list[Dict[str, Any]]:
+    ) -> list[dict[str, Any]]:
         """
         Fetch multiple URLs concurrently with rate limiting.
 
@@ -200,7 +200,7 @@ class APIClient:
         """
         semaphore = asyncio.Semaphore(max_concurrent)
 
-        async def fetch_with_semaphore(url: str, index: int) -> Dict[str, Any]:
+        async def fetch_with_semaphore(url: str, index: int) -> dict[str, Any]:
             async with semaphore:
                 save_to = None
                 if save_dir:
