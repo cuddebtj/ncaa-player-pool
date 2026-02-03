@@ -7,16 +7,17 @@ from pathlib import Path
 from typing import Any
 
 import psycopg
-from config import Config
-from logger import get_logger
-from models import (
+from psycopg import sql
+
+from .config import Config
+from .logger import get_logger
+from .models import (
     Game,
     Player,
     PlayerGameStats,
     Team,
     Tournament,
 )
-from psycopg import sql
 
 logger = get_logger(__name__)
 

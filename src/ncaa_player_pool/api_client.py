@@ -8,8 +8,6 @@ from pathlib import Path
 from typing import Any
 
 import httpx
-from config import Config
-from logger import get_logger
 from tenacity import (
     before_sleep_log,
     retry,
@@ -17,6 +15,9 @@ from tenacity import (
     stop_after_attempt,
     wait_exponential,
 )
+
+from .config import Config
+from .logger import get_logger
 
 logger = get_logger(__name__)
 

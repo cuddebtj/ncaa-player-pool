@@ -49,10 +49,20 @@ test = [
 ]
 
 [project.scripts]
-ncaa-pool = "ncaa-player-pool.__main__:app"
+ncaa-pool = "ncaa_player_pool.__main__:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ncaa_player_pool"]
+
+[tool.uv]
+package = true
 
 [tool.ruff]
-# Exclude a variety of commonly ignored directories.
+src = ["src"]
 exclude = [
     ".bzr",
     ".direnv",
@@ -81,12 +91,8 @@ exclude = [
     "site-packages",
     "venv",
 ]
-
-# Same as Black.
 line-length = 120
 indent-width = 4
-
-# Target Python 3.11
 target-version = "py311"
 
 [tool.ruff.lint]
@@ -108,7 +114,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["ncaa-player-pool"]
+known-first-party = ["ncaa_player_pool"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -124,7 +130,7 @@ markers = [
 ]
 
 [tool.coverage.run]
-source = ["ncaa-player-pool"]
+source = ["src/ncaa_player_pool"]
 branch = true
 omit = [
     "*/tests/*",
@@ -143,11 +149,8 @@ exclude_lines = [
 
 [tool.ty.environment]
 python-version = "3.11"
-extra-paths = ["ncaa-player-pool"]
 
 [tool.ty.rules]
-# Ignore unresolved imports for internal modules (hyphenated package name workaround)
-unresolved-import = "ignore"
 # Relax strictness for existing code
 possibly-missing-attribute = "ignore"
 invalid-argument-type = "ignore"

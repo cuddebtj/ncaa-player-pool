@@ -5,9 +5,9 @@ Provides methods to fetch tournaments, teams, players, and game statistics.
 
 from typing import Any
 
-from api_client import APIClient
-from config import Config
-from logger import get_logger
+from .api_client import APIClient
+from .config import Config
+from .logger import get_logger
 
 logger = get_logger(__name__)
 

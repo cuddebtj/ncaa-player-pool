@@ -1,19 +1,11 @@
 """Tests for Pydantic data models."""
 
-import importlib
-import sys
-from pathlib import Path
-
-# Add the package directory to the path for testing
-package_dir = Path(__file__).parent.parent
-sys.path.insert(0, str(package_dir))
-
-# Import from the hyphenated package name
-models = importlib.import_module("ncaa-player-pool.models")
-ESPNAthlete = models.ESPNAthlete
-ESPNPlayerStats = models.ESPNPlayerStats
-ESPNPosition = models.ESPNPosition
-ESPNTeamBasic = models.ESPNTeamBasic
+from ncaa_player_pool.models import (
+    ESPNAthlete,
+    ESPNPlayerStats,
+    ESPNPosition,
+    ESPNTeamBasic,
+)
 
 
 class TestESPNTeamBasic:

@@ -4,28 +4,24 @@ Main entry point with Typer commands.
 """
 
 import asyncio
-import sys
 from pathlib import Path
 
 import typer
 from rich.console import Console
 from rich.table import Table
 
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent))
-
-from api_client import APIClient
-from config import Config, get_config
-from db import Database
-from espn_api import ESPNService
-from logger import get_logger, setup_logger
-from models import (
+from .api_client import APIClient
+from .config import Config, get_config
+from .db import Database
+from .espn_api import ESPNService
+from .logger import get_logger, setup_logger
+from .models import (
     ESPNGameSummary,
     ESPNRosterResponse,
     ESPNScoreboard,
     ESPNTournament,
 )
-from transformers import (
+from .transformers import (
     transform_game_summary_to_game,
     transform_game_summary_to_player_stats,
     transform_roster_to_players,
@@ -436,7 +432,7 @@ def export(
     console.print(f"[cyan]Exporting data for year {year} to Google Sheets...[/cyan]")
 
     try:
-        from sheets import export_all_data
+        from .sheets import export_all_data
 
         url = export_all_data(config, year, sheet_id)
 

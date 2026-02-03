@@ -4,16 +4,11 @@ This will download tournament, team, and game data to data/espn/ directory.
 """
 
 import asyncio
-import sys
-from pathlib import Path
 
-# Add parent directory to path
-sys.path.insert(0, str(Path(__file__).parent))
-
-from api_client import APIClient
-from config import get_config
-from espn_api import ESPNService
-from logger import setup_logger
+from .api_client import APIClient
+from .config import get_config
+from .espn_api import ESPNService
+from .logger import setup_logger
 
 
 async def main():

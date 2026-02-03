@@ -7,9 +7,10 @@ from pathlib import Path
 from typing import Any
 
 import gspread
-from config import Config
 from google.oauth2.service_account import Credentials
-from logger import get_logger
+
+from .config import Config
+from .logger import get_logger
 
 logger = get_logger(__name__)
 
@@ -296,7 +297,7 @@ def export_all_data(config: Config, year: int, sheet_id: str | None = None) -> s
     Returns:
         Spreadsheet URL
     """
-    from db import Database
+    from .db import Database
 
     logger.info(f"Starting full export for year {year}")
 
