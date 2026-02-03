@@ -3,8 +3,7 @@ ESPN API service for fetching NCAA tournament data.
 Provides methods to fetch tournaments, teams, players, and game statistics.
 """
 
-from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 from api_client import APIClient
 from config import Config
@@ -33,9 +32,9 @@ class ESPNService:
 
     async def fetch_tournament(
         self,
-        tournament_id: Optional[str] = None,
+        tournament_id: str | None = None,
         save: bool = True,
-    ) -> Dict[str, Any]:
+    ) -> dict[str, Any]:
         """
         Fetch NCAA tournament bracket and summary data.
 
@@ -68,7 +67,7 @@ class ESPNService:
         self,
         team_id: str,
         save: bool = True,
-    ) -> Dict[str, Any]:
+    ) -> dict[str, Any]:
         """
         Fetch team profile with roster and player information.
 
@@ -98,7 +97,7 @@ class ESPNService:
         self,
         team_id: str,
         save: bool = True,
-    ) -> Dict[str, Any]:
+    ) -> dict[str, Any]:
         """
         Fetch team roster with player information.
 
@@ -127,9 +126,9 @@ class ESPNService:
 
     async def fetch_teams_batch(
         self,
-        team_ids: List[str],
+        team_ids: list[str],
         save: bool = True,
-    ) -> List[Dict[str, Any]]:
+    ) -> list[dict[str, Any]]:
         """
         Fetch multiple teams in batch.
 
@@ -152,9 +151,9 @@ class ESPNService:
 
     async def fetch_rosters_batch(
         self,
-        team_ids: List[str],
+        team_ids: list[str],
         save: bool = True,
-    ) -> List[Dict[str, Any]]:
+    ) -> list[dict[str, Any]]:
         """
         Fetch multiple team rosters in batch.
 
@@ -179,7 +178,7 @@ class ESPNService:
         self,
         game_id: str,
         save: bool = True,
-    ) -> Dict[str, Any]:
+    ) -> dict[str, Any]:
         """
         Fetch game summary with box scores and player statistics.
 
@@ -212,9 +211,9 @@ class ESPNService:
 
     async def fetch_games_batch(
         self,
-        game_ids: List[str],
+        game_ids: list[str],
         save: bool = True,
-    ) -> List[Dict[str, Any]]:
+    ) -> list[dict[str, Any]]:
         """
         Fetch multiple games in batch.
 
@@ -237,9 +236,9 @@ class ESPNService:
 
     async def fetch_scoreboard(
         self,
-        dates: Optional[str] = None,
+        dates: str | None = None,
         save: bool = True,
-    ) -> Dict[str, Any]:
+    ) -> dict[str, Any]:
         """
         Fetch current scoreboard for NCAA basketball.
 
@@ -270,7 +269,7 @@ class ESPNService:
 
         return data
 
-    def extract_tournament_teams(self, tournament_data: Dict[str, Any]) -> List[Dict[str, Any]]:
+    def extract_tournament_teams(self, tournament_data: dict[str, Any]) -> list[dict[str, Any]]:
         """
         Extract team information from tournament data.
 
@@ -298,7 +297,7 @@ class ESPNService:
         logger.info(f"Extracted {len(teams)} teams from tournament data")
         return teams
 
-    def extract_game_ids(self, tournament_data: Dict[str, Any]) -> List[str]:
+    def extract_game_ids(self, tournament_data: dict[str, Any]) -> list[str]:
         """
         Extract all game IDs from tournament data.
 

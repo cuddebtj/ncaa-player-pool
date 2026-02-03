@@ -4,18 +4,16 @@ This will download tournament, team, and game data to data/espn/ directory.
 """
 
 import asyncio
-from pathlib import Path
-
 import sys
 from pathlib import Path
 
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from config import get_config
-from logger import setup_logger
 from api_client import APIClient
+from config import get_config
 from espn_api import ESPNService
+from logger import setup_logger
 
 
 async def main():
@@ -97,7 +95,7 @@ async def main():
 
             if sample_games:
                 for game_id in sample_games:
-                    game_data = await espn.fetch_game_summary(game_id, save=True)
+                    await espn.fetch_game_summary(game_id, save=True)
                     logger.info(f"✓ Fetched game: {game_id}")
             else:
                 logger.warning("No game IDs found in scoreboard data")
@@ -108,8 +106,8 @@ async def main():
         # 4. Try Tournament Data (may not exist until March Madness)
         logger.info("\n[4/4] Attempting to fetch tournament bracket...")
         try:
-            tournament_data = await espn.fetch_tournament(save=True)
-            logger.info(f"✓ Tournament data saved")
+            await espn.fetch_tournament(save=True)
+            logger.info("✓ Tournament data saved")
         except Exception as e:
             logger.warning(f"Tournament bracket not available (expected if not March): {e}")
 

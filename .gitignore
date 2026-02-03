@@ -1,1 +1,34 @@
+# Credentials
 ncaa-player-pool-service-account.json
+*.json
+!package.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Build
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log

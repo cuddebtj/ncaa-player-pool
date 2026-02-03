@@ -4,8 +4,6 @@ import importlib
 import sys
 from pathlib import Path
 
-import pytest
-
 # Add the package directory to the path for testing
 package_dir = Path(__file__).parent.parent
 sys.path.insert(0, str(package_dir))
@@ -80,39 +78,29 @@ class TestESPNPlayerStats:
         assert stats.didNotPlay is False
         assert len(stats.stats) == 12
 
-    def test_get_stat(
-        self, sample_player_stats: dict, sample_stat_keys: list[str]
-    ) -> None:
+    def test_get_stat(self, sample_player_stats: dict, sample_stat_keys: list[str]) -> None:
         """Test getting a specific stat value."""
         stats = ESPNPlayerStats(**sample_player_stats)
         assert stats.get_stat(sample_stat_keys, "PTS") == "22"
         assert stats.get_stat(sample_stat_keys, "REB") == "7"
         assert stats.get_stat(sample_stat_keys, "AST") == "3"
 
-    def test_get_stat_invalid_key(
-        self, sample_player_stats: dict, sample_stat_keys: list[str]
-    ) -> None:
+    def test_get_stat_invalid_key(self, sample_player_stats: dict, sample_stat_keys: list[str]) -> None:
         """Test getting an invalid stat returns None."""
         stats = ESPNPlayerStats(**sample_player_stats)
         assert stats.get_stat(sample_stat_keys, "INVALID") is None
 
-    def test_parse_points(
-        self, sample_player_stats: dict, sample_stat_keys: list[str]
-    ) -> None:
+    def test_parse_points(self, sample_player_stats: dict, sample_stat_keys: list[str]) -> None:
         """Test parsing points from stats."""
         stats = ESPNPlayerStats(**sample_player_stats)
         assert stats.parse_points(sample_stat_keys) == 22
 
-    def test_parse_rebounds(
-        self, sample_player_stats: dict, sample_stat_keys: list[str]
-    ) -> None:
+    def test_parse_rebounds(self, sample_player_stats: dict, sample_stat_keys: list[str]) -> None:
         """Test parsing rebounds from stats."""
         stats = ESPNPlayerStats(**sample_player_stats)
         assert stats.parse_rebounds(sample_stat_keys) == 7
 
-    def test_parse_assists(
-        self, sample_player_stats: dict, sample_stat_keys: list[str]
-    ) -> None:
+    def test_parse_assists(self, sample_player_stats: dict, sample_stat_keys: list[str]) -> None:
         """Test parsing assists from stats."""
         stats = ESPNPlayerStats(**sample_player_stats)
         assert stats.parse_assists(sample_stat_keys) == 3

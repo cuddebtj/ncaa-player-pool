@@ -6,8 +6,6 @@ Main entry point with Typer commands.
 import asyncio
 import sys
 from pathlib import Path
-from typing import Optional
-from datetime import datetime
 
 import typer
 from rich.console import Console
@@ -16,25 +14,25 @@ from rich.table import Table
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent))
 
-from config import get_config, Config
-from logger import setup_logger, get_logger
 from api_client import APIClient
-from espn_api import ESPNService
+from config import Config, get_config
 from db import Database
+from espn_api import ESPNService
+from logger import get_logger, setup_logger
+from models import (
+    ESPNGameSummary,
+    ESPNRosterResponse,
+    ESPNScoreboard,
+    ESPNTournament,
+)
 from transformers import (
+    transform_game_summary_to_game,
+    transform_game_summary_to_player_stats,
     transform_roster_to_players,
     transform_scoreboard_to_games,
     transform_scoreboard_to_teams,
-    transform_game_summary_to_player_stats,
-    transform_game_summary_to_game,
-    transform_tournament_to_tournament,
     transform_tournament_to_teams,
-)
-from models import (
-    ESPNScoreboard,
-    ESPNGameSummary,
-    ESPNRosterResponse,
-    ESPNTournament,
+    transform_tournament_to_tournament,
 )
 
 # Initialize Typer app
@@ -61,7 +59,7 @@ def get_app_config() -> Config:
 
 @app.command()
 def init(
-    migration_file: Optional[Path] = typer.Option(
+    migration_file: Path | None = typer.Option(
         None,
         "--migration",
         "-m",
@@ -82,7 +80,7 @@ def init(
         console.print(f"[red]Error: Migration file not found: {migration_file}[/red]")
         raise typer.Exit(code=1)
 
-    console.print(f"[cyan]Initializing database...[/cyan]")
+    console.print("[cyan]Initializing database...[/cyan]")
     console.print(f"Migration file: {migration_file}")
 
     try:
@@ -100,7 +98,7 @@ def init(
 @app.command()
 def fetch_rosters(
     year: int = typer.Option(..., "--year", "-y", help="Tournament year"),
-    team_ids: Optional[str] = typer.Option(
+    team_ids: str | None = typer.Option(
         None,
         "--teams",
         "-t",
@@ -179,7 +177,7 @@ def fetch_rosters(
 @app.command()
 def fetch_games(
     year: int = typer.Option(..., "--year", "-y", help="Tournament year"),
-    date: Optional[str] = typer.Option(
+    date: str | None = typer.Option(
         None,
         "--date",
         "-d",
@@ -237,7 +235,7 @@ def fetch_games(
 @app.command()
 def update_stats(
     year: int = typer.Option(..., "--year", "-y", help="Tournament year"),
-    date: Optional[str] = typer.Option(
+    date: str | None = typer.Option(
         None,
         "--date",
         "-d",
@@ -315,7 +313,7 @@ def update_stats(
 @app.command()
 def fetch_tournament(
     year: int = typer.Option(..., "--year", "-y", help="Tournament year"),
-    tournament_id: Optional[str] = typer.Option(
+    tournament_id: str | None = typer.Option(
         None,
         "--id",
         "-i",
@@ -417,7 +415,7 @@ def stats(
 @app.command()
 def export(
     year: int = typer.Option(..., "--year", "-y", help="Tournament year"),
-    sheet_id: Optional[str] = typer.Option(
+    sheet_id: str | None = typer.Option(
         None,
         "--sheet-id",
         "-s",
@@ -442,7 +440,7 @@ def export(
 
         url = export_all_data(config, year, sheet_id)
 
-        console.print(f"[green]✓ Successfully exported data to Google Sheets![/green]")
+        console.print("[green]✓ Successfully exported data to Google Sheets![/green]")
         console.print(f"[cyan]Spreadsheet URL: {url}[/cyan]")
 
     except FileNotFoundError as e:

@@ -4,9 +4,8 @@ Models ESPN API responses and database entities.
 """
 
 from datetime import datetime
-from typing import Optional, List
-from pydantic import BaseModel, Field, ConfigDict
 
+from pydantic import BaseModel, ConfigDict
 
 # ============================================
 # ESPN API Response Models
@@ -19,17 +18,17 @@ class ESPNTeamBasic(BaseModel):
     id: str
     displayName: str
     abbreviation: str
-    location: Optional[str] = None
-    name: Optional[str] = None
-    logo: Optional[str] = None
-    color: Optional[str] = None
+    location: str | None = None
+    name: str | None = None
+    logo: str | None = None
+    color: str | None = None
 
 
 class ESPNPosition(BaseModel):
     """Player position information."""
 
     name: str
-    displayName: Optional[str] = None
+    displayName: str | None = None
     abbreviation: str
 
 
@@ -38,9 +37,9 @@ class ESPNAthlete(BaseModel):
 
     id: str
     displayName: str
-    shortName: Optional[str] = None
-    jersey: Optional[str] = None
-    position: Optional[ESPNPosition] = None
+    shortName: str | None = None
+    jersey: str | None = None
+    position: ESPNPosition | None = None
 
 
 class ESPNPlayerStats(BaseModel):
@@ -49,9 +48,9 @@ class ESPNPlayerStats(BaseModel):
     athlete: ESPNAthlete
     starter: bool = False
     didNotPlay: bool = False
-    stats: List[str]  # Array of stat values as strings
+    stats: list[str]  # Array of stat values as strings
 
-    def get_stat(self, keys: List[str], stat_name: str) -> Optional[str]:
+    def get_stat(self, keys: list[str], stat_name: str) -> str | None:
         """Get a specific stat value by name."""
         try:
             index = keys.index(stat_name)
@@ -59,17 +58,17 @@ class ESPNPlayerStats(BaseModel):
         except (ValueError, IndexError):
             return None
 
-    def parse_points(self, keys: List[str]) -> int:
+    def parse_points(self, keys: list[str]) -> int:
         """Parse points from stats array."""
         pts = self.get_stat(keys, "PTS")
         return int(pts) if pts and pts.isdigit() else 0
 
-    def parse_rebounds(self, keys: List[str]) -> int:
+    def parse_rebounds(self, keys: list[str]) -> int:
         """Parse total rebounds from stats array."""
         reb = self.get_stat(keys, "REB")
         return int(reb) if reb and reb.isdigit() else 0
 
-    def parse_assists(self, keys: List[str]) -> int:
+    def parse_assists(self, keys: list[str]) -> int:
         """Parse assists from stats array."""
         ast = self.get_stat(keys, "AST")
         return int(ast) if ast and ast.isdigit() else 0
@@ -78,34 +77,34 @@ class ESPNPlayerStats(BaseModel):
 class ESPNPlayerStatsGroup(BaseModel):
     """Group of player statistics with keys."""
 
-    names: Optional[List[str]] = None  # Alternative to name
-    name: Optional[str] = None
-    keys: List[str]  # Stat keys like ["MIN", "FG", "3PT", ...]
-    labels: List[str]
-    descriptions: Optional[List[str]] = None
-    athletes: List[ESPNPlayerStats]
-    totals: Optional[List[str]] = None
+    names: list[str] | None = None  # Alternative to name
+    name: str | None = None
+    keys: list[str]  # Stat keys like ["MIN", "FG", "3PT", ...]
+    labels: list[str]
+    descriptions: list[str] | None = None
+    athletes: list[ESPNPlayerStats]
+    totals: list[str] | None = None
 
 
 class ESPNBoxscoreTeam(BaseModel):
     """Team box score information."""
 
     team: ESPNTeamBasic
-    statistics: Optional[List[dict]] = None
+    statistics: list[dict] | None = None
 
 
 class ESPNBoxscorePlayers(BaseModel):
     """Player statistics for a team."""
 
     team: ESPNTeamBasic
-    statistics: List[ESPNPlayerStatsGroup]
+    statistics: list[ESPNPlayerStatsGroup]
 
 
 class ESPNBoxscore(BaseModel):
     """Game box score with team and player statistics."""
 
-    teams: List[ESPNBoxscoreTeam]
-    players: List[ESPNBoxscorePlayers]
+    teams: list[ESPNBoxscoreTeam]
+    players: list[ESPNBoxscorePlayers]
 
 
 class ESPNCompetitor(BaseModel):
@@ -114,8 +113,8 @@ class ESPNCompetitor(BaseModel):
     id: str
     homeAway: str
     team: ESPNTeamBasic
-    score: Optional[str] = None
-    winner: Optional[bool] = None
+    score: str | None = None
+    winner: bool | None = None
 
 
 class ESPNCompetition(BaseModel):
@@ -123,15 +122,15 @@ class ESPNCompetition(BaseModel):
 
     id: str
     date: str
-    attendance: Optional[int] = None
-    competitors: List[ESPNCompetitor]
+    attendance: int | None = None
+    competitors: list[ESPNCompetitor]
 
 
 class ESPNGameHeader(BaseModel):
     """Game header information."""
 
     id: str
-    competitions: List[ESPNCompetition]
+    competitions: list[ESPNCompetition]
 
 
 class ESPNGameSummary(BaseModel):
@@ -147,20 +146,20 @@ class ESPNEvent(BaseModel):
     id: str
     date: str
     name: str
-    shortName: Optional[str] = None
-    competitions: List[ESPNCompetition]
+    shortName: str | None = None
+    competitions: list[ESPNCompetition]
 
 
 class ESPNScoreboard(BaseModel):
     """Scoreboard response with events."""
 
-    events: List[ESPNEvent]
+    events: list[ESPNEvent]
 
 
 class ESPNTeamRecord(BaseModel):
     """Team record information."""
 
-    summary: Optional[str] = None
+    summary: str | None = None
 
 
 class ESPNTeamDetail(BaseModel):
@@ -172,10 +171,10 @@ class ESPNTeamDetail(BaseModel):
     location: str
     name: str
     slug: str
-    color: Optional[str] = None
-    logos: Optional[List[dict]] = None
-    record: Optional[dict] = None
-    rank: Optional[int] = None
+    color: str | None = None
+    logos: list[dict] | None = None
+    record: dict | None = None
+    rank: int | None = None
 
 
 class ESPNTeamResponse(BaseModel):
@@ -188,27 +187,27 @@ class ESPNRosterAthlete(BaseModel):
     """Athlete from roster endpoint."""
 
     id: str
-    firstName: Optional[str] = None
-    lastName: Optional[str] = None
+    firstName: str | None = None
+    lastName: str | None = None
     fullName: str
     displayName: str
-    shortName: Optional[str] = None
-    jersey: Optional[str] = None
-    position: Optional[ESPNPosition] = None
-    height: Optional[float] = None
-    displayHeight: Optional[str] = None
-    weight: Optional[float] = None
-    displayWeight: Optional[str] = None
-    experience: Optional[dict] = None
-    status: Optional[dict] = None
+    shortName: str | None = None
+    jersey: str | None = None
+    position: ESPNPosition | None = None
+    height: float | None = None
+    displayHeight: str | None = None
+    weight: float | None = None
+    displayWeight: str | None = None
+    experience: dict | None = None
+    status: dict | None = None
 
 
 class ESPNRosterResponse(BaseModel):
     """Roster API response."""
 
     team: ESPNTeamBasic
-    athletes: List[ESPNRosterAthlete]
-    season: Optional[dict] = None
+    athletes: list[ESPNRosterAthlete]
+    season: dict | None = None
 
 
 class ESPNTournamentParticipant(BaseModel):
@@ -216,8 +215,8 @@ class ESPNTournamentParticipant(BaseModel):
 
     id: str
     name: str
-    market: Optional[str] = None
-    seed: Optional[int] = None
+    market: str | None = None
+    seed: int | None = None
     type: str = "team"
 
 
@@ -225,7 +224,7 @@ class ESPNTournamentGame(BaseModel):
     """Tournament bracket game."""
 
     id: str
-    scheduled: Optional[str] = None
+    scheduled: str | None = None
 
 
 class ESPNTournamentBracket(BaseModel):
@@ -233,9 +232,9 @@ class ESPNTournamentBracket(BaseModel):
 
     id: str
     name: str
-    location: Optional[str] = None
-    participants: List[ESPNTournamentParticipant] = []
-    games: List[ESPNTournamentGame] = []
+    location: str | None = None
+    participants: list[ESPNTournamentParticipant] = []
+    games: list[ESPNTournamentGame] = []
 
 
 class ESPNTournament(BaseModel):
@@ -244,9 +243,9 @@ class ESPNTournament(BaseModel):
     id: str
     name: str
     status: str
-    start_date: Optional[str] = None
-    end_date: Optional[str] = None
-    brackets: List[ESPNTournamentBracket] = []
+    start_date: str | None = None
+    end_date: str | None = None
+    brackets: list[ESPNTournamentBracket] = []
 
 
 # ============================================
@@ -263,11 +262,11 @@ class Tournament(BaseModel):
     name: str
     year: int
     status: str = "upcoming"  # upcoming, in_progress, completed
-    start_date: Optional[datetime] = None
-    end_date: Optional[datetime] = None
-    raw_data: Optional[dict] = None
-    created_at: Optional[datetime] = None
-    updated_at: Optional[datetime] = None
+    start_date: datetime | None = None
+    end_date: datetime | None = None
+    raw_data: dict | None = None
+    created_at: datetime | None = None
+    updated_at: datetime | None = None
 
 
 class Team(BaseModel):
@@ -277,15 +276,15 @@ class Team(BaseModel):
 
     id: str
     name: str
-    market: Optional[str] = None  # School name (e.g., "Duke", "UConn")
-    abbreviation: Optional[str] = None
-    seed: Optional[int] = None  # 1-16, null for regular season
+    market: str | None = None  # School name (e.g., "Duke", "UConn")
+    abbreviation: str | None = None
+    seed: int | None = None  # 1-16, null for regular season
     year: int
     eliminated: bool = False
-    eliminated_round: Optional[str] = None
-    raw_data: Optional[dict] = None
-    created_at: Optional[datetime] = None
-    updated_at: Optional[datetime] = None
+    eliminated_round: str | None = None
+    raw_data: dict | None = None
+    created_at: datetime | None = None
+    updated_at: datetime | None = None
 
 
 class Player(BaseModel):
@@ -296,14 +295,14 @@ class Player(BaseModel):
     id: str
     team_id: str
     full_name: str
-    short_name: Optional[str] = None
-    position: Optional[str] = None
-    jersey_number: Optional[str] = None
+    short_name: str | None = None
+    position: str | None = None
+    jersey_number: str | None = None
     year: int
     active: bool = True
-    raw_data: Optional[dict] = None
-    created_at: Optional[datetime] = None
-    updated_at: Optional[datetime] = None
+    raw_data: dict | None = None
+    created_at: datetime | None = None
+    updated_at: datetime | None = None
 
 
 class Game(BaseModel):
@@ -315,15 +314,15 @@ class Game(BaseModel):
     home_team_id: str
     away_team_id: str
     year: int
-    round_name: Optional[str] = None
-    scheduled_date: Optional[datetime] = None
+    round_name: str | None = None
+    scheduled_date: datetime | None = None
     status: str = "scheduled"  # scheduled, in_progress, completed, cancelled
-    home_score: Optional[int] = None
-    away_score: Optional[int] = None
-    winner_team_id: Optional[str] = None
-    raw_data: Optional[dict] = None
-    created_at: Optional[datetime] = None
-    updated_at: Optional[datetime] = None
+    home_score: int | None = None
+    away_score: int | None = None
+    winner_team_id: str | None = None
+    raw_data: dict | None = None
+    created_at: datetime | None = None
+    updated_at: datetime | None = None
 
 
 class PlayerGameStats(BaseModel):
@@ -331,7 +330,7 @@ class PlayerGameStats(BaseModel):
 
     model_config = ConfigDict(from_attributes=True)
 
-    id: Optional[int] = None
+    id: int | None = None
     game_id: str
     player_id: str
     team_id: str
@@ -339,22 +338,22 @@ class PlayerGameStats(BaseModel):
     points: int = 0
     rebounds: int = 0
     assists: int = 0
-    minutes_played: Optional[int] = None
-    field_goals_made: Optional[int] = None
-    field_goals_attempted: Optional[int] = None
-    three_pointers_made: Optional[int] = None
-    three_pointers_attempted: Optional[int] = None
-    free_throws_made: Optional[int] = None
-    free_throws_attempted: Optional[int] = None
-    steals: Optional[int] = None
-    blocks: Optional[int] = None
-    turnovers: Optional[int] = None
-    fouls: Optional[int] = None
+    minutes_played: int | None = None
+    field_goals_made: int | None = None
+    field_goals_attempted: int | None = None
+    three_pointers_made: int | None = None
+    three_pointers_attempted: int | None = None
+    free_throws_made: int | None = None
+    free_throws_attempted: int | None = None
+    steals: int | None = None
+    blocks: int | None = None
+    turnovers: int | None = None
+    fouls: int | None = None
     starter: bool = False
     did_not_play: bool = False
-    raw_data: Optional[dict] = None
-    created_at: Optional[datetime] = None
-    updated_at: Optional[datetime] = None
+    raw_data: dict | None = None
+    created_at: datetime | None = None
+    updated_at: datetime | None = None
 
     @property
     def total_score(self) -> int:
@@ -372,11 +371,11 @@ class PlayerExport(BaseModel):
 
     player_id: str
     player_name: str
-    position: Optional[str] = None
-    jersey_number: Optional[str] = None
+    position: str | None = None
+    jersey_number: str | None = None
     team_id: str
     team_name: str
-    seed: Optional[int] = None
+    seed: int | None = None
     eliminated: bool = False
     tournament_year: int
     active: bool = True
@@ -388,7 +387,7 @@ class PlayerStatsExport(BaseModel):
     player_id: str
     player_name: str
     team_name: str
-    seed: Optional[int] = None
+    seed: int | None = None
     tournament_year: int
     games_played: int = 0
     total_points: int = 0
@@ -406,18 +405,18 @@ class GameStatsExport(BaseModel):
 
     game_id: str
     tournament_year: int
-    round_name: Optional[str] = None
-    scheduled_date: Optional[datetime] = None
+    round_name: str | None = None
+    scheduled_date: datetime | None = None
     game_status: str
     home_team: str
     away_team: str
-    home_score: Optional[int] = None
-    away_score: Optional[int] = None
+    home_score: int | None = None
+    away_score: int | None = None
     player_name: str
     player_team: str
-    seed: Optional[int] = None
+    seed: int | None = None
     points: int = 0
     rebounds: int = 0
     assists: int = 0
     total_score: int = 0
-    minutes_played: Optional[int] = None
+    minutes_played: int | None = None
