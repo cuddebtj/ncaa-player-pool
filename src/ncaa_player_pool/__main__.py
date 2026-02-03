@@ -1,6 +1,42 @@
-"""
-NCAA Player Pool CLI Application
-Main entry point with Typer commands.
+"""NCAA Player Pool CLI Application.
+
+This module provides the command-line interface for the NCAA Player Pool
+application. It uses Typer for command parsing and Rich for formatted
+terminal output.
+
+Usage:
+    Run directly with Python::
+
+        python -m ncaa_player_pool <command> [options]
+
+    Or use the installed script::
+
+        ncaa-pool <command> [options]
+
+Available Commands:
+    init: Initialize database schema
+    fetch-rosters: Fetch team rosters from ESPN
+    fetch-games: Fetch games from scoreboard
+    update-stats: Update player statistics from game summaries
+    fetch-tournament: Fetch tournament bracket with seeds
+    stats: Display top player statistics
+    export: Export data to Google Sheets
+
+Example:
+    Set up a new tournament::
+
+        ncaa-pool init
+        ncaa-pool fetch-tournament --year 2026
+        ncaa-pool fetch-rosters --year 2026
+
+    Update stats during tournament::
+
+        ncaa-pool update-stats --year 2026
+        ncaa-pool export --year 2026
+
+Attributes:
+    app: Typer application instance.
+    console: Rich console for formatted output.
 """
 
 import asyncio
@@ -43,7 +79,18 @@ console = Console()
 
 
 def get_app_config() -> Config:
-    """Get application configuration and set up logging."""
+    """Get application configuration and initialize logging.
+
+    Loads configuration from environment variables and sets up the
+    application logger with file rotation.
+
+    Returns:
+        Initialized Config instance with all settings loaded.
+
+    Note:
+        This function should be called at the start of each CLI command
+        to ensure consistent configuration and logging setup.
+    """
     config = get_config()
     setup_logger(
         name="ncaa_pool",
@@ -61,10 +108,24 @@ def init(
         "-m",
         help="Path to migration file (default: migrations/001_initial_schema.sql)",
     ),
-):
-    """
-    Initialize the database schema.
-    Runs the SQL migration to create tables, views, and functions.
+) -> None:
+    """Initialize the database schema.
+
+    Runs the SQL migration file to create all required database objects
+    including tables, views, indexes, and functions.
+
+    Args:
+        migration_file: Path to SQL migration file. Defaults to
+            migrations/001_initial_schema.sql if not specified.
+
+    Example:
+        Initialize with default migration::
+
+            ncaa-pool init
+
+        Use custom migration file::
+
+            ncaa-pool init --migration ./custom_schema.sql
     """
     config = get_app_config()
     logger = get_logger(__name__)
@@ -101,11 +162,27 @@ def fetch_rosters(
         help="Comma-separated team IDs (if not provided, fetches from scoreboard)",
     ),
     save_responses: bool = typer.Option(True, "--save/--no-save", help="Save API responses to files"),
-):
-    """
-    Fetch team rosters and store in database.
+) -> None:
+    """Fetch team rosters from ESPN and store in database.
 
-    If team IDs are not provided, fetches current teams from scoreboard.
+    Retrieves roster information for tournament teams including player
+    names, positions, and jersey numbers. If team IDs are not provided,
+    automatically discovers teams from the current scoreboard.
+
+    Args:
+        year: Tournament year for storing roster data.
+        team_ids: Optional comma-separated list of ESPN team IDs.
+            If not provided, fetches teams from current scoreboard.
+        save_responses: If True, saves raw API responses to data directory.
+
+    Example:
+        Fetch rosters for current tournament teams::
+
+            ncaa-pool fetch-rosters --year 2026
+
+        Fetch specific teams::
+
+            ncaa-pool fetch-rosters --year 2026 --teams "150,2305,97"
     """
     config = get_app_config()
     logger = get_logger(__name__)
@@ -180,12 +257,27 @@ def fetch_games(
         help="Specific date (YYYYMMDD format, e.g., 20260319)",
     ),
     save_responses: bool = typer.Option(True, "--save/--no-save", help="Save API responses to files"),
-):
-    """
-    Fetch games from scoreboard and store in database.
+) -> None:
+    """Fetch games from ESPN scoreboard and store in database.
 
-    If date is provided, fetches games for that specific date.
-    Otherwise, fetches current/recent games.
+    Retrieves game information from the scoreboard including teams,
+    scores, and game status. Automatically extracts and stores team
+    information as well.
+
+    Args:
+        year: Tournament year for storing game data.
+        date: Optional date filter in YYYYMMDD format. If not provided,
+            fetches current/recent games.
+        save_responses: If True, saves raw API responses to data directory.
+
+    Example:
+        Fetch current games::
+
+            ncaa-pool fetch-games --year 2026
+
+        Fetch games for specific date::
+
+            ncaa-pool fetch-games --year 2026 --date 20260319
     """
     config = get_app_config()
     logger = get_logger(__name__)
@@ -238,11 +330,30 @@ def update_stats(
         help="Specific date (YYYYMMDD format, e.g., 20260319)",
     ),
     save_responses: bool = typer.Option(True, "--save/--no-save", help="Save API responses to files"),
-):
-    """
-    Update player statistics from game summaries.
+) -> None:
+    """Update player statistics from game summaries.
 
-    Fetches detailed game summaries with player box scores and updates the database.
+    Fetches detailed game summaries with complete box scores and updates
+    the database with player statistics including points, rebounds,
+    assists, and other stats.
+
+    This is the main command to run during the tournament to keep
+    player statistics current.
+
+    Args:
+        year: Tournament year for storing statistics.
+        date: Optional date filter in YYYYMMDD format. If not provided,
+            fetches stats for current/recent games.
+        save_responses: If True, saves raw API responses to data directory.
+
+    Example:
+        Update all current game stats::
+
+            ncaa-pool update-stats --year 2026
+
+        Update stats for specific date::
+
+            ncaa-pool update-stats --year 2026 --date 20260319
     """
     config = get_app_config()
     logger = get_logger(__name__)
@@ -316,12 +427,27 @@ def fetch_tournament(
         help="Tournament ID (default: NCAA Men's tournament)",
     ),
     save_responses: bool = typer.Option(True, "--save/--no-save", help="Save API responses to files"),
-):
-    """
-    Fetch tournament bracket with seeds.
+) -> None:
+    """Fetch tournament bracket with seeds from ESPN.
 
-    Only available during March Madness tournament period.
-    Updates team seeds in the database.
+    Retrieves the complete tournament bracket including all teams
+    with their seeds. This data is typically only available during
+    the March Madness tournament period.
+
+    Args:
+        year: Tournament year for storing bracket data.
+        tournament_id: ESPN tournament identifier. Defaults to
+            NCAA Men's Basketball Tournament if not specified.
+        save_responses: If True, saves raw API responses to data directory.
+
+    Note:
+        Tournament bracket data is only available during March Madness.
+        Outside this period, the API may return limited or no data.
+
+    Example:
+        Fetch NCAA tournament bracket::
+
+            ncaa-pool fetch-tournament --year 2026
     """
     config = get_app_config()
     logger = get_logger(__name__)
@@ -362,9 +488,24 @@ def fetch_tournament(
 def stats(
     year: int = typer.Option(..., "--year", "-y", help="Tournament year"),
     limit: int = typer.Option(20, "--limit", "-l", help="Number of top players to show"),
-):
-    """
-    Show top player statistics from the database.
+) -> None:
+    """Display top player statistics from the database.
+
+    Shows a formatted table of the top players by total score
+    (points + rebounds + assists) for the specified tournament year.
+
+    Args:
+        year: Tournament year to show statistics for.
+        limit: Maximum number of players to display. Default is 20.
+
+    Example:
+        Show top 20 players::
+
+            ncaa-pool stats --year 2026
+
+        Show top 50 players::
+
+            ncaa-pool stats --year 2026 --limit 50
     """
     config = get_app_config()
     logger = get_logger(__name__)
@@ -417,14 +558,35 @@ def export(
         "-s",
         help="Google Sheet ID (uses GOOGLE_SHEET_ID from .env if not provided)",
     ),
-):
-    """
-    Export player roster and statistics to Google Sheets.
+) -> None:
+    """Export player roster and statistics to Google Sheets.
 
-    Requires GOOGLE_CREDENTIALS_FILE and GOOGLE_SHEET_ID in .env file.
-    Updates two sheets:
-    - Players: Tournament roster (player id, name, position, team, seed)
-    - Player Stats: Game-by-game statistics
+    Exports tournament data to a Google Spreadsheet, creating or updating
+    two worksheets with formatted data suitable for pool management.
+
+    Created worksheets:
+        - Players: Tournament roster with player ID, name, position,
+          team, and seed
+        - Player Stats: Game-by-game statistics with all box score data
+
+    Prerequisites:
+        - GOOGLE_CREDENTIALS_FILE: Path to service account JSON
+        - GOOGLE_SHEET_ID: Target spreadsheet ID (or use --sheet-id)
+        - Spreadsheet must be shared with the service account email
+
+    Args:
+        year: Tournament year to export data for.
+        sheet_id: Google Spreadsheet ID from the URL. If not provided,
+            uses GOOGLE_SHEET_ID from environment.
+
+    Example:
+        Export to configured spreadsheet::
+
+            ncaa-pool export --year 2026
+
+        Export to specific spreadsheet::
+
+            ncaa-pool export --year 2026 --sheet-id "abc123..."
     """
     config = get_app_config()
     logger = get_logger(__name__)
