@@ -38,7 +38,7 @@ dev = [
     "pytest>=8.0.0",
     "pytest-asyncio>=0.23.0",
     "pytest-cov>=4.1.0",
-    "mypy>=1.8.0",
+    "ty>=0.0.1a0",
     "ruff>=0.2.0",
     "pre-commit>=3.6.0",
 ]
@@ -137,23 +137,5 @@ exclude_lines = [
     "if TYPE_CHECKING:",
 ]
 
-[tool.mypy]
-python_version = "3.11"
-warn_return_any = true
-warn_unused_configs = true
-disallow_untyped_defs = true
-disallow_incomplete_defs = true
-check_untyped_defs = true
-strict_optional = true
-warn_redundant_casts = true
-warn_unused_ignores = true
-show_error_codes = true
-namespace_packages = true
-explicit_package_bases = true
-
-[[tool.mypy.overrides]]
-module = [
-    "gspread.*",
-    "google.oauth2.*",
-]
-ignore_missing_imports = true
+[tool.ty]
+python-version = "3.11"
