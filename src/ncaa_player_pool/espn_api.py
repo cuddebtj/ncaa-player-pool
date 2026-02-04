@@ -1,6 +1,35 @@
-"""
-ESPN API service for fetching NCAA tournament data.
-Provides methods to fetch tournaments, teams, players, and game statistics.
+"""ESPN API integration for NCAA basketball data.
+
+This module provides a high-level service for interacting with ESPN's
+public NCAA Basketball API. It handles fetching tournament brackets,
+team rosters, game summaries, and scoreboards.
+
+Example:
+    Basic usage for fetching tournament data::
+
+        from ncaa_player_pool.espn_api import ESPNService
+        from ncaa_player_pool.api_client import APIClient
+        from ncaa_player_pool.config import get_config
+
+        config = get_config()
+
+        async with APIClient(config) as client:
+            espn = ESPNService(config, client)
+
+            # Fetch tournament bracket
+            tournament = await espn.fetch_tournament()
+
+            # Extract team IDs and fetch rosters
+            team_ids = [team["id"] for team in espn.extract_tournament_teams(tournament)]
+            rosters = await espn.fetch_rosters_batch(team_ids)
+
+Attributes:
+    logger: Module-level logger for ESPN API operations.
+
+Note:
+    ESPN's API is undocumented and may change without notice. This module
+    is designed to handle common response formats but may need updates
+    if ESPN modifies their API structure.
 """
 
 from typing import Any
@@ -13,18 +42,47 @@ logger = get_logger(__name__)
 
 
 class ESPNService:
-    """Service for interacting with ESPN's NCAA Basketball API."""
+    """High-level service for ESPN NCAA Basketball API interactions.
+
+    Provides methods to fetch tournament data, team rosters, game summaries,
+    and scoreboards from ESPN's API. Handles URL construction, response
+    saving, and basic data extraction.
+
+    Attributes:
+        NCAA_TOURNAMENT_ID: Default tournament ID for NCAA Men's Basketball
+            March Madness tournament.
+        config: Application configuration instance.
+        api_client: HTTP client for making API requests.
+        data_dir: Directory path for saving API responses.
+
+    Example:
+        Fetch and process tournament data::
+
+            async with APIClient(config) as client:
+                espn = ESPNService(config, client)
+
+                # Fetch tournament bracket
+                tournament = await espn.fetch_tournament()
+
+                # Get all team info
+                teams = espn.extract_tournament_teams(tournament)
+                print(f"Found {len(teams)} teams")
+
+                # Fetch game summaries
+                game_ids = espn.extract_game_ids(tournament)
+                summaries = await espn.fetch_games_batch(game_ids)
+    """
 
     # Known tournament ID for NCAA Men's Basketball Tournament
     NCAA_TOURNAMENT_ID = "56befd3f-4024-47c4-900f-892883cc1b6b"
 
     def __init__(self, config: Config, api_client: APIClient):
-        """
-        Initialize ESPN service.
+        """Initialize ESPN service with configuration and HTTP client.
 
         Args:
-            config: Application configuration
-            api_client: HTTP API client
+            config: Application configuration containing ESPN base URL
+                and data directory settings.
+            api_client: Initialized HTTP API client for making requests.
         """
         self.config = config
         self.api_client = api_client
@@ -35,15 +93,23 @@ class ESPNService:
         tournament_id: str | None = None,
         save: bool = True,
     ) -> dict[str, Any]:
-        """
-        Fetch NCAA tournament bracket and summary data.
+        """Fetch NCAA tournament bracket and summary data.
+
+        Retrieves the tournament structure including brackets, seeds,
+        participants, and game schedules.
 
         Args:
-            tournament_id: Tournament ID (defaults to NCAA tournament)
-            save: Whether to save response to file
+            tournament_id: ESPN tournament identifier. Defaults to
+                NCAA_TOURNAMENT_ID (March Madness).
+            save: If True, saves the response JSON to the data directory.
 
         Returns:
-            Tournament data dictionary
+            Tournament data dictionary containing brackets, participants,
+            and game information.
+
+        Note:
+            Tournament bracket data is only available during March Madness.
+            Outside this period, the API may return limited or no data.
         """
         tournament_id = tournament_id or self.NCAA_TOURNAMENT_ID
         url = f"{self.config.espn_base_url}/tournaments/{tournament_id}/summary.json"
@@ -68,15 +134,17 @@ class ESPNService:
         team_id: str,
         save: bool = True,
     ) -> dict[str, Any]:
-        """
-        Fetch team profile with roster and player information.
+        """Fetch team profile with basic information.
+
+        Retrieves team details including name, location, conference,
+        and basic statistics.
 
         Args:
-            team_id: Team identifier
-            save: Whether to save response to file
+            team_id: ESPN team identifier (numeric string).
+            save: If True, saves the response JSON to data/espn/teams/.
 
         Returns:
-            Team data dictionary including roster
+            Team data dictionary containing team profile information.
         """
         url = f"{self.config.espn_base_url}/teams/{team_id}"
 
@@ -98,15 +166,17 @@ class ESPNService:
         team_id: str,
         save: bool = True,
     ) -> dict[str, Any]:
-        """
-        Fetch team roster with player information.
+        """Fetch team roster with player details.
+
+        Retrieves the complete roster including player names, positions,
+        jersey numbers, and other biographical information.
 
         Args:
-            team_id: Team identifier
-            save: Whether to save response to file
+            team_id: ESPN team identifier (numeric string).
+            save: If True, saves the response JSON to data/espn/teams/.
 
         Returns:
-            Roster data dictionary with athletes
+            Roster data dictionary containing team info and athletes list.
         """
         url = f"{self.config.espn_base_url}/teams/{team_id}/roster"
 
@@ -129,15 +199,17 @@ class ESPNService:
         team_ids: list[str],
         save: bool = True,
     ) -> list[dict[str, Any]]:
-        """
-        Fetch multiple teams in batch.
+        """Fetch multiple team profiles concurrently.
+
+        Uses the API client's batch_get method to fetch multiple teams
+        with controlled concurrency.
 
         Args:
-            team_ids: List of team identifiers
-            save: Whether to save responses to files
+            team_ids: List of ESPN team identifiers.
+            save: If True, saves responses to data/espn/teams/.
 
         Returns:
-            List of team data dictionaries
+            List of team data dictionaries. Failed fetches are excluded.
         """
         logger.info(f"Batch fetching {len(team_ids)} teams")
 
@@ -154,15 +226,18 @@ class ESPNService:
         team_ids: list[str],
         save: bool = True,
     ) -> list[dict[str, Any]]:
-        """
-        Fetch multiple team rosters in batch.
+        """Fetch multiple team rosters concurrently.
+
+        Uses the API client's batch_get method to fetch multiple rosters
+        with controlled concurrency. Useful for fetching all tournament
+        team rosters at once.
 
         Args:
-            team_ids: List of team identifiers
-            save: Whether to save responses to files
+            team_ids: List of ESPN team identifiers.
+            save: If True, saves responses to data/espn/teams/.
 
         Returns:
-            List of roster data dictionaries
+            List of roster data dictionaries. Failed fetches are excluded.
         """
         logger.info(f"Batch fetching rosters for {len(team_ids)} teams")
 
@@ -179,15 +254,18 @@ class ESPNService:
         game_id: str,
         save: bool = True,
     ) -> dict[str, Any]:
-        """
-        Fetch game summary with box scores and player statistics.
+        """Fetch detailed game summary with box scores.
+
+        Retrieves complete game information including final scores,
+        player statistics, play-by-play data, and game header info.
 
         Args:
-            game_id: Game/event identifier
-            save: Whether to save response to file
+            game_id: ESPN game/event identifier (numeric string).
+            save: If True, saves response to data/espn/games/.
 
         Returns:
-            Game data dictionary with player stats
+            Game summary dictionary containing header, boxscore,
+            and player statistics.
         """
         url = f"{self.config.espn_base_url}/summary?event={game_id}"
 
@@ -214,15 +292,17 @@ class ESPNService:
         game_ids: list[str],
         save: bool = True,
     ) -> list[dict[str, Any]]:
-        """
-        Fetch multiple games in batch.
+        """Fetch multiple game summaries concurrently.
+
+        Uses the API client's batch_get method to fetch multiple game
+        summaries with controlled concurrency.
 
         Args:
-            game_ids: List of game identifiers
-            save: Whether to save responses to files
+            game_ids: List of ESPN game/event identifiers.
+            save: If True, saves responses to data/espn/games/.
 
         Returns:
-            List of game data dictionaries
+            List of game summary dictionaries. Failed fetches are excluded.
         """
         logger.info(f"Batch fetching {len(game_ids)} games")
 
@@ -239,15 +319,25 @@ class ESPNService:
         dates: str | None = None,
         save: bool = True,
     ) -> dict[str, Any]:
-        """
-        Fetch current scoreboard for NCAA basketball.
+        """Fetch NCAA basketball scoreboard with game listings.
+
+        Retrieves current or historical game listings including scores,
+        game status, and participating teams.
 
         Args:
-            dates: Optional date in format YYYYMMDD
-            save: Whether to save response to file
+            dates: Optional date filter in YYYYMMDD format (e.g., "20260319").
+                If not provided, returns current/recent games.
+            save: If True, saves response to data/espn/tournaments/.
 
         Returns:
-            Scoreboard data with current/recent games
+            Scoreboard data containing events list with game information.
+
+        Example:
+            Fetch games for a specific date::
+
+                scoreboard = await espn.fetch_scoreboard(dates="20260319")
+                for event in scoreboard["events"]:
+                    print(event["name"])
         """
         url = f"{self.config.espn_base_url}/scoreboard"
 
@@ -270,14 +360,28 @@ class ESPNService:
         return data
 
     def extract_tournament_teams(self, tournament_data: dict[str, Any]) -> list[dict[str, Any]]:
-        """
-        Extract team information from tournament data.
+        """Extract team information from tournament bracket data.
+
+        Parses tournament response to extract all participating teams
+        with their seeds and records.
 
         Args:
-            tournament_data: Tournament data from fetch_tournament()
+            tournament_data: Raw tournament data from fetch_tournament().
 
         Returns:
-            List of team dictionaries with id, name, seed
+            List of team dictionaries, each containing:
+                - id: Team identifier
+                - name: Team display name
+                - seed: Tournament seed (1-16)
+                - record: Team's season record
+
+        Example:
+            Get all tournament teams::
+
+                tournament = await espn.fetch_tournament()
+                teams = espn.extract_tournament_teams(tournament)
+                for team in teams:
+                    print(f"#{team['seed']} {team['name']}")
         """
         teams = []
 
@@ -298,14 +402,23 @@ class ESPNService:
         return teams
 
     def extract_game_ids(self, tournament_data: dict[str, Any]) -> list[str]:
-        """
-        Extract all game IDs from tournament data.
+        """Extract all game IDs from tournament bracket data.
+
+        Parses tournament response to get all scheduled and completed
+        game identifiers, which can be used to fetch game summaries.
 
         Args:
-            tournament_data: Tournament data from fetch_tournament()
+            tournament_data: Raw tournament data from fetch_tournament().
 
         Returns:
-            List of game IDs
+            List of game ID strings for all tournament games.
+
+        Example:
+            Fetch all tournament game summaries::
+
+                tournament = await espn.fetch_tournament()
+                game_ids = espn.extract_game_ids(tournament)
+                summaries = await espn.fetch_games_batch(game_ids)
         """
         game_ids = []
 

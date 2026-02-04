@@ -1,6 +1,47 @@
-"""
-Data transformation utilities.
-Converts ESPN API responses into database models.
+"""Data transformation utilities for ESPN API responses.
+
+This module provides functions to transform raw ESPN API responses into
+structured Pydantic models suitable for database storage. It handles
+the mapping between ESPN's data format and the application's domain models.
+
+The transformation functions:
+
+- Parse ESPN date formats to Python datetime objects
+- Extract team and player information from nested API responses
+- Convert box score statistics to PlayerGameStats models
+- Handle tournament bracket data with seed information
+
+Example:
+    Transform a roster response::
+
+        from ncaa_player_pool.transformers import transform_roster_to_players
+        from ncaa_player_pool.models import ESPNRosterResponse
+
+        roster = ESPNRosterResponse.model_validate(api_response)
+        team, players = transform_roster_to_players(roster, year=2026)
+        print(f"Team: {team.name}, Players: {len(players)}")
+
+    Transform game summary to player stats::
+
+        from ncaa_player_pool.transformers import transform_game_summary_to_player_stats
+        from ncaa_player_pool.models import ESPNGameSummary
+
+        summary = ESPNGameSummary.model_validate(api_response)
+        players, stats = transform_game_summary_to_player_stats(summary, year=2026)
+
+Attributes:
+    logger: Module-level logger for transformation operations.
+
+Functions:
+    parse_espn_date: Parse ESPN ISO date strings to datetime.
+    extract_year_from_date: Extract year from date string with fallback.
+    transform_roster_to_players: Convert roster response to Team and Players.
+    transform_scoreboard_to_games: Convert scoreboard to Game models.
+    transform_scoreboard_to_teams: Convert scoreboard to Team models.
+    transform_game_summary_to_player_stats: Convert game summary to stats.
+    transform_game_summary_to_game: Convert game summary to Game model.
+    transform_tournament_to_teams: Convert tournament bracket to Teams.
+    transform_tournament_to_tournament: Convert to Tournament model.
 """
 
 from datetime import datetime
@@ -22,14 +63,23 @@ logger = get_logger(__name__)
 
 
 def parse_espn_date(date_str: str) -> datetime | None:
-    """
-    Parse ESPN date string to datetime.
+    """Parse ESPN date string to Python datetime.
+
+    ESPN dates are typically in ISO 8601 format with 'Z' suffix
+    for UTC timezone (e.g., "2026-03-19T01:00Z").
 
     Args:
-        date_str: Date string from ESPN API (ISO format)
+        date_str: Date string from ESPN API in ISO format.
 
     Returns:
-        Datetime object or None if parsing fails
+        Timezone-aware datetime object, or None if the string is
+        empty or cannot be parsed.
+
+    Example:
+        Parse a game date::
+
+            dt = parse_espn_date("2026-03-19T19:00Z")
+            print(dt.year, dt.month, dt.day)  # 2026 3 19
     """
     if not date_str:
         return None
@@ -44,15 +94,23 @@ def parse_espn_date(date_str: str) -> datetime | None:
 
 
 def extract_year_from_date(date_str: str | None, default_year: int) -> int:
-    """
-    Extract year from date string.
+    """Extract year from ESPN date string with fallback.
+
+    Attempts to parse the date string and extract the year. If parsing
+    fails or the string is None/empty, returns the default year.
 
     Args:
-        date_str: Date string
-        default_year: Default year if extraction fails
+        date_str: Date string in ESPN format, or None.
+        default_year: Year to return if extraction fails.
 
     Returns:
-        Year as integer
+        Extracted year as integer, or default_year on failure.
+
+    Example:
+        Extract tournament year::
+
+            year = extract_year_from_date("2026-03-19T19:00Z", 2025)
+            print(year)  # 2026
     """
     if date_str:
         dt = parse_espn_date(date_str)
@@ -66,16 +124,28 @@ def transform_roster_to_players(
     year: int,
     seed: int | None = None,
 ) -> tuple[Team, list[Player]]:
-    """
-    Transform ESPN roster response into Team and Player models.
+    """Transform ESPN roster response into Team and Player models.
+
+    Extracts team information and creates a Team model, then iterates
+    through all athletes to create Player models.
 
     Args:
-        roster: ESPN roster response
-        year: Tournament/season year
-        seed: Optional tournament seed
+        roster: Validated ESPN roster response containing team and
+            athletes data.
+        year: Tournament/season year for the team and players.
+        seed: Optional tournament seed (1-16) for the team.
 
     Returns:
-        Tuple of (team model, list of player models)
+        A tuple containing:
+            - Team: The team model with all team information
+            - list[Player]: List of player models for all roster athletes
+
+    Example:
+        Process a roster response::
+
+            roster = ESPNRosterResponse.model_validate(api_response)
+            team, players = transform_roster_to_players(roster, 2026, seed=1)
+            print(f"{team.name}: {len(players)} players")
     """
     # Create team model
     team = Team(
@@ -110,15 +180,27 @@ def transform_roster_to_players(
 
 
 def transform_scoreboard_to_games(scoreboard: ESPNScoreboard, year: int) -> list[Game]:
-    """
-    Transform ESPN scoreboard into Game models.
+    """Transform ESPN scoreboard into Game models.
+
+    Parses scoreboard events and their competitions to create Game
+    models with home/away teams, scores, and game status.
 
     Args:
-        scoreboard: ESPN scoreboard response
-        year: Tournament/season year
+        scoreboard: Validated ESPN scoreboard response containing
+            events and competitions.
+        year: Tournament/season year for the games.
 
     Returns:
-        List of Game models
+        List of Game models, one for each competition in the scoreboard.
+        Games missing home or away team data are skipped with a warning.
+
+    Example:
+        Get games from today's scoreboard::
+
+            scoreboard = ESPNScoreboard.model_validate(api_response)
+            games = transform_scoreboard_to_games(scoreboard, 2026)
+            for game in games:
+                print(f"Game {game.id}: {game.home_score}-{game.away_score}")
     """
     games = []
 
@@ -169,15 +251,23 @@ def transform_scoreboard_to_games(scoreboard: ESPNScoreboard, year: int) -> list
 
 
 def transform_scoreboard_to_teams(scoreboard: ESPNScoreboard, year: int) -> list[Team]:
-    """
-    Transform ESPN scoreboard into Team models.
+    """Transform ESPN scoreboard into unique Team models.
+
+    Extracts all teams participating in scoreboard games and creates
+    Team models. Deduplicates teams that appear in multiple games.
 
     Args:
-        scoreboard: ESPN scoreboard response
-        year: Tournament/season year
+        scoreboard: Validated ESPN scoreboard response containing
+            events and competitions with team data.
+        year: Tournament/season year for the teams.
 
     Returns:
-        List of unique Team models
+        List of unique Team models. Each team appears only once
+        regardless of how many games they're in.
+
+    Note:
+        Teams extracted from scoreboard don't have seed information.
+        Use transform_tournament_to_teams for seeded teams.
     """
     teams_dict = {}
 
@@ -205,14 +295,25 @@ def transform_scoreboard_to_teams(scoreboard: ESPNScoreboard, year: int) -> list
 
 
 def parse_stat_value(value: str) -> int | None:
-    """
-    Parse stat value from string, handling formats like "2-6" or "21".
+    """Parse basketball statistic value from string.
+
+    Handles two common ESPN stat formats:
+    - Simple integer: "21" -> 21
+    - Made-attempted: "2-6" -> 2 (returns made count)
 
     Args:
-        value: Stat value as string
+        value: Stat value as string from ESPN box score.
 
     Returns:
-        Integer value or None
+        Parsed integer value, or None if the value is empty
+        or cannot be parsed.
+
+    Example:
+        Parse various stat formats::
+
+            parse_stat_value("21")    # 21 (points)
+            parse_stat_value("5-10")  # 5 (field goals made)
+            parse_stat_value("")      # None
     """
     if not value:
         return None
@@ -235,15 +336,33 @@ def transform_game_summary_to_player_stats(
     game_summary: ESPNGameSummary,
     year: int,
 ) -> tuple[list[Player], list[PlayerGameStats]]:
-    """
-    Transform ESPN game summary into Player and PlayerGameStats models.
+    """Transform ESPN game summary into Player and PlayerGameStats models.
+
+    Parses the boxscore section of a game summary to extract all player
+    statistics. Creates both Player models (for roster tracking) and
+    PlayerGameStats models (for box score data).
 
     Args:
-        game_summary: ESPN game summary response
-        year: Tournament/season year
+        game_summary: Validated ESPN game summary containing boxscore
+            with player statistics.
+        year: Tournament/season year for the records.
 
     Returns:
-        Tuple of (players list, player_stats list)
+        A tuple containing:
+            - list[Player]: Player models for all athletes in the game
+            - list[PlayerGameStats]: Statistics for each player
+
+    Note:
+        The ESPN API uses two stat formats - uppercase abbreviations
+        (PTS, REB, AST) or lowercase names. This function handles both.
+
+    Example:
+        Process game statistics::
+
+            summary = ESPNGameSummary.model_validate(api_response)
+            players, stats = transform_game_summary_to_player_stats(summary, 2026)
+            for player, stat in zip(players, stats):
+                print(f"{player.full_name}: {stat.points} pts")
     """
     players = []
     stats_list = []
@@ -313,15 +432,21 @@ def transform_game_summary_to_player_stats(
 
 
 def transform_game_summary_to_game(game_summary: ESPNGameSummary, year: int) -> Game:
-    """
-    Transform ESPN game summary into Game model.
+    """Transform ESPN game summary into Game model.
+
+    Extracts game header information to create a Game model with
+    final scores, winner, and scheduling information.
 
     Args:
-        game_summary: ESPN game summary response
-        year: Tournament/season year
+        game_summary: Validated ESPN game summary containing header
+            with competition details.
+        year: Tournament/season year for the game.
 
     Returns:
-        Game model
+        Game model with complete game information.
+
+    Raises:
+        ValueError: If the game is missing home or away team data.
     """
     competition = game_summary.header.competitions[0]
 
@@ -367,15 +492,27 @@ def transform_game_summary_to_game(game_summary: ESPNGameSummary, year: int) -> 
 
 
 def transform_tournament_to_teams(tournament: ESPNTournament, year: int) -> list[Team]:
-    """
-    Transform ESPN tournament bracket into Team models with seeds.
+    """Transform ESPN tournament bracket into Team models with seeds.
+
+    Parses tournament brackets to extract all participating teams
+    with their seed information. This is the primary way to get
+    seeded team data.
 
     Args:
-        tournament: ESPN tournament response
-        year: Tournament year
+        tournament: Validated ESPN tournament response containing
+            brackets with participants.
+        year: Tournament year for the teams.
 
     Returns:
-        List of Team models with seed information
+        List of unique Team models with seed information populated.
+
+    Example:
+        Get all seeded teams::
+
+            tournament = ESPNTournament.model_validate(api_response)
+            teams = transform_tournament_to_teams(tournament, 2026)
+            for team in sorted(teams, key=lambda t: t.seed or 99):
+                print(f"#{team.seed} {team.name}")
     """
     teams_dict = {}
 
@@ -402,14 +539,23 @@ def transform_tournament_to_teams(tournament: ESPNTournament, year: int) -> list
 
 
 def transform_tournament_to_tournament(tournament: ESPNTournament) -> Tournament:
-    """
-    Transform ESPN tournament into Tournament model.
+    """Transform ESPN tournament data into Tournament model.
+
+    Creates a Tournament model with metadata about the tournament
+    including name, year, status, and date range.
 
     Args:
-        tournament: ESPN tournament response
+        tournament: Validated ESPN tournament response.
 
     Returns:
-        Tournament model
+        Tournament model with all tournament metadata.
+
+    Example:
+        Create tournament record::
+
+            tournament_data = ESPNTournament.model_validate(api_response)
+            tournament = transform_tournament_to_tournament(tournament_data)
+            print(f"{tournament.name} ({tournament.year})")
     """
     start_date = parse_espn_date(tournament.start_date) if tournament.start_date else None
     end_date = parse_espn_date(tournament.end_date) if tournament.end_date else None

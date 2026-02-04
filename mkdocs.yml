@@ -1,0 +1,91 @@
+site_name: NCAA Player Pool
+site_description: NCAA Tournament Player Pool - Track player stats and manage pool entries
+site_url: https://github.com/cuddebtj/ncaa-player-pool
+repo_url: https://github.com/cuddebtj/ncaa-player-pool
+repo_name: cuddebtj/ncaa-player-pool
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: google
+            docstring_options:
+              ignore_init_summary: true
+            show_source: true
+            show_root_heading: true
+            show_root_full_path: false
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            members_order: source
+            merge_init_into_class: true
+            separate_signature: true
+            show_signature_annotations: true
+            signature_crossrefs: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quick Start: getting-started/quickstart.md
+      - Configuration: getting-started/configuration.md
+  - User Guide:
+      - Tournament Setup: user-guide/tournament-setup.md
+      - Daily Updates: user-guide/daily-updates.md
+      - Google Sheets: user-guide/google-sheets.md
+  - CLI Reference: cli.md
+  - API Reference:
+      - Overview: api/index.md
+      - Models: api/models.md
+      - Configuration: api/config.md
+      - Database: api/db.md
+      - ESPN API: api/espn_api.md
+      - Transformers: api/transformers.md
+      - Sheets Export: api/sheets.md
+  - Development:
+      - Contributing: development/contributing.md
+      - Testing: development/testing.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cuddebtj/ncaa-player-pool

@@ -1,6 +1,46 @@
-"""
-Google Sheets integration for NCAA Player Pool.
-Exports player roster and game statistics to Google Sheets.
+"""Google Sheets integration for NCAA Player Pool.
+
+This module provides functionality to export player rosters and game
+statistics to Google Sheets. It uses gspread with service account
+authentication for API access.
+
+Prerequisites:
+    1. Create a Google Cloud project and enable Sheets API
+    2. Create a service account and download JSON credentials
+    3. Share your spreadsheet with the service account email
+    4. Set GOOGLE_CREDENTIALS_FILE and GOOGLE_SHEET_ID in environment
+
+Example:
+    Export all data to Google Sheets::
+
+        from ncaa_player_pool.sheets import export_all_data
+        from ncaa_player_pool.config import get_config
+
+        config = get_config()
+        url = export_all_data(config, year=2026)
+        print(f"Data exported to: {url}")
+
+    Manual export with custom sheets::
+
+        from ncaa_player_pool.sheets import SheetsClient
+        from ncaa_player_pool.config import get_config
+
+        config = get_config()
+        sheets = SheetsClient(config)
+        sheets.authenticate()
+        sheets.open_spreadsheet()
+
+        sheets.export_players(players_data, worksheet_name="My Roster")
+        sheets.export_player_stats(stats_data, worksheet_name="My Stats")
+
+Attributes:
+    logger: Module-level logger for Google Sheets operations.
+
+Classes:
+    SheetsClient: Client for Google Sheets API operations.
+
+Functions:
+    export_all_data: High-level function to export all data at once.
 """
 
 from pathlib import Path
@@ -16,29 +56,57 @@ logger = get_logger(__name__)
 
 
 class SheetsClient:
-    """Google Sheets client for exporting NCAA pool data."""
+    """Google Sheets client for exporting NCAA pool data.
+
+    Provides methods to authenticate with Google Sheets API, open
+    spreadsheets, and export player/stats data with formatting.
+
+    Attributes:
+        SCOPES: Required Google API scopes for Sheets and Drive access.
+        config: Application configuration instance.
+        client: Authenticated gspread client, or None if not authenticated.
+        spreadsheet: Currently open spreadsheet, or None if not opened.
+
+    Example:
+        Export players to a sheet::
+
+            sheets = SheetsClient(config)
+            sheets.authenticate()
+            sheets.open_spreadsheet("your-spreadsheet-id")
+            sheets.export_players(players_data)
+    """
 
     # Google Sheets API scopes
     SCOPES = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
 
     def __init__(self, config: Config):
-        """
-        Initialize Google Sheets client.
+        """Initialize Google Sheets client with configuration.
 
         Args:
-            config: Application configuration
+            config: Application configuration containing Google credentials
+                file path and sheet ID settings.
         """
         self.config = config
         self.client: gspread.Client | None = None
         self.spreadsheet: gspread.Spreadsheet | None = None
 
-    def authenticate(self):
-        """
-        Authenticate with Google Sheets API using service account.
+    def authenticate(self) -> None:
+        """Authenticate with Google Sheets API using service account.
+
+        Reads credentials from the JSON file specified in configuration
+        and creates an authenticated gspread client.
 
         Raises:
-            FileNotFoundError: If credentials file not found
-            Exception: If authentication fails
+            ValueError: If GOOGLE_CREDENTIALS_FILE is not set.
+            FileNotFoundError: If credentials file doesn't exist.
+            Exception: If authentication fails for other reasons.
+
+        Example:
+            Authenticate before using other methods::
+
+                sheets = SheetsClient(config)
+                sheets.authenticate()
+                # Now ready to open spreadsheets
         """
         if not self.config.google_credentials_file:
             raise ValueError("GOOGLE_CREDENTIALS_FILE not set in environment")
@@ -56,16 +124,26 @@ class SheetsClient:
             logger.exception(f"Failed to authenticate with Google Sheets: {e}")
             raise
 
-    def open_spreadsheet(self, sheet_id: str | None = None):
-        """
-        Open a Google Spreadsheet.
+    def open_spreadsheet(self, sheet_id: str | None = None) -> None:
+        """Open a Google Spreadsheet by ID.
+
+        Opens the specified spreadsheet and stores it for subsequent
+        operations. Automatically authenticates if not already done.
 
         Args:
-            sheet_id: Spreadsheet ID (uses config if not provided)
+            sheet_id: Google Spreadsheet ID (from the URL). If not provided,
+                uses GOOGLE_SHEET_ID from configuration.
 
         Raises:
-            ValueError: If sheet_id not provided and not in config
-            Exception: If spreadsheet cannot be opened
+            ValueError: If sheet_id is not provided and not in config.
+            gspread.SpreadsheetNotFound: If spreadsheet doesn't exist.
+            gspread.exceptions.APIError: If access is denied.
+
+        Example:
+            Open spreadsheet from URL ID::
+
+                # URL: https://docs.google.com/spreadsheets/d/ABC123/edit
+                sheets.open_spreadsheet("ABC123")
         """
         if not self.client:
             self.authenticate()
@@ -83,16 +161,27 @@ class SheetsClient:
             raise
 
     def get_or_create_worksheet(self, title: str, rows: int = 1000, cols: int = 26) -> gspread.Worksheet:
-        """
-        Get existing worksheet or create new one.
+        """Get existing worksheet or create a new one.
+
+        Attempts to find a worksheet with the given title. If not found,
+        creates a new worksheet with the specified dimensions.
 
         Args:
-            title: Worksheet title
-            rows: Number of rows (default 1000)
-            cols: Number of columns (default 26)
+            title: Worksheet/tab name to find or create.
+            rows: Number of rows for new worksheet (default 1000).
+            cols: Number of columns for new worksheet (default 26, A-Z).
 
         Returns:
-            Worksheet object
+            The existing or newly created worksheet object.
+
+        Raises:
+            ValueError: If no spreadsheet is currently open.
+
+        Example:
+            Get or create a stats worksheet::
+
+                ws = sheets.get_or_create_worksheet("Player Stats", rows=5000)
+                ws.update_cell(1, 1, "Player ID")
         """
         if not self.spreadsheet:
             raise ValueError("No spreadsheet opened. Call open_spreadsheet() first")
@@ -107,15 +196,35 @@ class SheetsClient:
             worksheet = self.spreadsheet.add_worksheet(title=title, rows=rows, cols=cols)
             return worksheet
 
-    def export_players(self, players_data: list[dict[str, Any]], worksheet_name: str = "Players"):
-        """
-        Export tournament player roster to Google Sheets.
+    def export_players(self, players_data: list[dict[str, Any]], worksheet_name: str = "Players") -> None:
+        """Export tournament player roster to Google Sheets.
 
-        Columns: Player ID, Player Name, Position, Team, Team Seed
+        Creates/updates a worksheet with player roster information including
+        player ID, name, position, team, and seed. Applies formatting with
+        a styled header row and frozen headers.
+
+        Sheet columns:
+            - Player ID: ESPN player identifier
+            - Player Name: Full player name
+            - Position: Player position (G, F, C, etc.)
+            - Team: Team name
+            - Team Seed: Tournament seed (1-16)
+            - Player Team: Combined player/team identifier
 
         Args:
-            players_data: List of player dictionaries from database
-            worksheet_name: Name of worksheet to write to
+            players_data: List of player dictionaries from database export,
+                each containing player_id, player_name, position, team_name,
+                seed, and player_team keys.
+            worksheet_name: Name of the worksheet/tab to create or update.
+
+        Raises:
+            ValueError: If no spreadsheet is currently open.
+
+        Example:
+            Export roster to Players sheet::
+
+                players = db.get_players_export(2026)
+                sheets.export_players(players)
         """
         if not self.spreadsheet:
             raise ValueError("No spreadsheet opened. Call open_spreadsheet() first")
@@ -173,16 +282,42 @@ class SheetsClient:
 
         logger.info(f"Successfully exported {len(players_data)} players")
 
-    def export_player_stats(self, stats_data: list[dict[str, Any]], worksheet_name: str = "Player Stats"):
-        """
-        Export detailed player game statistics to Google Sheets.
+    def export_player_stats(self, stats_data: list[dict[str, Any]], worksheet_name: str = "Player Stats") -> None:
+        """Export detailed player game statistics to Google Sheets.
 
-        Columns: Player ID, Is Eliminated, Player Name, Position, Team, Game ID,
-                Round, Points, Assists, Rebounds, Steals, Minutes Played, etc.
+        Creates/updates a worksheet with per-game player statistics including
+        all box score data. Applies formatting with styled headers, number
+        formatting for stats columns, and frozen headers.
+
+        Sheet columns:
+            - Player ID: ESPN player identifier
+            - Is Eliminated: Whether player's team is eliminated
+            - Player Name: Full player name
+            - Position: Player position
+            - Team: Team name
+            - Team Seed: Tournament seed
+            - Game ID: ESPN game identifier
+            - Round: Tournament round name
+            - Home Team: Home team name
+            - Away Team: Away team name
+            - Game Date: Scheduled game date
+            - Points, Assists, Rebounds, Steals, Blocks, Turnovers, Fouls
+            - Minutes Played: Total minutes in game
+            - Total Score: PTS + AST + REB
 
         Args:
-            stats_data: List of game stats dictionaries from database
-            worksheet_name: Name of worksheet to write to
+            stats_data: List of game stats dictionaries from database export,
+                each containing player info, game info, and all statistics.
+            worksheet_name: Name of the worksheet/tab to create or update.
+
+        Raises:
+            ValueError: If no spreadsheet is currently open.
+
+        Example:
+            Export game-by-game stats::
+
+                stats = db.get_game_stats_export(2026)
+                sheets.export_player_stats(stats)
         """
         if not self.spreadsheet:
             raise ValueError("No spreadsheet opened. Call open_spreadsheet() first")
@@ -286,16 +421,42 @@ class SheetsClient:
 
 
 def export_all_data(config: Config, year: int, sheet_id: str | None = None) -> str:
-    """
-    Export all data (players and stats) to Google Sheets.
+    """Export all tournament data to Google Sheets.
+
+    High-level convenience function that exports both the player roster
+    and game-by-game statistics to a Google Spreadsheet. Creates two
+    worksheets: "Players" and "Player Stats".
+
+    This function handles the complete workflow:
+    1. Initialize and authenticate Sheets client
+    2. Open the target spreadsheet
+    3. Query database for player and stats data
+    4. Export both datasets with formatting
 
     Args:
-        config: Application configuration
-        year: Tournament year
-        sheet_id: Optional Google Sheet ID (uses config if not provided)
+        config: Application configuration with database and Google
+            credentials settings.
+        year: Tournament year to export data for.
+        sheet_id: Google Spreadsheet ID. If not provided, uses
+            GOOGLE_SHEET_ID from configuration.
 
     Returns:
-        Spreadsheet URL
+        URL of the updated Google Spreadsheet.
+
+    Raises:
+        ValueError: If Google credentials or sheet ID not configured.
+        FileNotFoundError: If credentials file doesn't exist.
+        psycopg.DatabaseError: If database connection fails.
+
+    Example:
+        Export 2026 tournament data::
+
+            from ncaa_player_pool.sheets import export_all_data
+            from ncaa_player_pool.config import get_config
+
+            config = get_config()
+            url = export_all_data(config, 2026)
+            print(f"View results at: {url}")
     """
     from .db import Database
 

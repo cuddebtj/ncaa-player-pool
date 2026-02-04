@@ -1,5 +1,35 @@
-"""
-HTTP API client using httpx with retry logic and comprehensive error handling.
+"""HTTP API client with retry logic and error handling.
+
+This module provides an async HTTP client built on httpx with automatic retry
+logic using tenacity. It handles common API issues like rate limiting, timeouts,
+and network errors.
+
+Example:
+    Basic usage with async context manager::
+
+        from ncaa_player_pool.api_client import APIClient
+        from ncaa_player_pool.config import get_config
+
+        config = get_config()
+
+        async with APIClient(config) as client:
+            data = await client.get("https://api.example.com/data")
+            print(data)
+
+    Batch fetching multiple URLs::
+
+        async with APIClient(config) as client:
+            urls = ["https://api.example.com/1", "https://api.example.com/2"]
+            results = await client.batch_get(urls, max_concurrent=3)
+
+Attributes:
+    logger: Module-level logger instance for API operations.
+
+Classes:
+    APIError: Base exception for all API-related errors.
+    RateLimitError: Raised when API rate limit (429) is exceeded.
+    NotFoundError: Raised when resource is not found (404).
+    APIClient: Async HTTP client with retry logic.
 """
 
 import asyncio
@@ -23,41 +53,94 @@ logger = get_logger(__name__)
 
 
 class APIError(Exception):
-    """Base exception for API errors."""
+    """Base exception for API-related errors.
+
+    All API exceptions inherit from this class, making it easy to catch
+    any API-related error with a single except clause.
+
+    Example:
+        Catching any API error::
+
+            try:
+                data = await client.get(url)
+            except APIError as e:
+                print(f"API request failed: {e}")
+    """
 
     pass
 
 
 class RateLimitError(APIError):
-    """Raised when API rate limit is exceeded."""
+    """Raised when API rate limit (HTTP 429) is exceeded.
+
+    This exception triggers automatic retry with exponential backoff
+    when caught by the retry decorator.
+
+    Attributes:
+        Inherits all attributes from APIError.
+    """
 
     pass
 
 
 class NotFoundError(APIError):
-    """Raised when resource is not found (404)."""
+    """Raised when the requested resource is not found (HTTP 404).
+
+    Unlike other API errors, 404 errors are not retried since the
+    resource genuinely does not exist.
+
+    Attributes:
+        Inherits all attributes from APIError.
+    """
 
     pass
 
 
 class APIClient:
-    """
-    HTTP client for making API requests with retry logic and error handling.
+    """Async HTTP client with retry logic and comprehensive error handling.
+
+    This client wraps httpx.AsyncClient and adds automatic retry logic
+    for transient errors, rate limiting support, and response caching
+    to files.
+
+    Attributes:
+        config: Application configuration instance.
+        client: The underlying httpx.AsyncClient (None until context entered).
+
+    Example:
+        Using as an async context manager::
+
+            async with APIClient(config) as client:
+                # Make requests
+                data = await client.get("https://api.example.com/resource")
+
+                # Save response to file
+                data = await client.get(url, save_to=Path("response.json"))
+
+                # Batch fetch with concurrency control
+                results = await client.batch_get(urls, max_concurrent=5)
     """
 
     def __init__(self, config: Config):
-        """
-        Initialize the API client.
+        """Initialize the API client.
 
         Args:
-            config: Application configuration
+            config: Application configuration containing timeout settings,
+                rate limit delay, and other HTTP client options.
         """
         self.config = config
         self.client: httpx.AsyncClient | None = None
         self._rate_limit_delay = config.rate_limit_delay
 
-    async def __aenter__(self):
-        """Async context manager entry."""
+    async def __aenter__(self) -> "APIClient":
+        """Enter async context manager and initialize HTTP client.
+
+        Creates the underlying httpx.AsyncClient with configured timeout
+        and default headers for JSON API requests.
+
+        Returns:
+            Self reference for use in async with statements.
+        """
         self.client = httpx.AsyncClient(
             timeout=httpx.Timeout(self.config.request_timeout),
             headers={"accept": "application/json"},
@@ -66,8 +149,16 @@ class APIClient:
         logger.info("API client initialized")
         return self
 
-    async def __aexit__(self, exc_type, exc_val, exc_tb):
-        """Async context manager exit."""
+    async def __aexit__(self, exc_type, exc_val, exc_tb) -> None:
+        """Exit async context manager and close HTTP client.
+
+        Properly closes the httpx.AsyncClient to release resources.
+
+        Args:
+            exc_type: Exception type if an error occurred, None otherwise.
+            exc_val: Exception value if an error occurred, None otherwise.
+            exc_tb: Exception traceback if an error occurred, None otherwise.
+        """
         if self.client:
             await self.client.aclose()
             logger.info("API client closed")
@@ -84,21 +175,47 @@ class APIClient:
         params: dict[str, Any] | None = None,
         save_to: Path | None = None,
     ) -> dict[str, Any]:
-        """
-        Make a GET request with retry logic.
+        """Make a GET request with automatic retry on transient errors.
+
+        Performs an HTTP GET request with automatic retry logic for timeouts,
+        network errors, and rate limiting (HTTP 429). Uses exponential backoff
+        between retries.
 
         Args:
-            url: URL to request
-            params: Optional query parameters
-            save_to: Optional path to save response JSON
+            url: The URL to request. Must be a fully qualified URL.
+            params: Optional dictionary of query parameters to append to the URL.
+            save_to: Optional file path to save the JSON response. Parent
+                directories are created automatically if they don't exist.
 
         Returns:
-            Response JSON as dictionary
+            The parsed JSON response as a Python dictionary.
 
         Raises:
-            APIError: If request fails after retries
-            NotFoundError: If resource not found (404)
-            RateLimitError: If rate limited (429)
+            APIError: If the request fails after all retry attempts, or if
+                the server returns an error status code (5xx).
+            NotFoundError: If the resource is not found (HTTP 404). This error
+                is not retried.
+            RateLimitError: If rate limited (HTTP 429). This triggers retry
+                with exponential backoff.
+
+        Example:
+            Basic GET request::
+
+                data = await client.get("https://api.example.com/users")
+
+            With query parameters::
+
+                data = await client.get(
+                    "https://api.example.com/search",
+                    params={"q": "tournament", "year": 2026}
+                )
+
+            Save response to file::
+
+                data = await client.get(
+                    "https://api.example.com/data",
+                    save_to=Path("data/response.json")
+                )
         """
         if not self.client:
             raise APIError("Client not initialized. Use 'async with' context manager.")
@@ -163,15 +280,30 @@ class APIClient:
             raise APIError(f"Unexpected error: {e}") from e
 
     async def get_json_file(self, url: str, file_path: Path) -> dict[str, Any]:
-        """
-        Fetch JSON from URL and save to file, or load from file if it exists.
+        """Fetch JSON from URL with local file caching.
+
+        If the file already exists at the specified path, loads and returns
+        the cached data. Otherwise, fetches from the URL and saves to the file.
+
+        This is useful for avoiding redundant API calls when data doesn't
+        change frequently.
 
         Args:
-            url: URL to fetch
-            file_path: Path to save/load JSON file
+            url: The URL to fetch if the file doesn't exist.
+            file_path: Path to the cache file. Will be created if it doesn't
+                exist, loaded if it does.
 
         Returns:
-            JSON data as dictionary
+            The JSON data as a Python dictionary, either from cache or
+            freshly fetched.
+
+        Example:
+            Cache tournament data locally::
+
+                data = await client.get_json_file(
+                    "https://api.espn.com/tournament/123",
+                    Path("cache/tournament_123.json")
+                )
         """
         if file_path.exists():
             logger.info(f"Loading cached data from {file_path}")
@@ -187,16 +319,36 @@ class APIClient:
         save_dir: Path | None = None,
         max_concurrent: int = 5,
     ) -> list[dict[str, Any]]:
-        """
-        Fetch multiple URLs concurrently with rate limiting.
+        """Fetch multiple URLs concurrently with controlled parallelism.
+
+        Uses asyncio.Semaphore to limit concurrent requests, preventing
+        overwhelming the target API. Failed requests are logged but don't
+        stop other requests from completing.
 
         Args:
-            urls: List of URLs to fetch
-            save_dir: Optional directory to save responses (uses URL hash as filename)
-            max_concurrent: Maximum concurrent requests
+            urls: List of URLs to fetch. Each URL is fetched independently.
+            save_dir: Optional directory to save responses. If provided,
+                responses are saved as ``response_NNNN.json`` files.
+            max_concurrent: Maximum number of concurrent requests. Lower
+                values are gentler on the API but slower. Default is 5.
 
         Returns:
-            List of response JSONs
+            List of successfully fetched JSON responses. Failed requests
+            are excluded from the results but logged as errors.
+
+        Example:
+            Fetch multiple team rosters::
+
+                team_urls = [
+                    f"https://api.espn.com/teams/{tid}"
+                    for tid in ["123", "456", "789"]
+                ]
+                results = await client.batch_get(
+                    team_urls,
+                    save_dir=Path("data/teams"),
+                    max_concurrent=3
+                )
+                print(f"Successfully fetched {len(results)} teams")
         """
         semaphore = asyncio.Semaphore(max_concurrent)
 
