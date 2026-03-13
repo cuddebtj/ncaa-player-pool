@@ -325,7 +325,7 @@ class SheetsClient:
         logger.info(f"Exporting {len(stats_data)} stat records to '{worksheet_name}' worksheet")
 
         # Get or create worksheet
-        worksheet = self.get_or_create_worksheet(worksheet_name, rows=5000, cols=20)
+        worksheet = self.get_or_create_worksheet(worksheet_name, rows=5000, cols=21)
 
         # Clear existing data
         worksheet.clear()
@@ -356,6 +356,7 @@ class SheetsClient:
             "Fouls",
             "Minutes Played",
             "Total Score (PTS+AST+REB)",
+            "Player Name (Team)",
         ]
 
         # Prepare data rows
@@ -382,6 +383,7 @@ class SheetsClient:
                 stats.get("fouls", 0),
                 stats.get("minutes_played", 0) if stats.get("minutes_played") is not None else "",
                 stats.get("total_score", 0),
+                f"{stats.get('player_name', '')} ({stats.get('player_team', '')})",
             ]
             rows.append(row)
 
@@ -390,7 +392,7 @@ class SheetsClient:
 
         # Format header row
         worksheet.format(
-            "A1:T1",
+            "A1:U1",
             {
                 "backgroundColor": {"red": 0.2, "green": 0.5, "blue": 0.8},
                 "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},

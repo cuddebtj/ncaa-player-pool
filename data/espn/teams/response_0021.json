@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-21T05:50:07Z",
+  "timestamp": "2026-03-13T03:10:07Z",
   "status": "success",
   "season": {
     "year": 2026,
@@ -9,19 +9,19 @@
   },
   "athletes": [
     {
-      "id": "5179085",
-      "uid": "s:40~l:41~a:5179085",
-      "guid": "d7a72ee2-4059-3e15-9f54-481e049b9142",
+      "id": "5107148",
+      "uid": "s:40~l:41~a:5107148",
+      "guid": "806b6304-c89c-3d7c-8190-df6eeb16ae47",
       "alternateIds": {
-        "sdr": "5179085"
+        "sdr": "5107148"
       },
-      "firstName": "Ace",
-      "lastName": "Buckner",
-      "fullName": "Ace Buckner",
-      "displayName": "Ace Buckner",
-      "shortName": "A. Buckner",
-      "weight": 170.0,
-      "displayWeight": "170 lbs",
+      "firstName": "Roddie",
+      "lastName": "Anderson III",
+      "fullName": "Roddie Anderson III",
+      "displayName": "Roddie Anderson III",
+      "shortName": "R. Anderson III",
+      "weight": 195.0,
+      "displayWeight": "195 lbs",
       "height": 75.0,
       "displayHeight": "6' 3\"",
       "links": [
@@ -32,7 +32,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5179085/ace-buckner",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5107148/roddie-anderson-iii",
           "text": "Player Card",
           "shortText": "Player Card",
           "isExternal": false,
@@ -45,7 +45,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5179085/ace-buckner",
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5107148/roddie-anderson-iii",
           "text": "Stats",
           "shortText": "Stats",
           "isExternal": false,
@@ -58,7 +58,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5179085/ace-buckner",
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5107148/roddie-anderson-iii",
           "text": "Splits",
           "shortText": "Splits",
           "isExternal": false,
@@ -71,7 +71,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5179085/ace-buckner",
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5107148/roddie-anderson-iii",
           "text": "Game Log",
           "shortText": "Game Log",
           "isExternal": false,
@@ -84,7 +84,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5179085/ace-buckner",
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5107148/roddie-anderson-iii",
           "text": "News",
           "shortText": "News",
           "isExternal": false,
@@ -97,7 +97,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5179085/ace-buckner",
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5107148/roddie-anderson-iii",
           "text": "Bio",
           "shortText": "Bio",
           "isExternal": false,
@@ -110,7 +110,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5179085/ace-buckner",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5107148/roddie-anderson-iii",
           "text": "Overview",
           "shortText": "Overview",
           "isExternal": false,
@@ -118,647 +118,19 @@
         }
       ],
       "birthPlace": {
-        "city": "Dallas",
-        "state": "TX",
-        "country": "USA",
-        "displayText": "Dallas, TX"
-      },
-      "birthCountry": {
-        "alternateId": "1",
-        "abbreviation": "USA"
-      },
-      "slug": "ace-buckner",
-      "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5179085.png",
-        "alt": "Ace Buckner"
-      },
-      "jersey": "21",
-      "flag": {
-        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-        "alt": "USA",
-        "rel": [
-          "country-flag"
-        ]
-      },
-      "position": {
-        "id": "3",
-        "name": "Guard",
-        "displayName": "Guard",
-        "abbreviation": "G",
-        "leaf": true
-      },
-      "injuries": [],
-      "teams": [
-        {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
-        }
-      ],
-      "experience": {
-        "years": 1,
-        "displayValue": "Freshman",
-        "abbreviation": "FR"
-      },
-      "status": {
-        "id": "1",
-        "name": "Active",
-        "type": "active",
-        "abbreviation": "Active"
-      }
-    },
-    {
-      "id": "5311534",
-      "uid": "s:40~l:41~a:5311534",
-      "guid": "f28078e0-2f85-3dcb-9a52-652a12e8c3b2",
-      "alternateIds": {
-        "sdr": "5311534"
-      },
-      "firstName": "Blake",
-      "lastName": "Davidson",
-      "fullName": "Blake Davidson",
-      "displayName": "Blake Davidson",
-      "shortName": "B. Davidson",
-      "weight": 200.0,
-      "displayWeight": "200 lbs",
-      "height": 81.0,
-      "displayHeight": "6' 9\"",
-      "links": [
-        {
-          "language": "en-US",
-          "rel": [
-            "playercard",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5311534/blake-davidson",
-          "text": "Player Card",
-          "shortText": "Player Card",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "stats",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5311534/blake-davidson",
-          "text": "Stats",
-          "shortText": "Stats",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "splits",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5311534/blake-davidson",
-          "text": "Splits",
-          "shortText": "Splits",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "gamelog",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5311534/blake-davidson",
-          "text": "Game Log",
-          "shortText": "Game Log",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "news",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5311534/blake-davidson",
-          "text": "News",
-          "shortText": "News",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "bio",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5311534/blake-davidson",
-          "text": "Bio",
-          "shortText": "Bio",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "overview",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5311534/blake-davidson",
-          "text": "Overview",
-          "shortText": "Overview",
-          "isExternal": false,
-          "isPremium": false
-        }
-      ],
-      "birthPlace": {
-        "city": "Mission Viejo",
+        "city": "Orange County",
         "state": "CA",
         "country": "USA",
-        "displayText": "Mission Viejo, CA"
+        "displayText": "Orange County, CA"
       },
       "birthCountry": {
         "alternateId": "1",
         "abbreviation": "USA"
       },
-      "slug": "blake-davidson",
+      "slug": "roddie-anderson-iii",
       "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5311534.png",
-        "alt": "Blake Davidson"
-      },
-      "jersey": "14",
-      "flag": {
-        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-        "alt": "USA",
-        "rel": [
-          "country-flag"
-        ]
-      },
-      "position": {
-        "id": "2",
-        "name": "Forward",
-        "displayName": "Forward",
-        "abbreviation": "F",
-        "leaf": true
-      },
-      "injuries": [],
-      "teams": [
-        {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
-        }
-      ],
-      "experience": {
-        "years": 1,
-        "displayValue": "Freshman",
-        "abbreviation": "FR"
-      },
-      "status": {
-        "id": "1",
-        "name": "Active",
-        "type": "active",
-        "abbreviation": "Active"
-      }
-    },
-    {
-      "id": "4699440",
-      "uid": "s:40~l:41~a:4699440",
-      "guid": "7abc617e-6cd0-3371-a8fa-85eae7ac7640",
-      "alternateIds": {
-        "sdr": "4699440"
-      },
-      "firstName": "Nick",
-      "lastName": "Davidson",
-      "fullName": "Nick Davidson",
-      "displayName": "Nick Davidson",
-      "shortName": "N. Davidson",
-      "weight": 238.0,
-      "displayWeight": "238 lbs",
-      "height": 82.0,
-      "displayHeight": "6' 10\"",
-      "links": [
-        {
-          "language": "en-US",
-          "rel": [
-            "playercard",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/4699440/nick-davidson",
-          "text": "Player Card",
-          "shortText": "Player Card",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "stats",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/4699440/nick-davidson",
-          "text": "Stats",
-          "shortText": "Stats",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "splits",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/4699440/nick-davidson",
-          "text": "Splits",
-          "shortText": "Splits",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "gamelog",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/4699440/nick-davidson",
-          "text": "Game Log",
-          "shortText": "Game Log",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "news",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/4699440/nick-davidson",
-          "text": "News",
-          "shortText": "News",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "bio",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/4699440/nick-davidson",
-          "text": "Bio",
-          "shortText": "Bio",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "overview",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/4699440/nick-davidson",
-          "text": "Overview",
-          "shortText": "Overview",
-          "isExternal": false,
-          "isPremium": false
-        }
-      ],
-      "birthPlace": {
-        "city": "Mission Viejo",
-        "state": "CA",
-        "country": "USA",
-        "displayText": "Mission Viejo, CA"
-      },
-      "birthCountry": {
-        "alternateId": "1",
-        "abbreviation": "USA"
-      },
-      "slug": "nick-davidson",
-      "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/4699440.png",
-        "alt": "Nick Davidson"
-      },
-      "jersey": "11",
-      "flag": {
-        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-        "alt": "USA",
-        "rel": [
-          "country-flag"
-        ]
-      },
-      "position": {
-        "id": "2",
-        "name": "Forward",
-        "displayName": "Forward",
-        "abbreviation": "F",
-        "leaf": true
-      },
-      "injuries": [],
-      "teams": [
-        {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
-        }
-      ],
-      "experience": {
-        "years": 4,
-        "displayValue": "Senior",
-        "abbreviation": "SR"
-      },
-      "status": {
-        "id": "1",
-        "name": "Active",
-        "type": "active",
-        "abbreviation": "Active"
-      }
-    },
-    {
-      "id": "5237299",
-      "uid": "s:40~l:41~a:5237299",
-      "guid": "f83c9f8b-ea04-3bab-821b-f1c7d592ddad",
-      "alternateIds": {
-        "sdr": "5237299"
-      },
-      "firstName": "Zac",
-      "lastName": "Foster",
-      "fullName": "Zac Foster",
-      "displayName": "Zac Foster",
-      "shortName": "Z. Foster",
-      "weight": 180.0,
-      "displayWeight": "180 lbs",
-      "height": 76.0,
-      "displayHeight": "6' 4\"",
-      "links": [
-        {
-          "language": "en-US",
-          "rel": [
-            "playercard",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5237299/zac-foster",
-          "text": "Player Card",
-          "shortText": "Player Card",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "stats",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5237299/zac-foster",
-          "text": "Stats",
-          "shortText": "Stats",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "splits",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5237299/zac-foster",
-          "text": "Splits",
-          "shortText": "Splits",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "gamelog",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5237299/zac-foster",
-          "text": "Game Log",
-          "shortText": "Game Log",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "news",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5237299/zac-foster",
-          "text": "News",
-          "shortText": "News",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "bio",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5237299/zac-foster",
-          "text": "Bio",
-          "shortText": "Bio",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "overview",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5237299/zac-foster",
-          "text": "Overview",
-          "shortText": "Overview",
-          "isExternal": false,
-          "isPremium": false
-        }
-      ],
-      "birthPlace": {
-        "city": "Atlanta",
-        "state": "GA",
-        "country": "USA",
-        "displayText": "Atlanta, GA"
-      },
-      "birthCountry": {
-        "alternateId": "1",
-        "abbreviation": "USA"
-      },
-      "slug": "zac-foster",
-      "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5237299.png",
-        "alt": "Zac Foster"
-      },
-      "jersey": "5",
-      "flag": {
-        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-        "alt": "USA",
-        "rel": [
-          "country-flag"
-        ]
-      },
-      "position": {
-        "id": "3",
-        "name": "Guard",
-        "displayName": "Guard",
-        "abbreviation": "G",
-        "leaf": true
-      },
-      "injuries": [],
-      "teams": [
-        {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
-        }
-      ],
-      "experience": {
-        "years": 1,
-        "displayValue": "Freshman",
-        "abbreviation": "FR"
-      },
-      "status": {
-        "id": "1",
-        "name": "Active",
-        "type": "active",
-        "abbreviation": "Active"
-      }
-    },
-    {
-      "id": "5105449",
-      "uid": "s:40~l:41~a:5105449",
-      "guid": "d0ba0bab-90d1-314b-95b8-d58bcc1d26d2",
-      "alternateIds": {
-        "sdr": "5105449"
-      },
-      "firstName": "RJ",
-      "lastName": "Godfrey",
-      "fullName": "RJ Godfrey",
-      "displayName": "RJ Godfrey",
-      "shortName": "R. Godfrey",
-      "weight": 230.0,
-      "displayWeight": "230 lbs",
-      "height": 80.0,
-      "displayHeight": "6' 8\"",
-      "links": [
-        {
-          "language": "en-US",
-          "rel": [
-            "playercard",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105449/rj-godfrey",
-          "text": "Player Card",
-          "shortText": "Player Card",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "stats",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5105449/rj-godfrey",
-          "text": "Stats",
-          "shortText": "Stats",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "splits",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5105449/rj-godfrey",
-          "text": "Splits",
-          "shortText": "Splits",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "gamelog",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5105449/rj-godfrey",
-          "text": "Game Log",
-          "shortText": "Game Log",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "news",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5105449/rj-godfrey",
-          "text": "News",
-          "shortText": "News",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "bio",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5105449/rj-godfrey",
-          "text": "Bio",
-          "shortText": "Bio",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "overview",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105449/rj-godfrey",
-          "text": "Overview",
-          "shortText": "Overview",
-          "isExternal": false,
-          "isPremium": false
-        }
-      ],
-      "birthPlace": {
-        "city": "Suwanee",
-        "state": "GA",
-        "country": "USA",
-        "displayText": "Suwanee, GA"
-      },
-      "birthCountry": {
-        "alternateId": "1",
-        "abbreviation": "USA"
-      },
-      "slug": "rj-godfrey",
-      "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5105449.png",
-        "alt": "RJ Godfrey"
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5107148.png",
+        "alt": "Roddie Anderson III"
       },
       "jersey": "0",
       "flag": {
@@ -769,6 +141,162 @@
         ]
       },
       "position": {
+        "id": "3",
+        "name": "Guard",
+        "displayName": "Guard",
+        "abbreviation": "G",
+        "leaf": true
+      },
+      "injuries": [],
+      "teams": [
+        {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
+        }
+      ],
+      "experience": {
+        "years": 4,
+        "displayValue": "Senior",
+        "abbreviation": "SR"
+      },
+      "status": {
+        "id": "1",
+        "name": "Active",
+        "type": "active",
+        "abbreviation": "Active"
+      }
+    },
+    {
+      "id": "5105569",
+      "uid": "s:40~l:41~a:5105569",
+      "guid": "bb443265-8438-36f6-8708-d9d86e1e1758",
+      "alternateIds": {
+        "sdr": "5105569"
+      },
+      "firstName": "Filip",
+      "lastName": "Borovicanin",
+      "fullName": "Filip Borovicanin",
+      "displayName": "Filip Borovicanin",
+      "shortName": "F. Borovicanin",
+      "weight": 227.0,
+      "displayWeight": "227 lbs",
+      "height": 81.0,
+      "displayHeight": "6' 9\"",
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "playercard",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105569/filip-borovicanin",
+          "text": "Player Card",
+          "shortText": "Player Card",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5105569/filip-borovicanin",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "splits",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5105569/filip-borovicanin",
+          "text": "Splits",
+          "shortText": "Splits",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamelog",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5105569/filip-borovicanin",
+          "text": "Game Log",
+          "shortText": "Game Log",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "news",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5105569/filip-borovicanin",
+          "text": "News",
+          "shortText": "News",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "bio",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5105569/filip-borovicanin",
+          "text": "Bio",
+          "shortText": "Bio",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "overview",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105569/filip-borovicanin",
+          "text": "Overview",
+          "shortText": "Overview",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "birthPlace": {
+        "city": "Belgrade",
+        "country": "Serbia",
+        "displayText": "Belgrade, Serbia"
+      },
+      "birthCountry": {
+        "alternateId": "924",
+        "abbreviation": "SER"
+      },
+      "slug": "filip-borovicanin",
+      "headshot": {
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5105569.png",
+        "alt": "Filip Borovicanin"
+      },
+      "jersey": "4",
+      "flag": {
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/ser.png",
+        "alt": "Serbia",
+        "rel": [
+          "country-flag"
+        ]
+      },
+      "position": {
         "id": "2",
         "name": "Forward",
         "displayName": "Forward",
@@ -778,7 +306,7 @@
       "injuries": [],
       "teams": [
         {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
         }
       ],
       "experience": {
@@ -794,21 +322,21 @@
       }
     },
     {
-      "id": "5105445",
-      "uid": "s:40~l:41~a:5105445",
-      "guid": "4a3850b6-f6bc-3849-a559-2a5bcec7e13b",
+      "id": "4684289",
+      "uid": "s:40~l:41~a:4684289",
+      "guid": "5351f69d-8a09-308c-adee-f3473cb33b94",
       "alternateIds": {
-        "sdr": "5105445"
+        "sdr": "4684289"
       },
-      "firstName": "Dillon",
-      "lastName": "Hunter",
-      "fullName": "Dillon Hunter",
-      "displayName": "Dillon Hunter",
-      "shortName": "D. Hunter",
-      "weight": 192.0,
-      "displayWeight": "192 lbs",
-      "height": 75.0,
-      "displayHeight": "6' 3\"",
+      "firstName": "Tre",
+      "lastName": "Carroll",
+      "fullName": "Tre Carroll",
+      "displayName": "Tre Carroll",
+      "shortName": "T. Carroll",
+      "weight": 235.0,
+      "displayWeight": "235 lbs",
+      "height": 80.0,
+      "displayHeight": "6' 8\"",
       "links": [
         {
           "language": "en-US",
@@ -817,7 +345,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105445/dillon-hunter",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/4684289/tre-carroll",
           "text": "Player Card",
           "shortText": "Player Card",
           "isExternal": false,
@@ -830,7 +358,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5105445/dillon-hunter",
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/4684289/tre-carroll",
           "text": "Stats",
           "shortText": "Stats",
           "isExternal": false,
@@ -843,7 +371,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5105445/dillon-hunter",
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/4684289/tre-carroll",
           "text": "Splits",
           "shortText": "Splits",
           "isExternal": false,
@@ -856,7 +384,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5105445/dillon-hunter",
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/4684289/tre-carroll",
           "text": "Game Log",
           "shortText": "Game Log",
           "isExternal": false,
@@ -869,7 +397,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5105445/dillon-hunter",
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/4684289/tre-carroll",
           "text": "News",
           "shortText": "News",
           "isExternal": false,
@@ -882,7 +410,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5105445/dillon-hunter",
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/4684289/tre-carroll",
           "text": "Bio",
           "shortText": "Bio",
           "isExternal": false,
@@ -895,7 +423,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105445/dillon-hunter",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/4684289/tre-carroll",
           "text": "Overview",
           "shortText": "Overview",
           "isExternal": false,
@@ -903,26 +431,21 @@
         }
       ],
       "birthPlace": {
-        "city": "Atlanta",
-        "state": "GA",
+        "city": "Port Charlotte",
+        "state": "FL",
         "country": "USA",
-        "displayText": "Atlanta, GA"
+        "displayText": "Port Charlotte, FL"
       },
       "birthCountry": {
         "alternateId": "1",
         "abbreviation": "USA"
       },
-      "slug": "dillon-hunter",
+      "slug": "tre-carroll",
       "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5105445.png",
-        "alt": "Dillon Hunter"
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/4684289.png",
+        "alt": "Tre Carroll"
       },
-      "jersey": "2",
-      "hand": {
-        "type": "RIGHT",
-        "abbreviation": "R",
-        "displayValue": "Right"
-      },
+      "jersey": "12",
       "flag": {
         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
         "alt": "USA",
@@ -931,16 +454,16 @@
         ]
       },
       "position": {
-        "id": "3",
-        "name": "Guard",
-        "displayName": "Guard",
-        "abbreviation": "G",
+        "id": "2",
+        "name": "Forward",
+        "displayName": "Forward",
+        "abbreviation": "F",
         "leaf": true
       },
       "injuries": [],
       "teams": [
         {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
         }
       ],
       "experience": {
@@ -956,21 +479,21 @@
       }
     },
     {
-      "id": "5107144",
-      "uid": "s:40~l:41~a:5107144",
-      "guid": "af4bc772-4f7b-3b1e-9eb5-395dc2d9a820",
+      "id": "5105454",
+      "uid": "s:40~l:41~a:5105454",
+      "guid": "dd64d468-80be-3411-bfdd-1c63f24eb679",
       "alternateIds": {
-        "sdr": "5107144"
+        "sdr": "5105454"
       },
-      "firstName": "Butta",
-      "lastName": "Johnson",
-      "fullName": "Butta Johnson",
-      "displayName": "Butta Johnson",
-      "shortName": "B. Johnson",
-      "weight": 180.0,
-      "displayWeight": "180 lbs",
-      "height": 76.0,
-      "displayHeight": "6' 4\"",
+      "firstName": "Malik",
+      "lastName": "Messina-Moore",
+      "fullName": "Malik Messina-Moore",
+      "displayName": "Malik Messina-Moore",
+      "shortName": "M. Messina-Moore",
+      "weight": 200.0,
+      "displayWeight": "200 lbs",
+      "height": 77.0,
+      "displayHeight": "6' 5\"",
       "links": [
         {
           "language": "en-US",
@@ -979,7 +502,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5107144/butta-johnson",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105454/malik-messina-moore",
           "text": "Player Card",
           "shortText": "Player Card",
           "isExternal": false,
@@ -992,7 +515,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5107144/butta-johnson",
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5105454/malik-messina-moore",
           "text": "Stats",
           "shortText": "Stats",
           "isExternal": false,
@@ -1005,7 +528,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5107144/butta-johnson",
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5105454/malik-messina-moore",
           "text": "Splits",
           "shortText": "Splits",
           "isExternal": false,
@@ -1018,7 +541,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5107144/butta-johnson",
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5105454/malik-messina-moore",
           "text": "Game Log",
           "shortText": "Game Log",
           "isExternal": false,
@@ -1031,7 +554,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5107144/butta-johnson",
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5105454/malik-messina-moore",
           "text": "News",
           "shortText": "News",
           "isExternal": false,
@@ -1044,7 +567,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5107144/butta-johnson",
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5105454/malik-messina-moore",
           "text": "Bio",
           "shortText": "Bio",
           "isExternal": false,
@@ -1057,7 +580,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5107144/butta-johnson",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105454/malik-messina-moore",
           "text": "Overview",
           "shortText": "Overview",
           "isExternal": false,
@@ -1065,176 +588,19 @@
         }
       ],
       "birthPlace": {
-        "city": "Huntsville",
-        "state": "AL",
+        "city": "Ventura",
+        "state": "CA",
         "country": "USA",
-        "displayText": "Huntsville, AL"
+        "displayText": "Ventura, CA"
       },
       "birthCountry": {
         "alternateId": "1",
         "abbreviation": "USA"
       },
-      "slug": "butta-johnson",
+      "slug": "malik-messina-moore",
       "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5107144.png",
-        "alt": "Butta Johnson"
-      },
-      "jersey": "4",
-      "flag": {
-        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-        "alt": "USA",
-        "rel": [
-          "country-flag"
-        ]
-      },
-      "position": {
-        "id": "3",
-        "name": "Guard",
-        "displayName": "Guard",
-        "abbreviation": "G",
-        "leaf": true
-      },
-      "injuries": [],
-      "teams": [
-        {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
-        }
-      ],
-      "experience": {
-        "years": 4,
-        "displayValue": "Senior",
-        "abbreviation": "SR"
-      },
-      "status": {
-        "id": "1",
-        "name": "Active",
-        "type": "active",
-        "abbreviation": "Active"
-      }
-    },
-    {
-      "id": "5106880",
-      "uid": "s:40~l:41~a:5106880",
-      "guid": "c264df42-558e-351e-ad37-49c027d7e37e",
-      "alternateIds": {
-        "sdr": "5106880"
-      },
-      "firstName": "Jestin",
-      "lastName": "Porter",
-      "fullName": "Jestin Porter",
-      "displayName": "Jestin Porter",
-      "shortName": "J. Porter",
-      "weight": 180.0,
-      "displayWeight": "180 lbs",
-      "height": 73.0,
-      "displayHeight": "6' 1\"",
-      "links": [
-        {
-          "language": "en-US",
-          "rel": [
-            "playercard",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5106880/jestin-porter",
-          "text": "Player Card",
-          "shortText": "Player Card",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "stats",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5106880/jestin-porter",
-          "text": "Stats",
-          "shortText": "Stats",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "splits",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5106880/jestin-porter",
-          "text": "Splits",
-          "shortText": "Splits",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "gamelog",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5106880/jestin-porter",
-          "text": "Game Log",
-          "shortText": "Game Log",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "news",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5106880/jestin-porter",
-          "text": "News",
-          "shortText": "News",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "bio",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5106880/jestin-porter",
-          "text": "Bio",
-          "shortText": "Bio",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "overview",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5106880/jestin-porter",
-          "text": "Overview",
-          "shortText": "Overview",
-          "isExternal": false,
-          "isPremium": false
-        }
-      ],
-      "birthPlace": {
-        "city": "Houston",
-        "state": "TX",
-        "country": "USA",
-        "displayText": "Houston, TX"
-      },
-      "birthCountry": {
-        "alternateId": "1",
-        "abbreviation": "USA"
-      },
-      "slug": "jestin-porter",
-      "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5106880.png",
-        "alt": "Jestin Porter"
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5105454.png",
+        "alt": "Malik Messina-Moore"
       },
       "jersey": "1",
       "hand": {
@@ -1259,7 +625,7 @@
       "injuries": [],
       "teams": [
         {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
         }
       ],
       "experience": {
@@ -1275,19 +641,19 @@
       }
     },
     {
-      "id": "5196959",
-      "uid": "s:40~l:41~a:5196959",
-      "guid": "7dd7895b-9445-3c07-807b-4a71d3f777ba",
+      "id": "5101673",
+      "uid": "s:40~l:41~a:5101673",
+      "guid": "cd326176-f6f9-3554-ad48-7cc46184951c",
       "alternateIds": {
-        "sdr": "5196959"
+        "sdr": "5101673"
       },
-      "firstName": "Trent",
-      "lastName": "Steinour",
-      "fullName": "Trent Steinour",
-      "displayName": "Trent Steinour",
-      "shortName": "T. Steinour",
-      "weight": 215.0,
-      "displayWeight": "215 lbs",
+      "firstName": "Jovan",
+      "lastName": "Milicevic",
+      "fullName": "Jovan Milicevic",
+      "displayName": "Jovan Milicevic",
+      "shortName": "J. Milicevic",
+      "weight": 241.0,
+      "displayWeight": "241 lbs",
       "height": 82.0,
       "displayHeight": "6' 10\"",
       "links": [
@@ -1298,7 +664,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5196959/trent-steinour",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5101673/jovan-milicevic",
           "text": "Player Card",
           "shortText": "Player Card",
           "isExternal": false,
@@ -1311,7 +677,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5196959/trent-steinour",
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5101673/jovan-milicevic",
           "text": "Stats",
           "shortText": "Stats",
           "isExternal": false,
@@ -1324,7 +690,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5196959/trent-steinour",
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5101673/jovan-milicevic",
           "text": "Splits",
           "shortText": "Splits",
           "isExternal": false,
@@ -1337,7 +703,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5196959/trent-steinour",
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5101673/jovan-milicevic",
           "text": "Game Log",
           "shortText": "Game Log",
           "isExternal": false,
@@ -1350,7 +716,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5196959/trent-steinour",
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5101673/jovan-milicevic",
           "text": "News",
           "shortText": "News",
           "isExternal": false,
@@ -1363,7 +729,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5196959/trent-steinour",
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5101673/jovan-milicevic",
           "text": "Bio",
           "shortText": "Bio",
           "isExternal": false,
@@ -1376,7 +742,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5196959/trent-steinour",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5101673/jovan-milicevic",
           "text": "Overview",
           "shortText": "Overview",
           "isExternal": false,
@@ -1384,24 +750,24 @@
         }
       ],
       "birthPlace": {
-        "city": "Huntersville",
-        "state": "NC",
-        "country": "USA",
-        "displayText": "Huntersville, NC"
+        "city": "Toronto",
+        "state": "ON",
+        "country": "Canada",
+        "displayText": "Toronto, Canada"
       },
       "birthCountry": {
-        "alternateId": "1",
-        "abbreviation": "USA"
+        "alternateId": "102",
+        "abbreviation": "CAN"
       },
-      "slug": "trent-steinour",
+      "slug": "jovan-milicevic",
       "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5196959.png",
-        "alt": "Trent Steinour"
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5101673.png",
+        "alt": "Jovan Milicevic"
       },
-      "jersey": "44",
+      "jersey": "24",
       "flag": {
-        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-        "alt": "USA",
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+        "alt": "Canada",
         "rel": [
           "country-flag"
         ]
@@ -1416,13 +782,13 @@
       "injuries": [],
       "teams": [
         {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
         }
       ],
       "experience": {
-        "years": 1,
-        "displayValue": "Freshman",
-        "abbreviation": "FR"
+        "years": 2,
+        "displayValue": "Sophomore",
+        "abbreviation": "SO"
       },
       "status": {
         "id": "1",
@@ -1432,21 +798,21 @@
       }
     },
     {
-      "id": "4869781",
-      "uid": "s:40~l:41~a:4869781",
-      "guid": "70800369-5303-382b-aab7-4a856fdf5b81",
+      "id": "5152658",
+      "uid": "s:40~l:41~a:5152658",
+      "guid": "46e5e909-a848-3e21-bf60-dee89d1deef3",
       "alternateIds": {
-        "sdr": "4869781"
+        "sdr": "5152658"
       },
-      "firstName": "Dallas",
-      "lastName": "Thomas",
-      "fullName": "Dallas Thomas",
-      "displayName": "Dallas Thomas",
-      "shortName": "D. Thomas",
-      "weight": 180.0,
-      "displayWeight": "180 lbs",
-      "height": 81.0,
-      "displayHeight": "6' 9\"",
+      "firstName": "Pape",
+      "lastName": "N'Diaye",
+      "fullName": "Pape N'Diaye",
+      "displayName": "Pape N'Diaye",
+      "shortName": "P. N'Diaye",
+      "weight": 230.0,
+      "displayWeight": "230 lbs",
+      "height": 84.0,
+      "displayHeight": "7' 0\"",
       "links": [
         {
           "language": "en-US",
@@ -1455,7 +821,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/4869781/dallas-thomas",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5152658/pape-ndiaye",
           "text": "Player Card",
           "shortText": "Player Card",
           "isExternal": false,
@@ -1468,7 +834,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/4869781/dallas-thomas",
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5152658/pape-ndiaye",
           "text": "Stats",
           "shortText": "Stats",
           "isExternal": false,
@@ -1481,7 +847,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/4869781/dallas-thomas",
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5152658/pape-ndiaye",
           "text": "Splits",
           "shortText": "Splits",
           "isExternal": false,
@@ -1494,7 +860,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/4869781/dallas-thomas",
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5152658/pape-ndiaye",
           "text": "Game Log",
           "shortText": "Game Log",
           "isExternal": false,
@@ -1507,7 +873,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/4869781/dallas-thomas",
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5152658/pape-ndiaye",
           "text": "News",
           "shortText": "News",
           "isExternal": false,
@@ -1520,7 +886,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/4869781/dallas-thomas",
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5152658/pape-ndiaye",
           "text": "Bio",
           "shortText": "Bio",
           "isExternal": false,
@@ -1533,7 +899,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/4869781/dallas-thomas",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5152658/pape-ndiaye",
           "text": "Overview",
           "shortText": "Overview",
           "isExternal": false,
@@ -1541,19 +907,175 @@
         }
       ],
       "birthPlace": {
-        "city": "Little Rock",
-        "state": "AR",
+        "city": "Abidjan",
+        "country": "Ivory Coast",
+        "displayText": "Abidjan, Ivory Coast"
+      },
+      "birthCountry": {
+        "alternateId": "591",
+        "abbreviation": "CIV"
+      },
+      "slug": "pape-ndiaye",
+      "headshot": {
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5152658.png",
+        "alt": "Pape N'Diaye"
+      },
+      "jersey": "22",
+      "flag": {
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+        "alt": "Ivory Coast",
+        "rel": [
+          "country-flag"
+        ]
+      },
+      "position": {
+        "id": "2",
+        "name": "Forward",
+        "displayName": "Forward",
+        "abbreviation": "F",
+        "leaf": true
+      },
+      "injuries": [],
+      "teams": [
+        {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
+        }
+      ],
+      "experience": {
+        "years": 2,
+        "displayValue": "Sophomore",
+        "abbreviation": "SO"
+      },
+      "status": {
+        "id": "1",
+        "name": "Active",
+        "type": "active",
+        "abbreviation": "Active"
+      }
+    },
+    {
+      "id": "5241258",
+      "uid": "s:40~l:41~a:5241258",
+      "guid": "c2073ab5-7850-3cb2-902a-fbdfe3f29e9c",
+      "alternateIds": {
+        "sdr": "5241258"
+      },
+      "firstName": "Luke",
+      "lastName": "Naser",
+      "fullName": "Luke Naser",
+      "displayName": "Luke Naser",
+      "shortName": "L. Naser",
+      "weight": 179.0,
+      "displayWeight": "179 lbs",
+      "height": 74.0,
+      "displayHeight": "6' 2\"",
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "playercard",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5241258/luke-naser",
+          "text": "Player Card",
+          "shortText": "Player Card",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5241258/luke-naser",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "splits",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5241258/luke-naser",
+          "text": "Splits",
+          "shortText": "Splits",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamelog",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5241258/luke-naser",
+          "text": "Game Log",
+          "shortText": "Game Log",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "news",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5241258/luke-naser",
+          "text": "News",
+          "shortText": "News",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "bio",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5241258/luke-naser",
+          "text": "Bio",
+          "shortText": "Bio",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "overview",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5241258/luke-naser",
+          "text": "Overview",
+          "shortText": "Overview",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "birthPlace": {
+        "city": "Gilroy",
+        "state": "CA",
         "country": "USA",
-        "displayText": "Little Rock, AR"
+        "displayText": "Gilroy, CA"
       },
       "birthCountry": {
         "alternateId": "1",
         "abbreviation": "USA"
       },
-      "slug": "dallas-thomas",
+      "slug": "luke-naser",
       "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/4869781.png",
-        "alt": "Dallas Thomas"
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241258.png",
+        "alt": "Luke Naser"
       },
       "jersey": "8",
       "flag": {
@@ -1564,6 +1086,324 @@
         ]
       },
       "position": {
+        "id": "3",
+        "name": "Guard",
+        "displayName": "Guard",
+        "abbreviation": "G",
+        "leaf": true
+      },
+      "injuries": [],
+      "teams": [
+        {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
+        }
+      ],
+      "experience": {
+        "years": 2,
+        "displayValue": "Sophomore",
+        "abbreviation": "SO"
+      },
+      "status": {
+        "id": "1",
+        "name": "Active",
+        "type": "active",
+        "abbreviation": "Active"
+      }
+    },
+    {
+      "id": "5175711",
+      "uid": "s:40~l:41~a:5175711",
+      "guid": "debe1d00-bba3-304b-aa93-3af0e890dcf8",
+      "alternateIds": {
+        "sdr": "5175711"
+      },
+      "firstName": "Mier",
+      "lastName": "Panoam",
+      "fullName": "Mier Panoam",
+      "displayName": "Mier Panoam",
+      "shortName": "M. Panoam",
+      "weight": 200.0,
+      "displayWeight": "200 lbs",
+      "height": 74.0,
+      "displayHeight": "6' 2\"",
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "playercard",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5175711/mier-panoam",
+          "text": "Player Card",
+          "shortText": "Player Card",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5175711/mier-panoam",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "splits",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5175711/mier-panoam",
+          "text": "Splits",
+          "shortText": "Splits",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamelog",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5175711/mier-panoam",
+          "text": "Game Log",
+          "shortText": "Game Log",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "news",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5175711/mier-panoam",
+          "text": "News",
+          "shortText": "News",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "bio",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5175711/mier-panoam",
+          "text": "Bio",
+          "shortText": "Bio",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "overview",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5175711/mier-panoam",
+          "text": "Overview",
+          "shortText": "Overview",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "birthPlace": {
+        "city": "Anchorage",
+        "state": "AK",
+        "country": "USA",
+        "displayText": "Anchorage, AK"
+      },
+      "birthCountry": {
+        "alternateId": "1",
+        "abbreviation": "USA"
+      },
+      "slug": "mier-panoam",
+      "headshot": {
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5175711.png",
+        "alt": "Mier Panoam"
+      },
+      "jersey": "9",
+      "flag": {
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "alt": "USA",
+        "rel": [
+          "country-flag"
+        ]
+      },
+      "position": {
+        "id": "3",
+        "name": "Guard",
+        "displayName": "Guard",
+        "abbreviation": "G",
+        "leaf": true
+      },
+      "injuries": [],
+      "teams": [
+        {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
+        }
+      ],
+      "experience": {
+        "years": 3,
+        "displayValue": "Junior",
+        "abbreviation": "JR"
+      },
+      "status": {
+        "id": "1",
+        "name": "Active",
+        "type": "active",
+        "abbreviation": "Active"
+      }
+    },
+    {
+      "id": "5241369",
+      "uid": "s:40~l:41~a:5241369",
+      "guid": "ec708fc4-79a1-3035-88bd-a3756d43321a",
+      "alternateIds": {
+        "sdr": "5241369"
+      },
+      "firstName": "Gabriel",
+      "lastName": "Pozzato",
+      "fullName": "Gabriel Pozzato",
+      "displayName": "Gabriel Pozzato",
+      "shortName": "G. Pozzato",
+      "weight": 200.0,
+      "displayWeight": "200 lbs",
+      "height": 79.0,
+      "displayHeight": "6' 7\"",
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "playercard",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5241369/gabriel-pozzato",
+          "text": "Player Card",
+          "shortText": "Player Card",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5241369/gabriel-pozzato",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "splits",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5241369/gabriel-pozzato",
+          "text": "Splits",
+          "shortText": "Splits",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamelog",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5241369/gabriel-pozzato",
+          "text": "Game Log",
+          "shortText": "Game Log",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "news",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5241369/gabriel-pozzato",
+          "text": "News",
+          "shortText": "News",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "bio",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5241369/gabriel-pozzato",
+          "text": "Bio",
+          "shortText": "Bio",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "overview",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5241369/gabriel-pozzato",
+          "text": "Overview",
+          "shortText": "Overview",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "birthPlace": {
+        "city": "Novara",
+        "country": "Italy",
+        "displayText": "Novara, Italy"
+      },
+      "birthCountry": {
+        "alternateId": "105",
+        "abbreviation": "ITA"
+      },
+      "slug": "gabriel-pozzato",
+      "headshot": {
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241369.png",
+        "alt": "Gabriel Pozzato"
+      },
+      "jersey": "2",
+      "hand": {
+        "type": "RIGHT",
+        "abbreviation": "R",
+        "displayValue": "Right"
+      },
+      "flag": {
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/ita.png",
+        "alt": "Italy",
+        "rel": [
+          "country-flag"
+        ]
+      },
+      "position": {
         "id": "2",
         "name": "Forward",
         "displayName": "Forward",
@@ -1573,7 +1413,792 @@
       "injuries": [],
       "teams": [
         {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
+        }
+      ],
+      "experience": {
+        "years": 2,
+        "displayValue": "Sophomore",
+        "abbreviation": "SO"
+      },
+      "status": {
+        "id": "1",
+        "name": "Active",
+        "type": "active",
+        "abbreviation": "Active"
+      }
+    },
+    {
+      "id": "5143921",
+      "uid": "s:40~l:41~a:5143921",
+      "guid": "d9d0fc5a-25e5-3762-ad1d-9d9478ddf9f7",
+      "alternateIds": {
+        "sdr": "5143921"
+      },
+      "firstName": "Anthony",
+      "lastName": "Robinson",
+      "fullName": "Anthony Robinson",
+      "displayName": "Anthony Robinson",
+      "shortName": "A. Robinson",
+      "weight": 252.0,
+      "displayWeight": "252 lbs",
+      "height": 82.0,
+      "displayHeight": "6' 10\"",
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "playercard",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5143921/anthony-robinson",
+          "text": "Player Card",
+          "shortText": "Player Card",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5143921/anthony-robinson",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "splits",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5143921/anthony-robinson",
+          "text": "Splits",
+          "shortText": "Splits",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamelog",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5143921/anthony-robinson",
+          "text": "Game Log",
+          "shortText": "Game Log",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "news",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5143921/anthony-robinson",
+          "text": "News",
+          "shortText": "News",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "bio",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5143921/anthony-robinson",
+          "text": "Bio",
+          "shortText": "Bio",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "overview",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5143921/anthony-robinson",
+          "text": "Overview",
+          "shortText": "Overview",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "birthPlace": {
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA",
+        "displayText": "Atlanta, GA"
+      },
+      "birthCountry": {
+        "alternateId": "1",
+        "abbreviation": "USA"
+      },
+      "slug": "anthony-robinson",
+      "headshot": {
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5143921.png",
+        "alt": "Anthony Robinson"
+      },
+      "jersey": "21",
+      "flag": {
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "alt": "USA",
+        "rel": [
+          "country-flag"
+        ]
+      },
+      "position": {
+        "id": "2",
+        "name": "Forward",
+        "displayName": "Forward",
+        "abbreviation": "F",
+        "leaf": true
+      },
+      "injuries": [],
+      "teams": [
+        {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
+        }
+      ],
+      "experience": {
+        "years": 2,
+        "displayValue": "Sophomore",
+        "abbreviation": "SO"
+      },
+      "status": {
+        "id": "1",
+        "name": "Active",
+        "type": "active",
+        "abbreviation": "Active"
+      }
+    },
+    {
+      "id": "5105609",
+      "uid": "s:40~l:41~a:5105609",
+      "guid": "b6f403c8-65d5-3ace-9407-d2f6bc8cd56b",
+      "alternateIds": {
+        "sdr": "5105609"
+      },
+      "firstName": "Ian",
+      "lastName": "Sabourin",
+      "fullName": "Ian Sabourin",
+      "displayName": "Ian Sabourin",
+      "shortName": "I. Sabourin",
+      "weight": 210.0,
+      "displayWeight": "210 lbs",
+      "height": 76.0,
+      "displayHeight": "6' 4\"",
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "playercard",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105609/ian-sabourin",
+          "text": "Player Card",
+          "shortText": "Player Card",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5105609/ian-sabourin",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "splits",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5105609/ian-sabourin",
+          "text": "Splits",
+          "shortText": "Splits",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamelog",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5105609/ian-sabourin",
+          "text": "Game Log",
+          "shortText": "Game Log",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "news",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5105609/ian-sabourin",
+          "text": "News",
+          "shortText": "News",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "bio",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5105609/ian-sabourin",
+          "text": "Bio",
+          "shortText": "Bio",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "overview",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105609/ian-sabourin",
+          "text": "Overview",
+          "shortText": "Overview",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "birthPlace": {
+        "city": "Hamilton",
+        "state": "OH",
+        "country": "USA",
+        "displayText": "Hamilton, OH"
+      },
+      "birthCountry": {
+        "alternateId": "1",
+        "abbreviation": "USA"
+      },
+      "slug": "ian-sabourin",
+      "headshot": {
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5105609.png",
+        "alt": "Ian Sabourin"
+      },
+      "jersey": "31",
+      "flag": {
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "alt": "USA",
+        "rel": [
+          "country-flag"
+        ]
+      },
+      "position": {
+        "id": "2",
+        "name": "Forward",
+        "displayName": "Forward",
+        "abbreviation": "F",
+        "leaf": true
+      },
+      "injuries": [],
+      "teams": [
+        {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
+        }
+      ],
+      "experience": {
+        "years": 4,
+        "displayValue": "Senior",
+        "abbreviation": "SR"
+      },
+      "status": {
+        "id": "1",
+        "name": "Active",
+        "type": "active",
+        "abbreviation": "Active"
+      }
+    },
+    {
+      "id": "5240541",
+      "uid": "s:40~l:41~a:5240541",
+      "guid": "8408c194-7751-3f75-b350-ecef928d3c77",
+      "alternateIds": {
+        "sdr": "5240541"
+      },
+      "firstName": "Henry",
+      "lastName": "Thole",
+      "fullName": "Henry Thole",
+      "displayName": "Henry Thole",
+      "shortName": "H. Thole",
+      "weight": 230.0,
+      "displayWeight": "230 lbs",
+      "height": 79.0,
+      "displayHeight": "6' 7\"",
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "playercard",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5240541/henry-thole",
+          "text": "Player Card",
+          "shortText": "Player Card",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5240541/henry-thole",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "splits",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5240541/henry-thole",
+          "text": "Splits",
+          "shortText": "Splits",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamelog",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5240541/henry-thole",
+          "text": "Game Log",
+          "shortText": "Game Log",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "news",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5240541/henry-thole",
+          "text": "News",
+          "shortText": "News",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "bio",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5240541/henry-thole",
+          "text": "Bio",
+          "shortText": "Bio",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "overview",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5240541/henry-thole",
+          "text": "Overview",
+          "shortText": "Overview",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "birthPlace": {
+        "city": "Union",
+        "state": "KY",
+        "country": "USA",
+        "displayText": "Union, KY"
+      },
+      "birthCountry": {
+        "alternateId": "1",
+        "abbreviation": "USA"
+      },
+      "slug": "henry-thole",
+      "headshot": {
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5240541.png",
+        "alt": "Henry Thole"
+      },
+      "jersey": "20",
+      "flag": {
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "alt": "USA",
+        "rel": [
+          "country-flag"
+        ]
+      },
+      "position": {
+        "id": "2",
+        "name": "Forward",
+        "displayName": "Forward",
+        "abbreviation": "F",
+        "leaf": true
+      },
+      "injuries": [],
+      "teams": [
+        {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
+        }
+      ],
+      "experience": {
+        "years": 2,
+        "displayValue": "Sophomore",
+        "abbreviation": "SO"
+      },
+      "status": {
+        "id": "1",
+        "name": "Active",
+        "type": "active",
+        "abbreviation": "Active"
+      }
+    },
+    {
+      "id": "4897261",
+      "uid": "s:40~l:41~a:4897261",
+      "guid": "e350cd26-8a4e-33cf-82ad-440f7fc2e77c",
+      "alternateIds": {
+        "sdr": "4897261"
+      },
+      "firstName": "Isaiah",
+      "lastName": "Walker",
+      "fullName": "Isaiah Walker",
+      "displayName": "Isaiah Walker",
+      "shortName": "I. Walker",
+      "weight": 205.0,
+      "displayWeight": "205 lbs",
+      "height": 77.0,
+      "displayHeight": "6' 5\"",
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "playercard",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/4897261/isaiah-walker",
+          "text": "Player Card",
+          "shortText": "Player Card",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/4897261/isaiah-walker",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "splits",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/4897261/isaiah-walker",
+          "text": "Splits",
+          "shortText": "Splits",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamelog",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/4897261/isaiah-walker",
+          "text": "Game Log",
+          "shortText": "Game Log",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "news",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/4897261/isaiah-walker",
+          "text": "News",
+          "shortText": "News",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "bio",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/4897261/isaiah-walker",
+          "text": "Bio",
+          "shortText": "Bio",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "overview",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/4897261/isaiah-walker",
+          "text": "Overview",
+          "shortText": "Overview",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "birthPlace": {
+        "city": "Cincinnati",
+        "state": "OH",
+        "country": "USA",
+        "displayText": "Cincinnati, OH"
+      },
+      "birthCountry": {
+        "alternateId": "1",
+        "abbreviation": "USA"
+      },
+      "slug": "isaiah-walker",
+      "headshot": {
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/4897261.png",
+        "alt": "Isaiah Walker"
+      },
+      "jersey": "7",
+      "flag": {
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "alt": "USA",
+        "rel": [
+          "country-flag"
+        ]
+      },
+      "position": {
+        "id": "3",
+        "name": "Guard",
+        "displayName": "Guard",
+        "abbreviation": "G",
+        "leaf": true
+      },
+      "injuries": [],
+      "teams": [
+        {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
+        }
+      ],
+      "experience": {
+        "years": 4,
+        "displayValue": "Senior",
+        "abbreviation": "SR"
+      },
+      "status": {
+        "id": "1",
+        "name": "Active",
+        "type": "active",
+        "abbreviation": "Active"
+      }
+    },
+    {
+      "id": "5315032",
+      "uid": "s:40~l:41~a:5315032",
+      "guid": "e33030b9-6b23-3307-815c-add42aa84d9b",
+      "alternateIds": {
+        "sdr": "5315032"
+      },
+      "firstName": "Kason",
+      "lastName": "Westphal",
+      "fullName": "Kason Westphal",
+      "displayName": "Kason Westphal",
+      "shortName": "K. Westphal",
+      "weight": 260.0,
+      "displayWeight": "260 lbs",
+      "height": 84.0,
+      "displayHeight": "7' 0\"",
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "playercard",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5315032/kason-westphal",
+          "text": "Player Card",
+          "shortText": "Player Card",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5315032/kason-westphal",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "splits",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5315032/kason-westphal",
+          "text": "Splits",
+          "shortText": "Splits",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamelog",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5315032/kason-westphal",
+          "text": "Game Log",
+          "shortText": "Game Log",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "news",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5315032/kason-westphal",
+          "text": "News",
+          "shortText": "News",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "bio",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5315032/kason-westphal",
+          "text": "Bio",
+          "shortText": "Bio",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "overview",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5315032/kason-westphal",
+          "text": "Overview",
+          "shortText": "Overview",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "birthPlace": {
+        "city": "Salida",
+        "state": "CO",
+        "country": "USA",
+        "displayText": "Salida, CO"
+      },
+      "birthCountry": {
+        "alternateId": "1",
+        "abbreviation": "USA"
+      },
+      "slug": "kason-westphal",
+      "headshot": {
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5315032.png",
+        "alt": "Kason Westphal"
+      },
+      "jersey": "15",
+      "flag": {
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "alt": "USA",
+        "rel": [
+          "country-flag"
+        ]
+      },
+      "position": {
+        "id": "1",
+        "name": "Center",
+        "displayName": "Center",
+        "abbreviation": "C",
+        "leaf": true
+      },
+      "injuries": [],
+      "teams": [
+        {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
         }
       ],
       "experience": {
@@ -1589,21 +2214,21 @@
       }
     },
     {
-      "id": "5196962",
-      "uid": "s:40~l:41~a:5196962",
-      "guid": "b293ba07-7309-334e-a4e0-417cd723b751",
+      "id": "5105608",
+      "uid": "s:40~l:41~a:5105608",
+      "guid": "b5a6a15b-ae89-3bb2-a023-e1c8a063c930",
       "alternateIds": {
-        "sdr": "5196962"
+        "sdr": "5105608"
       },
-      "firstName": "Chase",
-      "lastName": "Thompson",
-      "fullName": "Chase Thompson",
-      "displayName": "Chase Thompson",
-      "shortName": "C. Thompson",
-      "weight": 215.0,
-      "displayWeight": "215 lbs",
-      "height": 80.0,
-      "displayHeight": "6' 8\"",
+      "firstName": "Michael",
+      "lastName": "Wolf",
+      "fullName": "Michael Wolf",
+      "displayName": "Michael Wolf",
+      "shortName": "M. Wolf",
+      "weight": 195.0,
+      "displayWeight": "195 lbs",
+      "height": 73.0,
+      "displayHeight": "6' 1\"",
       "links": [
         {
           "language": "en-US",
@@ -1612,7 +2237,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5196962/chase-thompson",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105608/michael-wolf",
           "text": "Player Card",
           "shortText": "Player Card",
           "isExternal": false,
@@ -1625,7 +2250,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5196962/chase-thompson",
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5105608/michael-wolf",
           "text": "Stats",
           "shortText": "Stats",
           "isExternal": false,
@@ -1638,7 +2263,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5196962/chase-thompson",
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5105608/michael-wolf",
           "text": "Splits",
           "shortText": "Splits",
           "isExternal": false,
@@ -1651,7 +2276,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5196962/chase-thompson",
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5105608/michael-wolf",
           "text": "Game Log",
           "shortText": "Game Log",
           "isExternal": false,
@@ -1664,7 +2289,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5196962/chase-thompson",
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5105608/michael-wolf",
           "text": "News",
           "shortText": "News",
           "isExternal": false,
@@ -1677,7 +2302,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5196962/chase-thompson",
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5105608/michael-wolf",
           "text": "Bio",
           "shortText": "Bio",
           "isExternal": false,
@@ -1690,7 +2315,7 @@
             "desktop",
             "athlete"
           ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5196962/chase-thompson",
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5105608/michael-wolf",
           "text": "Overview",
           "shortText": "Overview",
           "isExternal": false,
@@ -1698,19 +2323,175 @@
         }
       ],
       "birthPlace": {
-        "city": "Glenwood",
-        "state": "MN",
+        "city": "Greenwood Village",
+        "state": "CO",
         "country": "USA",
-        "displayText": "Glenwood, MN"
+        "displayText": "Greenwood Village, CO"
       },
       "birthCountry": {
         "alternateId": "1",
         "abbreviation": "USA"
       },
-      "slug": "chase-thompson",
+      "slug": "michael-wolf",
       "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5196962.png",
-        "alt": "Chase Thompson"
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5105608.png",
+        "alt": "Michael Wolf"
+      },
+      "jersey": "25",
+      "flag": {
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "alt": "USA",
+        "rel": [
+          "country-flag"
+        ]
+      },
+      "position": {
+        "id": "3",
+        "name": "Guard",
+        "displayName": "Guard",
+        "abbreviation": "G",
+        "leaf": true
+      },
+      "injuries": [],
+      "teams": [
+        {
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
+        }
+      ],
+      "experience": {
+        "years": 4,
+        "displayValue": "Senior",
+        "abbreviation": "SR"
+      },
+      "status": {
+        "id": "1",
+        "name": "Active",
+        "type": "active",
+        "abbreviation": "Active"
+      }
+    },
+    {
+      "id": "5241430",
+      "uid": "s:40~l:41~a:5241430",
+      "guid": "7632bc1e-423a-3f4b-810e-f53deae6d6e4",
+      "alternateIds": {
+        "sdr": "5241430"
+      },
+      "firstName": "All",
+      "lastName": "Wright",
+      "fullName": "All Wright",
+      "displayName": "All Wright",
+      "shortName": "A. Wright",
+      "weight": 190.0,
+      "displayWeight": "190 lbs",
+      "height": 75.0,
+      "displayHeight": "6' 3\"",
+      "links": [
+        {
+          "language": "en-US",
+          "rel": [
+            "playercard",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5241430/all-wright",
+          "text": "Player Card",
+          "shortText": "Player Card",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "stats",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5241430/all-wright",
+          "text": "Stats",
+          "shortText": "Stats",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "splits",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5241430/all-wright",
+          "text": "Splits",
+          "shortText": "Splits",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "gamelog",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5241430/all-wright",
+          "text": "Game Log",
+          "shortText": "Game Log",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "news",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5241430/all-wright",
+          "text": "News",
+          "shortText": "News",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "bio",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5241430/all-wright",
+          "text": "Bio",
+          "shortText": "Bio",
+          "isExternal": false,
+          "isPremium": false
+        },
+        {
+          "language": "en-US",
+          "rel": [
+            "overview",
+            "desktop",
+            "athlete"
+          ],
+          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5241430/all-wright",
+          "text": "Overview",
+          "shortText": "Overview",
+          "isExternal": false,
+          "isPremium": false
+        }
+      ],
+      "birthPlace": {
+        "city": "Durango",
+        "country": "Mexico",
+        "displayText": "Durango, Mexico"
+      },
+      "birthCountry": {
+        "alternateId": "166",
+        "abbreviation": "MEX"
+      },
+      "slug": "all-wright",
+      "headshot": {
+        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241430.png",
+        "alt": "All Wright"
       },
       "jersey": "3",
       "hand": {
@@ -1719,343 +2500,29 @@
         "displayValue": "Both"
       },
       "flag": {
-        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-        "alt": "USA",
+        "href": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+        "alt": "Mexico",
         "rel": [
           "country-flag"
         ]
       },
       "position": {
-        "id": "2",
-        "name": "Forward",
-        "displayName": "Forward",
-        "abbreviation": "F",
+        "id": "3",
+        "name": "Guard",
+        "displayName": "Guard",
+        "abbreviation": "G",
         "leaf": true
       },
       "injuries": [],
       "teams": [
         {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
+          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/2752?lang=en&region=us"
         }
       ],
       "experience": {
-        "years": 1,
-        "displayValue": "Freshman",
-        "abbreviation": "FR"
-      },
-      "status": {
-        "id": "1",
-        "name": "Active",
-        "type": "active",
-        "abbreviation": "Active"
-      }
-    },
-    {
-      "id": "5174977",
-      "uid": "s:40~l:41~a:5174977",
-      "guid": "b6950b3e-7fe2-3d9c-a986-d59b7c8d43a2",
-      "alternateIds": {
-        "sdr": "5174977"
-      },
-      "firstName": "Jake",
-      "lastName": "Wahlin",
-      "fullName": "Jake Wahlin",
-      "displayName": "Jake Wahlin",
-      "shortName": "J. Wahlin",
-      "weight": 212.0,
-      "displayWeight": "212 lbs",
-      "height": 82.0,
-      "displayHeight": "6' 10\"",
-      "links": [
-        {
-          "language": "en-US",
-          "rel": [
-            "playercard",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5174977/jake-wahlin",
-          "text": "Player Card",
-          "shortText": "Player Card",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "stats",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5174977/jake-wahlin",
-          "text": "Stats",
-          "shortText": "Stats",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "splits",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5174977/jake-wahlin",
-          "text": "Splits",
-          "shortText": "Splits",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "gamelog",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5174977/jake-wahlin",
-          "text": "Game Log",
-          "shortText": "Game Log",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "news",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5174977/jake-wahlin",
-          "text": "News",
-          "shortText": "News",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "bio",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5174977/jake-wahlin",
-          "text": "Bio",
-          "shortText": "Bio",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "overview",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5174977/jake-wahlin",
-          "text": "Overview",
-          "shortText": "Overview",
-          "isExternal": false,
-          "isPremium": false
-        }
-      ],
-      "birthPlace": {
-        "city": "Provo",
-        "state": "UT",
-        "country": "USA",
-        "displayText": "Provo, UT"
-      },
-      "birthCountry": {
-        "alternateId": "1",
-        "abbreviation": "USA"
-      },
-      "slug": "jake-wahlin",
-      "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5174977.png",
-        "alt": "Jake Wahlin"
-      },
-      "jersey": "10",
-      "flag": {
-        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-        "alt": "USA",
-        "rel": [
-          "country-flag"
-        ]
-      },
-      "position": {
-        "id": "2",
-        "name": "Forward",
-        "displayName": "Forward",
-        "abbreviation": "F",
-        "leaf": true
-      },
-      "injuries": [],
-      "teams": [
-        {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
-        }
-      ],
-      "experience": {
-        "years": 3,
-        "displayValue": "Junior",
-        "abbreviation": "JR"
-      },
-      "status": {
-        "id": "1",
-        "name": "Active",
-        "type": "active",
-        "abbreviation": "Active"
-      }
-    },
-    {
-      "id": "5176397",
-      "uid": "s:40~l:41~a:5176397",
-      "guid": "b8bb89bf-ecdd-3c7a-a09a-726831c7a705",
-      "alternateIds": {
-        "sdr": "5176397"
-      },
-      "firstName": "Carter",
-      "lastName": "Welling",
-      "fullName": "Carter Welling",
-      "displayName": "Carter Welling",
-      "shortName": "C. Welling",
-      "weight": 225.0,
-      "displayWeight": "225 lbs",
-      "height": 82.0,
-      "displayHeight": "6' 10\"",
-      "links": [
-        {
-          "language": "en-US",
-          "rel": [
-            "playercard",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5176397/carter-welling",
-          "text": "Player Card",
-          "shortText": "Player Card",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "stats",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/stats/_/id/5176397/carter-welling",
-          "text": "Stats",
-          "shortText": "Stats",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "splits",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/splits/_/id/5176397/carter-welling",
-          "text": "Splits",
-          "shortText": "Splits",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "gamelog",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/gamelog/_/id/5176397/carter-welling",
-          "text": "Game Log",
-          "shortText": "Game Log",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "news",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/news/_/id/5176397/carter-welling",
-          "text": "News",
-          "shortText": "News",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "bio",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/bio/_/id/5176397/carter-welling",
-          "text": "Bio",
-          "shortText": "Bio",
-          "isExternal": false,
-          "isPremium": false
-        },
-        {
-          "language": "en-US",
-          "rel": [
-            "overview",
-            "desktop",
-            "athlete"
-          ],
-          "href": "https://www.espn.com/mens-college-basketball/player/_/id/5176397/carter-welling",
-          "text": "Overview",
-          "shortText": "Overview",
-          "isExternal": false,
-          "isPremium": false
-        }
-      ],
-      "birthPlace": {
-        "city": "Draper",
-        "state": "UT",
-        "country": "USA",
-        "displayText": "Draper, UT"
-      },
-      "birthCountry": {
-        "alternateId": "1",
-        "abbreviation": "USA"
-      },
-      "slug": "carter-welling",
-      "headshot": {
-        "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5176397.png",
-        "alt": "Carter Welling"
-      },
-      "jersey": "22",
-      "flag": {
-        "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-        "alt": "USA",
-        "rel": [
-          "country-flag"
-        ]
-      },
-      "position": {
-        "id": "2",
-        "name": "Forward",
-        "displayName": "Forward",
-        "abbreviation": "F",
-        "leaf": true
-      },
-      "injuries": [],
-      "teams": [
-        {
-          "$ref": "http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/mens-college-basketball/seasons/2026/teams/228?lang=en&region=us"
-        }
-      ],
-      "experience": {
-        "years": 3,
-        "displayValue": "Junior",
-        "abbreviation": "JR"
+        "years": 2,
+        "displayValue": "Sophomore",
+        "abbreviation": "SO"
       },
       "status": {
         "id": "1",
@@ -2067,23 +2534,22 @@
   ],
   "coach": [
     {
-      "id": "71273",
-      "firstName": "Brad",
-      "lastName": "Brownell",
-      "experience": 10
+      "id": "2955963",
+      "firstName": "Richard",
+      "lastName": "Pitino"
     }
   ],
   "team": {
-    "id": "228",
-    "abbreviation": "CLEM",
-    "location": "Clemson",
-    "name": "Tigers",
-    "displayName": "Clemson Tigers",
-    "clubhouse": "https://www.espn.com/mens-college-basketball/team/_/id/228/clemson-tigers",
-    "color": "f56600",
-    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
-    "recordSummary": "16-4",
+    "id": "2752",
+    "abbreviation": "XAV",
+    "location": "Xavier",
+    "name": "Musketeers",
+    "displayName": "Xavier Musketeers",
+    "clubhouse": "https://www.espn.com/mens-college-basketball/team/_/id/2752/xavier-musketeers",
+    "color": "21304e",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2752.png",
+    "recordSummary": "15-18",
     "seasonSummary": "2025-26",
-    "standingSummary": "2nd in ACC"
+    "standingSummary": "10th in Big East"
   }
 }
